@@ -1,0 +1,1 @@
+nice -19 javahog -mx256m -classpath ~/lib/grok-exe-0.6.0.jar:../src foldocpos.POSParse Dictionary.gz -l -m 4 foldoctag.fdg

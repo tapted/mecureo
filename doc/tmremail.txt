@@ -1,0 +1,26 @@
+ mail judy
+Date: Wed, 19 Feb 2003 14:11:23 +1100
+From: tapted@it.usyd.edu.au ("Apted; Trent Heath")
+Reply-To: tapted@it.usyd.edu.au
+To: judy
+Subject: Tomorrow
+
+Sorry, I need to dash [see prev. email].
+
+But I thought I'd just check to see if I'm on track with where you
+most prefer me to be, or if I should change the priorities:
+
+- Strict Concept Mapping write-up
+- Expanding keywords for NLP
+- Fixing broken journal paper [reformatting, adding link detection
+    and other writeups]
+- NLP Writeup
+- Anything else?
+
+I also discovered another freely availably NLP library called
+"GATE" - I've not yet investigated the license, although grok
+seems to be performing adequately for now, so I don't think I'll
+go through the hassle of learning and incorporating it.
+
+.
+EOT

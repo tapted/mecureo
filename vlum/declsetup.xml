@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<squidgeSetup>
+
+  <relationship name="child"/>
+  <relationship name="parent"/>
+  <relationship name="sibling"/>
+  <relationship name="antonym"/>
+  <relationship name="category"/>
+  <relationship name="synonym"/>
+  <relationship name="unknown"/>
+  
+  <display type="plain" ID="gmp:average">
+    <tag>The connectivity</tag>
+    <name>gmp:average</name>
+    <tooltip>The connectivity</tooltip>
+  </display>
+</squidgeSetup>

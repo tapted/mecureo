@@ -1,0 +1,43 @@
+Date: Fri, 21 Feb 2003 16:41:28 +1100
+From: tapted@it.usyd.edu.au ("Apted; Trent Heath")
+Subject: Paper
+To: judy@staff.cs.su.oz.au
+Reply-To: tapted@it.usyd.edu.au
+
+Word truly is posessed by a devil of some description.
+
+I think I managed an exorcism of sorts. In any case,
+the file size is much smaller, and the references and
+images are stable.
+
+Pictures are all in. The only change was a paragraph
+in Section 4.1 (the last para) hinting at the better
+way of doing things with NLP that is being trialled,
+and some minor gramatical errors fixed up.
+
+The current link is:
+
+http://www.cs.usyd.edu.au/~tapted/mecureo/papers/journal-mecuro-stable.doc
+
+One FOLDOC parameter-permutation managed to get done
+it's hooked up by selecting
+
+"Matched with NLP Link Detection"
+
+on the intermediate page.
+
+I haven't had time to test it yet.
+
+Keywords are still being extended. They currently
+stand at 187.
+
+The case-matched parse is staring at me while
+thrashing away on definition number 12156 [I
+think it's 3LA]; so I'll prolly have to cancel
+it before I head off.
+
+Also I think I may come in on Monday next week
+if that's okay as Tuesday is Honours orientation.
+
+Thanks,
+	Trent.

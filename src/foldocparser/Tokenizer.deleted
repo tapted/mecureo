@@ -1,0 +1,83 @@
+        //read keywords from a file
+        //parse the keywords file
+        //parent means current defn is a parent of next keyword
+        //child means current defn is a child of next keyword
+        Map FLAGS = new HashMap();
+        FLAGS.put("weak", new Integer(Token.WEAK));
+        FLAGS.put("normal", new Integer(Token.NORMAL));
+        FLAGS.put("strong", new Integer(Token.STRONG));
+        FLAGS.put("very", new Integer(Token.VERY_STRONG));
+        FLAGS.put("child", new Integer(Token.CHILD));
+        FLAGS.put("parent", new Integer(Token.PARENT));
+        FLAGS.put("sibling", new Integer(Token.SIBLING));
+        FLAGS.put("dissim", new Integer(Token.DISSIM));
+        FLAGS.put("category", new Integer(Token.CATEGORY));
+        FLAGS.put("invalid", new Integer(Token.K_INVALID));
+        FLAGS.put("longer", new Integer(Token.K_LONGER));
+
+        try {
+            BufferedReader in = new BufferedReader(
+                    new FileReader("keywords.txt"));
+            String l = in.readLine();
+            //sink comments and blank lines
+            while (l != null && (l.length() == 0 || l.charAt(0) == '#'))
+                l = in.readLine();
+            while (l != null) {     //for each line/keyword
+                l = l.toLowerCase();
+                int pos = 0;
+                String key;
+                int flags = Token.K_WORD;
+                //read key (up to ':')
+                for (; pos < l.length() && l.charAt(pos) != ':'; ++pos);
+                if (pos >= l.length()) {
+                    System.err.println("error in keywords.txt: line without key");
+                } else {
+                    key = l.substring(0, pos);
+                    while (pos < l.length()) {    //for each flag
+                        //sink white space/:/junk
+                        for(; pos < l.length() && !Character.isLetter(l.charAt(pos)); ++pos);
+                        int start = pos;
+                        //read to next white space
+                        for(; pos < l.length() && Character.isLetter(l.charAt(pos)); ++pos);
+                        if (start == pos) {
+                            //maybe an error, maybe just trailing white space
+                        } else {
+                            String val = l.substring(start, pos);
+                            Integer f = (Integer)FLAGS.get(val);
+                            if (f == null) {
+                                System.err.println("No mapping for '" + val + "' flag");
+                            } else {
+                                flags |= f.intValue();
+                            }
+                        }
+                    } //next flag
+                    KEYWORDS.put(key, new Token(flags, key));
+                } //end of if
+                l = in.readLine();
+            } //next line
+	    in.close();
+	    System.err.println("Read in " + KEYWORDS.size() + " keywords.");
+        } catch (IOException ioe) {
+            System.err.println("Unexpected IOException reading keywords.txt:");
+            System.err.println(ioe);
+        }
+        
+        //read stopwords
+        try {        	
+            BufferedReader in = new BufferedReader(
+                    new FileReader("stopwords.txt"));
+            String l;
+            while ((l = in.readLine()) != null) {
+            	STOPWORDS.add(l);
+            }
+            in.close();
+	    System.err.println("Read in " + STOPWORDS.size() + " stopwords.");
+    	} catch (IOException ioe) {
+    		System.err.println("Unexpected IOException reading stopwords.txt:");
+            System.err.println(ioe);
+        }
+                
+        //debugging
+        //System.err.println("KEYWORDS::");
+        //System.err.println(KEYWORDS);
+    } //end of static initializer block

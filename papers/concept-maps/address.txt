@@ -1,0 +1,24 @@
+address
+CPU
+MMU
+Memory Management Unit
+register
+memory location
+main memory
+word
+address bus
+program counter
+pointer
+type
+object identifier
+cache
+e-mail address
+ISP
+Internet address
+IP address
+address resolution
+dot notation
+dot address
+ARP
+Address Resolution Protocol
+OID

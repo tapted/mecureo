@@ -1,0 +1,556 @@
+.lf 1 tcldgl.n
+'\"
+'\" Copyright (c) 1997 Lucent Technologies, Inc.
+'\"
+.lf 1 man.macros
+'\" The definitions below are for supplemental macros used in Tcl/Tk
+'\" manual entries.
+'\"
+'\" .AP type name in/out ?indent?
+'\"	Start paragraph describing an argument to a library procedure.
+'\"	type is type of argument (int, etc.), in/out is either "in", "out",
+'\"	or "in/out" to describe whether procedure reads or modifies arg,
+'\"	and indent is equivalent to second arg of .IP (shouldn't ever be
+'\"	needed;  use .AS below instead)
+'\"
+'\" .AS ?type? ?name?
+'\"	Give maximum sizes of arguments for setting tab stops.  Type and
+'\"	name are examples of largest possible arguments that will be passed
+'\"	to .AP later.  If args are omitted, default tab stops are used.
+'\"
+'\" .BS
+'\"	Start box enclosure.  From here until next .BE, everything will be
+'\"	enclosed in one large box.
+'\"
+'\" .BE
+'\"	End of box enclosure.
+'\"
+'\" .CS
+'\"	Begin code excerpt.
+'\"
+'\" .CE
+'\"	End code excerpt.
+'\"
+'\" .VS ?br?
+'\"	Begin vertical sidebar, for use in marking newly-changed parts
+'\"	of man pages.  If an argument is present, then a line break is
+'\"	forced before starting the sidebar.
+'\"
+'\" .VE
+'\"	End of vertical sidebar.
+'\"
+'\" .DS
+'\"	Begin an indented unfilled display.
+'\"
+'\" .DE
+'\"	End of indented unfilled display.
+'\"
+'\" .SO
+'\"	Start of list of standard options for a Tk widget.  The
+'\"	options follow on successive lines, in four columns separated
+'\"	by tabs.
+'\"
+'\" .SE
+'\"	End of list of standard options for a Tk widget.
+'\"
+'\" .OP cmdName dbName dbClass
+'\"	Start of description of a specific option.  cmdName gives the
+'\"	option's name as specified in the class command, dbName gives
+'\"	the option's name in the option database, and dbClass gives
+'\"	the option's class in the option database.
+'\"
+'\" .UL arg1 arg2
+'\"	Print arg1 underlined, then print arg2 normally.
+'\"
+'\" SCCS: @(#) man.macros 1.8 96/02/15 20:02:24
+'\"
+'\"	# Set up traps and other miscellaneous stuff for Tcl/Tk man pages.
+.if t .wh -1.3i ^B
+.nr ^l \n(.l
+.ad b
+'\"	# Start an argument description
+.de AP
+.ie !"\\$4"" .TP \\$4
+.el \{\
+.   ie !"\\$2"" .TP \\n()Cu
+.   el          .TP 15
+.\}
+.ie !"\\$3"" \{\
+.ta \\n()Au \\n()Bu
+\&\\$1	\\fI\\$2\\fP	(\\$3)
+.\".b
+.\}
+.el \{\
+.br
+.ie !"\\$2"" \{\
+\&\\$1	\\fI\\$2\\fP
+.\}
+.el \{\
+\&\\fI\\$1\\fP
+.\}
+.\}
+..
+'\"	# define tabbing values for .AP
+.de AS
+.nr )A 10n
+.if !"\\$1"" .nr )A \\w'\\$1'u+3n
+.nr )B \\n()Au+15n
+.\"
+.if !"\\$2"" .nr )B \\w'\\$2'u+\\n()Au+3n
+.nr )C \\n()Bu+\\w'(in/out)'u+2n
+..
+.AS Tcl_Interp Tcl_CreateInterp in/out
+'\"	# BS - start boxed text
+'\"	# ^y = starting y location
+'\"	# ^b = 1
+.de BS
+.br
+.mk ^y
+.nr ^b 1u
+.if n .nf
+.if n .ti 0
+.if n \l'\\n(.lu\(ul'
+.if n .fi
+..
+'\"	# BE - end boxed text (draw box now)
+.de BE
+.nf
+.ti 0
+.mk ^t
+.ie n \l'\\n(^lu\(ul'
+.el \{\
+.\"	Draw four-sided box normally, but don't draw top of
+.\"	box if the box started on an earlier page.
+.ie !\\n(^b-1 \{\
+\h'-1.5n'\L'|\\n(^yu-1v'\l'\\n(^lu+3n\(ul'\L'\\n(^tu+1v-\\n(^yu'\l'|0u-1.5n\(ul'
+.\}
+.el \}\
+\h'-1.5n'\L'|\\n(^yu-1v'\h'\\n(^lu+3n'\L'\\n(^tu+1v-\\n(^yu'\l'|0u-1.5n\(ul'
+.\}
+.\}
+.fi
+.br
+.nr ^b 0
+..
+'\"	# VS - start vertical sidebar
+'\"	# ^Y = starting y location
+'\"	# ^v = 1 (for troff;  for nroff this doesn't matter)
+.de VS
+.if !"\\$1"" .br
+.mk ^Y
+.ie n 'mc \s12\(br\s0
+.el .nr ^v 1u
+..
+'\"	# VE - end of vertical sidebar
+.de VE
+.ie n 'mc
+.el \{\
+.ev 2
+.nf
+.ti 0
+.mk ^t
+\h'|\\n(^lu+3n'\L'|\\n(^Yu-1v\(bv'\v'\\n(^tu+1v-\\n(^Yu'\h'-|\\n(^lu+3n'
+.sp -1
+.fi
+.ev
+.\}
+.nr ^v 0
+..
+'\"	# Special macro to handle page bottom:  finish off current
+'\"	# box/sidebar if in box/sidebar mode, then invoked standard
+'\"	# page bottom macro.
+.de ^B
+.ev 2
+'ti 0
+'nf
+.mk ^t
+.if \\n(^b \{\
+.\"	Draw three-sided box if this is the box's first page,
+.\"	draw two sides but no top otherwise.
+.ie !\\n(^b-1 \h'-1.5n'\L'|\\n(^yu-1v'\l'\\n(^lu+3n\(ul'\L'\\n(^tu+1v-\\n(^yu'\h'|0u'\c
+.el \h'-1.5n'\L'|\\n(^yu-1v'\h'\\n(^lu+3n'\L'\\n(^tu+1v-\\n(^yu'\h'|0u'\c
+.\}
+.if \\n(^v \{\
+.nr ^x \\n(^tu+1v-\\n(^Yu
+\kx\h'-\\nxu'\h'|\\n(^lu+3n'\ky\L'-\\n(^xu'\v'\\n(^xu'\h'|0u'\c
+.\}
+.bp
+'fi
+.ev
+.if \\n(^b \{\
+.mk ^y
+.nr ^b 2
+.\}
+.if \\n(^v \{\
+.mk ^Y
+.\}
+..
+'\"	# DS - begin display
+.de DS
+.RS
+.nf
+.sp
+..
+'\"	# DE - end display
+.de DE
+.fi
+.RE
+.sp
+..
+'\"	# SO - start of list of standard options
+.de SO
+.SH "STANDARD OPTIONS"
+.LP
+.nf
+.ta 4c 8c 12c
+.ft B
+..
+'\"	# SE - end of list of standard options
+.de SE
+.fi
+.ft R
+.LP
+See the \\fBoptions\\fR manual entry for details on the standard options.
+..
+'\"	# OP - start of full description for a single option
+.de OP
+.LP
+.nf
+.ta 4c
+Command-Line Name:	\\fB\\$1\\fR
+Database Name:	\\fB\\$2\\fR
+Database Class:	\\fB\\$3\\fR
+.fi
+.IP
+..
+'\"	# CS - begin code excerpt
+.de CS
+.RS
+.nf
+.ta .25i .5i .75i 1i
+..
+'\"	# CE - end code excerpt
+.de CE
+.fi
+.RE
+..
+.de UL
+\\$1\l'|0\(ul'\\$2
+..
+.lf 5 tcldgl.n
+.TH TCLDGL 1 "Tcl Extension"
+.BS
+'\" Note:  do not modify the .SH NAME line immediately below!
+.SH NAME
+Tcldgl \- dynamic graph layout in tcl
+.SH SYNOPSIS
+
+#!/bin/sh
+.br
+# next line is a comment in tcl \\
+.br
+exec tclsh "$0" ${1+"$@"}
+.br
+package require Tcldgr
+.br
+package require Tcldgl
+.BE
+
+.SH USAGE
+
+Requires the dynamic loading facilities of tcl7.6 or later.
+Does \fInot\fR require tk, but the layout facilities are typically
+used to drive a tk display.
+
+.SH INTRODUCTION
+
+.B Tcldgl
+is a tcl dynamically loaded extension that uses 
+the incremental graph layout capabilities of
+.B libincr(3).  
+Typically it is expected to be used in conjunction
+with Tcldgr (and libgraph(3)) which provide for maniplutation of graph
+structures.
+
+This program is a significant evolution from its
+.B tcldot
+heritage. 
+The major differences are the addition of "bindings" to graph 
+and layout events to support incremental graphs.
+The various built in renderers that were available in 
+.B tcldot
+are no longer provided.
+Instead the script writer is expected to use the facilities of Tk.  
+An example graph editor,
+.B dge,
+is provided in the distribution which provides an example of the use
+of Tk as a renderer.
+
+.SH COMMAND SUMMARY
+
+.B Tcldgl
+uses
+.I Tcl
+(Tool Command Language).
+Tcl provides control flow (e.g., if, for, break),
+expression evaluation and several other features such as recursion,
+procedure definition, etc.
+Commands used here but not defined (e.g.,
+.BR set ,
+.BR if ,
+.BR exec )
+are Tcl commands (see
+.B Tcl(n)
+).
+.B Tcldgl
+supports several additional commands, described below.
+Nearly all
+.B Tcldgl
+commands return a value, usually the handle of a layout (graph), node, or edge.
+The handles are themselves registered as commands to permit direct
+operations on the objects after they have been created.
+.B Tcldgl
+initially adds only one user commands to the 
+.B tcl
+interpreter at start up, namely 
+.B dglayout.
+
+All other "commands" are of the form:
+.I "handle
+.B command
+.I parameters"
+where the
+.I handle
+refers to an existing layout.
+
+The commands are described in detail below, but in summary:
+.HP
+Tcl commands are:
+.br
+dglayout.
+.HP
+Layout commands are:
+.br
+batch, bind, defaultedge, defaultnode, delete,
+get_edge, get_node,
+insert_edge, insert_node,
+modify_edge, modify_node,
+delete_edge, delete_node.
+
+.SH LAYOUT COMMANDS
+
+.TP
+\fBdglayout\fR \fI?switch value?\fR ...
+
+creates a new layout and returns its
+.I layoutHandle.
+
+\fIswitch\fR  can be any of the following:
+.DS 
+.ta 3c 
+\fB-engine\fR	(enum)	(default geograph)
+\fB-orientation\fR	(int)	(default 0) 
+\fB-resolution\fR	(float)	(default 1.0)
+\fB-xseparation\fR	(float)	(default 10.0)
+\fB-yseparation\fR	(float)	(default 40.0)
+\fB-ticks\fR	(float)	(default 1.0)
+.DE
+
+The possible engines are:
+.DS
+.ta 3c
+\fBdynadag\fR	provides a strict-digraph layout with
+	automatic node repositioning and spline
+	curves used for edges.
+\fBgeograph\fR	leaves the nodes as placed and draws
+	"as-the-crow-flies" edges between them.
+\fBorthogrid\fR	leaves the nodes as placed and routes
+	the edges in a "Manhattan" grid style.
+.DE
+
+The possible orientations are:
+.DS
+.ta 3c
+\fB0\fR	top to bottom
+\fB1\fR	left to right
+\fB2\fR	bottom to top
+\fB3\fR	right to left
+.DE
+
+.TP
+\fIlayoutHandle\fR \fBbatch\fR \fIboolean\fI
+
+When set, batches up all events in a buffer until cleared.
+Initially batch is cleared so that events immediately
+invoke any scripts that have been attached with "bind".
+
+.TP
+\fIlayoutHandle\fR \fBbind\fR \fIlayoutEvent ?script?\fR
+
+attaches a script to be executed whenever a specified even occurs.
+.I layoutEvent
+can be any one of:
+.DS 
+.ta 3c 
+\fBinsert_node\fR	%l %n %P
+\fBinsert_edge\fR	%l %e %t %h %P
+\fBmodify_node\fR	%l %n %P
+\fBmodify_edge\fR	%l %e %P
+\fBdelete_node\fR	%l %n
+\fBdelete_edge\fR	%l %e
+
+Where the substitutions are:
+
+%l	the layout handle
+%n	the node handle 
+%t	the tail_node handle
+%e	the edge handle
+%h	the head_node handle
+%P	the coordinates of an edge for insert_edge/modify_edge
+	or the center position of a node for insert_node/modify_node
+.DE
+
+.PD 0
+.TP
+\fIlayoutHandle\fR \fBdefaultnode\fR \fI?nodeshapeswitch ...?\fR
+.TP
+\fIlayoutHandle\fR \fBdefaultedge\fR \fI?edgeshapeswitch ...?\fR
+.PD
+
+Set the default node and edge shapes in a layout.  Can be changed at
+anytime but only affects the shape of nodes or edges created afterwards.
+
+The possible shape switches are described in \fBSHAPES\fR.
+
+.TP
+\fIlayoutHandle\fR \fBdelete\fR
+
+Delete all data structures associated with the layout
+from the internal storage of the interpreter.
+This command returns a null string.
+
+.PD 0
+.TP
+\fIlayoutHandle\fR \fBdelete_node\fR \fInodeHandle\fR
+.TP
+\fIlayoutHandle\fR \fBdelete_edge\fR \fIedgeHandle\fR
+.PD
+
+Delete a node or edge from a layout.  The nodes existance in the
+underlying graph is unaffected by this operation.
+
+Execution of node or edge \fBdelete\fR from a layout will have the side effect
+of also executing any scripts that have been attached to the
+\fIdelete_node\fR, or \fIdelete_edge\fR, events by the
+bind command on the layout.
+
+.PD 0
+.TP
+\fIlayoutHandle\fR \fBget_node\fR \fI?nodeHandle?\fR
+.TP
+\fIlayoutHandle\fR \fBget_edge\fR \fI?edgeHandle?\fR
+.PD
+
+For nodes returns: \fIx y shape {coordinates} {nodedistances}\fR
+.br
+for edges returns: \fIshape {coordinates} {edgedistances}\fR
+
+If the node or edge handle is ommitted then the command returns the
+values of the default node or edge.
+
+.PD 0
+.TP
+\fIlayoutHandle\fR \fBinsert_node\fR \fInodeHandle\fR \fI?nodeshapeswitch ...?\fR
+.TP
+\fIlayoutHandle\fR \fBinsert_edge\fR \fIedgeHandle\fR \fItailHandle\fR \fIheadHandle\fR \fI?edgeshapeswitch ...?\fR
+.PD
+
+Insert a node or edge into a layout.  
+
+The possible shape switches are described in \fBSHAPES\fR.
+
+Execution of \fBinsert_node\fR, will have the side effect of also executing
+any scripts that have been attached to the \fIinsert_node\fR event by the
+bind command on the layout.
+
+.PD 0
+.TP
+\fIlayout\fR \fBmodify_node\fR \fInodeHandle\fR \fI?nodeshapeswitch ...?\fR
+.TP
+\fIlayout\fR \fBmodify_edge\fR \fIedgeHandle\fR \fI?edgeshapeswitch ...?\fR
+.PD
+
+Modify a node or edge in a layout.  
+
+The possible shape switches are described in \fBSHAPES\fR.
+
+Execution of \fBmodify_node\fR, will have the side effect of also executing
+any scripts that have been attached to the \fImodify_node\fR event by the
+bind command on the layout.
+
+.SH SHAPES
+
+.PD 0
+.TP
+\fB-shape\fR \fIpolygon|oval\fR
+.TP
+\fB-boundary\fR \fI{coordinates}\fR
+.TP
+\fB-at\fR \fIx y\fR
+.TP
+\fB-by\fR \fIdx dy\fR
+.PD
+
+These are the node shape switches.
+
+The \fIshape\fR must be either \fBoval\fR or \fBpolygon\fR.  Oval
+accepts just two coordinates in boundary representing a the diagonal
+corners of a bounding box for the oval.  Polygons accept three or
+more coordinates, each coordinate representing a vertex of the polygon
+
+For \fB-boundary\fR the center of the coordinates is first computed and 
+subtracted from all points. This allows shapes to be cloned
+without concern for their original position.
+
+\fB-at x y\fR is taken as a strong hint as to the absolute location of the node.
+Some layout engines, such as \fBdynadag\fR, will modify this if the
+position violates some layout constraint, such as overlapping nodes.
+
+\fB-by dx dy\fR is taken as a strong hint as to the relative movement of the node.
+Some layout engines, such as \fBdynadag\fR, will modify this if the new
+position violates some layout constraint, such as overlapping nodes.
+
+.PD 0
+.TP
+\fB-shape\fR \fIline|spline\fR
+.TP
+\fB-coordinates\fR \fI{coordinates}\fR
+.PD
+
+These are the edge shape switches.
+
+The \fIshape\fR must be either \fBline\fR or \fBspline\fR.  
+
+\fB-coordinates\fR are taken as a strpng hint as to the absolute
+location of the edge.
+
+.SH AUTHOR
+
+John Ellson (ellson@graphviz.org)
+
+.SH ACKNOWLEDGEMENTS
+
+John Ousterhout, of course, for 
+.B tcl
+and
+.B tk.
+Steven North and Eleftherios Koutsofios for
+.B dot, libgraph
+and
+.B libincr.
+Karl Lehenbauer and Mark Diekhans of NeoSoft
+for the tclhandles.c code which was derived from tclXhandles.c.
+
+.SH KEYWORDS
+
+Tcldgl, Tcldgr, graph, tcl, tk, dot, tcldot, graphviz.

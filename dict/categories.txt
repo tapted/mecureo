@@ -1,0 +1,154 @@
+abuse
+algorithm
+application
+architecture
+artificial intelligence
+audio
+benchmark
+body
+Bull
+bus
+business
+C
+CAD
+cellular automaton
+character
+chat
+communications
+company
+compiler
+complexity
+compression
+computability
+computer
+computing
+conferencing
+convention
+cryptography
+Cygnus
+data
+data processing
+database
+Debian
+DEC
+design
+DSP
+editor
+education
+electronics
+Erlang
+event
+example
+exclamation
+file format
+file system
+filename extension
+functional language
+functional programming
+games
+grammar
+graph theory
+graphics
+hardware
+history
+human language
+humour
+hypertext
+image
+information science
+integrated circuit
+Intel
+interface
+Japanese
+jargon
+job
+lambda calculus
+language
+legal
+library
+LISP
+Lisp
+logic
+Macintosh
+marketing
+mathematics
+medical
+meeting
+memory
+memory management
+messaging
+microprocessor
+microsoft
+multimedia
+multitasking
+music
+networking
+nondeterminism
+none
+object-oriented
+object-oriented language
+open source
+operating system
+parallel
+PDF
+Perl
+person
+Petri net
+philosophy
+physics
+printer
+probability
+process
+processor
+product
+programming
+project
+prolog
+Prolog
+protocol
+publication
+puzzle
+radio
+real-time
+recreation
+reduction
+reliability
+robotics
+routing
+rule-based language
+Scheme
+security
+set theory
+shell
+simulation
+software
+SPARC
+specification
+spelling
+standard
+standardq
+statistics
+storage
+symbolic mathematics
+system
+systems analysis
+Tandem
+Tcl
+telecommunications
+television
+testing
+TeX
+text
+theory
+time
+Tk
+tool
+topology
+unit
+Unix
+Usenet
+video
+virtual reality
+wireless
+World-Wide Web
+person

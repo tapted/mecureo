@@ -1,0 +1,63 @@
+Date: Wed, 19 Feb 2003 10:14:27 +1100
+From: tapted@it.usyd.edu.au ("Apted; Trent Heath")
+Subject: An excellent demo query
+To: judy
+CC: alum, tapted
+Reply-To: tapted@it.usyd.edu.au
+
+Andrew mentioned that a good query, with good categorised relationships
+was desired.
+
+I ran the NLP Parser/ontology generator on my home machine last night
+for three [of the 6] levels of link detection for FOLDOC and I'm quite
+pleased with the results [if not the runtime :)]
+
+There is an excellent sample query [actually the 'old' default, done
+better] that can be demoed [MECUREO + VLUM].
+
+The steps are:
+
+start at
+
+http://www.it.usyd.edu.au/~tapted/mecureo/modelgrow.html
+
+Check 
+"Try and open in VLUM" [should check Output RDF as well with js] and
+change the '30' in 'distance to grow' to '300' [this becomes the
+number of nodes].
+
+The next page has some new defaults: case-matched NLP, Node Number.
+These should already be checked, along with SQL and declarative
+language. All you need to do is click Generate Model.
+
+The model should then open up in VLUM, with FOLDOC on the right frame.
+
+The direct URL is:
+
+http://www.it.usyd.edu.au/~tapted/mecureo/rdfvlum.cgi?ontology=fdg%2Ffcasetag.fdg&w1.1=%22SQL%22&w2.1=%22declarative+language%22&distance=300.0&peerage=0&mode=num&Submit=Generate+Model
+
+It is clearest if the Depth Limit slider is set to 1.
+
+For me, Netscape automatically 'clicked' SQL, but internet explorer
+sometimes did not [selecting Filter -> None, even though it is
+already checked, will expand SQL (clicking SQL might not)].
+
+Leaving SQL selected, a filter can be chosen: child, parent, sibling
+and synonym all produce meaningful, accurate and interesting results.
+In fact, I feel the need to say that it is still fully automatic -
+the ontology is unmodified after coming out of the parser.
+
+Selecting 'declarative language' [also left-aligned as it is a
+direct query node] can give an example of an 'antonym'
+relationship [imperative language].
+
+The definition for SQL is long and detailed, and so performs better
+than declarative language [whose definition is more brief] when
+it comes to link classification.
+
+A final note about loading times: MECUREO is now quite fast - the
+ontologies are gzipped, which saves slightly on IO, and a faster
+CPU is rsh-ed into to run the query. However, Netscape tends to
+load things quite slowly still. IE 5.5 with JDK 1.4.1 took me less
+than 10 seconds to load everything after VLUM was cached, whereas
+Netscape took about 36 seconds [inside Madsen].

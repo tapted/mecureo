@@ -1,0 +1,63 @@
+This is to inform you that as of today the first official Beta of my
+HTML widget is publically available. It is distributed under the Library
+GNU Public License.
+
+Main site:
+http://www.xs4all.nl/~ripley/XmHTML/
+
+You can get it at the following sites:
+
+http://www.hsa.lr.tudelft.nl/~koen/XmHTML
+ftp://ftp.nerdnet.nl/pub/X11/Widgets/XmHTML.
+
+Here's a short overview
+
+- builtin image support for X11 bitmaps, X11 pixmaps, GIF87a,
+  GIF89a, JPEG and PNG;
+- handles PNG gamma correction, all color types and depths,
+  and fully supports tRNS chunk, bKGD chunk and alpha channel
+  processing.
+- GIF images are decoded using a patent free scheme;
+- builtin support for animated GIF89a and animated GIF89a with
+  NETSCAPE2.0 loop extension. XmHTML supports all GIF89a disposal
+  methods;
+- image support covers all X11 visual types and display depths;
+- delayed image loading;
+- progressive image loading of XBM, single image GIF and baseline
+  and interlaced JPEG;
+- powerfull HTML parser with extensive document verification and
+  repair capabilities;
+- builtin scrolling interface (both keyboard and mouse);
+- anchors can be displayed as pushbuttons;
+- anchors can be highlighted for enhanced visual feedback;
+- autosizing;
+- capable of displaying text/html, text/plain and standalone
+  images;
+- supports the full HTML 3.2 standard; as well as the
+  HTML 4.0 <FRAMESET> tags;
+- an extensive set of callback resources;
+- text outlining;
+- smart and user-definable font mapping;
+- can work with a predefined palette (which it can even
+  create for you);
+- builtin quantizer using Floyd-Steinberg error diffusion;
+- four different dithering methods allow one to achieve an
+  optimum balance between performance and image quality;
+- fully compatible with LessTif;
+- comes with an extensive set of documentation (html-manual
+  pages, Programmers and Reference Guide and a collection of
+  examples);
+
+The most important item that is still missing and is very high on my
+priority list is support for HTML tables. The current codebase already
+carries some provisions for tables. I expect to release a second Beta
+with table support within two months.
+
+As a final note: although XmHTML is a Motif widget, porting it to other
+toolkits should be relatively easy.
+
+Enjoy,
+Koen D'Hondt
+--
+XmHTML author and maintainer
+ripley@xs4all.nl                          http://www.xs4all.nl/~ripley

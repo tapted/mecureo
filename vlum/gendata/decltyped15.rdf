@@ -1,0 +1,1768 @@
+<?xml version="1.0"?>
+
+<rdf:rdf
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/metadata/dublin_core/"
+  xmlns:gmp="http://www.gmp.usyd.edu.au/schema/resources/">
+
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=ABCL/c+">
+    <dc:Title>ABCL/c+</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.005082" gmp:reliability="0.005082"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=C"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=ABSET">
+    <dc:Title>ABSET</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.666135" gmp:reliability="0.666135"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=declarative%20language"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=ABSYS">
+    <dc:Title>ABSYS</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.666135" gmp:reliability="0.666135"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=declarative%20language"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=AI">
+    <dc:Title>AI</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.241792" gmp:reliability="0.241792"/>
+    <gmp:peer gmp:peerType="synonym" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=artificial%20intelligence"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=ontology"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=LogC"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Ada">
+    <dc:Title>Ada</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.095389" gmp:reliability="0.095389"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Ada-O"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=bondage-and-discipline%20language"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=derived%20type"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=derived%20type"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Lisp"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=SPARK"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Pascal"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Pascal"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=InnovAda"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=InnovAda"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Ada-O">
+    <dc:Title>Ada-O</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.429254" gmp:reliability="0.429254"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Ada"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=overloading"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=compiler"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=derived%20type"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Aditi">
+    <dc:Title>Aditi</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.120450" gmp:reliability="0.120450"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Prolog"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Algebraic%20Logic%20Functional%20language">
+    <dc:Title>Algebraic Logic Functional language</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.287565" gmp:reliability="0.287565"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=logic%20programming"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=logic%20programming"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=goal"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=functional%20programming"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=functional%20programming"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Association%20of%20Lisp%20Users">
+    <dc:Title>Association of Lisp Users</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.009052" gmp:reliability="0.009052"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Lisp"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Lisp"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Astral">
+    <dc:Title>Astral</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.098564" gmp:reliability="0.098564"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Pascal"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=BASIC">
+    <dc:Title>BASIC</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.061018" gmp:reliability="0.061018"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=parser"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=interpreter"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=interpreter"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Pascal"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Bell%20Laboratories">
+    <dc:Title>Bell Laboratories</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.025277" gmp:reliability="0.025277"/>
+    <gmp:peer gmp:peerType="synonym" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Bell%20Labs"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=C"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Bell%20Labs">
+    <dc:Title>Bell Labs</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.031955" gmp:reliability="0.031955"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=C"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Early%20PL/I"/>
+    <gmp:peer gmp:peerType="synonym" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Bell%20Laboratories"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Common%20Lisp"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Boolean%20algebra">
+    <dc:Title>Boolean algebra</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.241792" gmp:reliability="0.241792"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Boolean%20logic"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=inference%20rule"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=binary"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Boolean%20logic">
+    <dc:Title>Boolean logic</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.008087" gmp:reliability="0.008087"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Boolean%20algebra"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Brilliant">
+    <dc:Title>Brilliant</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.275994" gmp:reliability="0.275994"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=algorithm"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Ruby"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Ruby"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Nonpareil"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Nonpareil"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Diamond"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=C">
+    <dc:Title>C</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.268835" gmp:reliability="0.268835"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=procedural%20language"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Bell%20Labs"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=MC"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=CHARM"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=assembly%20language"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Modular%20C"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=interpreter"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=compact"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Split-C"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=fprintf"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=portability"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=C5"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Pascal"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=C-Interp"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=ABCL/c+"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=DUEL"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Haskell"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=DUEL"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=GNU%20C"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=CParaOps5"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=MPL"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=ConC"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=multiC"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=fdlibm"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Vector%20C"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Mach%20Interface%20Generator"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Hungarian%20Notation"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Bell%20Laboratories"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=derived%20type"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Small-C"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Small-C"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=function"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Common%20Applications%20Environment"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Lisp"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Hyper-C"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=C-BC"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=LogC"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=CHISEL"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=MELDC"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=LPC"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=C-Linda"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=C-BC">
+    <dc:Title>C-BC</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.005082" gmp:reliability="0.005082"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=C"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=syntax"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=C-Interp">
+    <dc:Title>C-Interp</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.168676" gmp:reliability="0.168676"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=interpreter"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=C"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=C-Linda">
+    <dc:Title>C-Linda</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.035130" gmp:reliability="0.035130"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=C"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=C5">
+    <dc:Title>C5</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.022870" gmp:reliability="0.022870"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=C"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=OPS5"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=OPS5"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=CHARM">
+    <dc:Title>CHARM</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.068516" gmp:reliability="0.068516"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=C"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=CHISEL">
+    <dc:Title>CHISEL</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.068516" gmp:reliability="0.068516"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=C"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=CLIPS">
+    <dc:Title>CLIPS</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.255451" gmp:reliability="0.255451"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=OPS5"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=production%20system"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=CParaOps5">
+    <dc:Title>CParaOps5</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.035130" gmp:reliability="0.035130"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=C"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=OPS5"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Clean">
+    <dc:Title>Clean</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.051382" gmp:reliability="0.051382"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=assembly%20language"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=functional%20programming"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Common%20Applications%20Environment">
+    <dc:Title>Common Applications Environment</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.005082" gmp:reliability="0.005082"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=C"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Common%20Lisp">
+    <dc:Title>Common Lisp</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.002866" gmp:reliability="0.002866"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Lisp"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Lisp"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=macro"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Paradigms%20of%20AI%20Programming"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=OPS5"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Haskell"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Bell%20Labs"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=MIT"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=ConC">
+    <dc:Title>ConC</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.068516" gmp:reliability="0.068516"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=C"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Constraint%20Logic%20Programming">
+    <dc:Title>Constraint Logic Programming</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.275669" gmp:reliability="0.275669"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=interpreter"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Prolog"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=DACTL">
+    <dc:Title>DACTL</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.261297" gmp:reliability="0.261297"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=functional%20language"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=DUEL">
+    <dc:Title>DUEL</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.168676" gmp:reliability="0.168676"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=C"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=C"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Diamond">
+    <dc:Title>Diamond</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.145786" gmp:reliability="0.145786"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Nonpareil"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Ruby"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Brilliant"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Digital%20Signature%20Standard">
+    <dc:Title>Digital Signature Standard</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.218903" gmp:reliability="0.218903"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=algorithm"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Domain%20Name%20System">
+    <dc:Title>Domain Name System</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.021107" gmp:reliability="0.021107"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=domain"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Early%20PL/I">
+    <dc:Title>Early PL/I</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.429254" gmp:reliability="0.429254"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=PL/I"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Bell%20Labs"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=MIT"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=TMG"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=REPL"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=compiler"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=End%20Of%20Line">
+    <dc:Title>End Of Line</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.065178" gmp:reliability="0.065178"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Pascal"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Extended%20Self-containing%20Prolog">
+    <dc:Title>Extended Self-containing Prolog</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.041963" gmp:reliability="0.041963"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=backtracking"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=KL0"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=FP">
+    <dc:Title>FP</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.039741" gmp:reliability="0.039741"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=functional%20language"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=functional%20programming"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=functional%20programming"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=higher-order%20function"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=GNU%20C">
+    <dc:Title>GNU C</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.068516" gmp:reliability="0.068516"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=C"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Goedel">
+    <dc:Title>Goedel</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.258251" gmp:reliability="0.258251"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Prolog"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=logic%20programming"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=artificial%20intelligence"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Haskell">
+    <dc:Title>Haskell</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.448681" gmp:reliability="0.448681"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=higher-order%20function"/>
+    <gmp:peer gmp:peerType="parent" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=overloading"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=overloading"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Parallel%20Haskell"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=polymorphic"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=C"/>
+    <gmp:peer gmp:peerType="parent" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=polymorphism"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=LML"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Miranda"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=functional%20programming"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=functional%20programming"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Common%20Lisp"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=monad"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Haskell%20Curry"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Haskell%20Curry"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Haskell%20B"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=declarative%20language"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Haskell%20B">
+    <dc:Title>Haskell B</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.248362" gmp:reliability="0.248362"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Haskell"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Haskell%20Curry">
+    <dc:Title>Haskell Curry</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.114816" gmp:reliability="0.114816"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Haskell"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Haskell"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=functional%20programming"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=HiLog">
+    <dc:Title>HiLog</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.291637" gmp:reliability="0.291637"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=logic%20programming"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Hope">
+    <dc:Title>Hope</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.019834" gmp:reliability="0.019834"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=functional%20programming"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=functional%20programming"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=overloading"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=polymorphic"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Hungarian%20Notation">
+    <dc:Title>Hungarian Notation</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.154916" gmp:reliability="0.154916"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=scope"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=C"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=compiler"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Hyper-C">
+    <dc:Title>Hyper-C</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.068516" gmp:reliability="0.068516"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=C"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=InnovAda">
+    <dc:Title>InnovAda</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.084071" gmp:reliability="0.084071"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Lisp"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Ada"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Ada"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Joyce">
+    <dc:Title>Joyce</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.098564" gmp:reliability="0.098564"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Pascal"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=KL0">
+    <dc:Title>KL0</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.275669" gmp:reliability="0.275669"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=KL1"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Prolog"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Extended%20Self-containing%20Prolog"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=KL1">
+    <dc:Title>KL1</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.075350" gmp:reliability="0.075350"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=KL0"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Kamin's%20interpreters">
+    <dc:Title>Kamin's interpreters</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.131029" gmp:reliability="0.131029"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Lisp"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Lisp"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Prolog"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Prolog"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Pascal"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Pascal"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=LISP%201.5">
+    <dc:Title>LISP 1.5</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.147505" gmp:reliability="0.147505"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Lisp"/>
+    <gmp:peer gmp:peerType="parent" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=MIT"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=LML">
+    <dc:Title>LML</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.011348" gmp:reliability="0.011348"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Miranda"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=functional%20programming"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Haskell"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=LOGLISP">
+    <dc:Title>LOGLISP</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.275669" gmp:reliability="0.275669"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Lisp"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Prolog"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=LPC">
+    <dc:Title>LPC</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.068516" gmp:reliability="0.068516"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=C"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Lambda-Prolog">
+    <dc:Title>Lambda-Prolog</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.275669" gmp:reliability="0.275669"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Prolog"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=goal"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Lisp">
+    <dc:Title>Lisp</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.347825" gmp:reliability="0.347825"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Association%20of%20Lisp%20Users"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Association%20of%20Lisp%20Users"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Kamin's%20interpreters"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Kamin's%20interpreters"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=side-effect"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=recursive"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=macro"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=LISP%201.5"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=LOGLISP"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=functional%20programming"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Common%20Lisp"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Common%20Lisp"/>
+    <gmp:peer gmp:peerType="parent" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=interpreter"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Pure%20Lisp"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Ada"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=OPS5"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=InnovAda"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=functional"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=MIT"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=QLOG"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Lisp%20Object-Oriented%20Programming%20System"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=C"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=microPLANNER"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Lisp%20Object-Oriented%20Programming%20System">
+    <dc:Title>Lisp Object-Oriented Programming System</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.114119" gmp:reliability="0.114119"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Lisp"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=knowledge-based%20system"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=LogC">
+    <dc:Title>LogC</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.008087" gmp:reliability="0.008087"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=AI"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=C"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=M-Prolog">
+    <dc:Title>M-Prolog</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.275669" gmp:reliability="0.275669"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Prolog"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=MC">
+    <dc:Title>MC</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.068516" gmp:reliability="0.068516"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=C"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=MELDC">
+    <dc:Title>MELDC</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.005082" gmp:reliability="0.005082"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=C"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=MIT">
+    <dc:Title>MIT</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.004912" gmp:reliability="0.004912"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Early%20PL/I"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=stack"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=microPLANNER"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Lisp"/>
+    <gmp:peer gmp:peerType="parent" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=LISP%201.5"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Common%20Lisp"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=MPEG-2">
+    <dc:Title>MPEG-2</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.245946" gmp:reliability="0.245946"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=algorithm"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=MPEG-2%20Low%20Sampling%20Frequencies%20Extention"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=MPEG-2%20Low%20Sampling%20Frequencies%20Extention">
+    <dc:Title>MPEG-2 Low Sampling Frequencies Extention</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.045627" gmp:reliability="0.045627"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=MPEG-2"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=MPL">
+    <dc:Title>MPL</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.035130" gmp:reliability="0.035130"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=C"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=PL/I"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Mach%20Interface%20Generator">
+    <dc:Title>Mach Interface Generator</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.168676" gmp:reliability="0.168676"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=C"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Miranda">
+    <dc:Title>Miranda</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.003710" gmp:reliability="0.003710"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=syntax"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=LML"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Haskell"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=functional%20programming"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=compiler"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Modula-2">
+    <dc:Title>Modula-2</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.241792" gmp:reliability="0.241792"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Parallaxis"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Pascal"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Modula-2*"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=procedural%20language"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Modula-2*">
+    <dc:Title>Modula-2*</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.041473" gmp:reliability="0.041473"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Modula-2"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Modular%20C">
+    <dc:Title>Modular C</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.035130" gmp:reliability="0.035130"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=C"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Nondeterministic%20Turing%20Machine">
+    <dc:Title>Nondeterministic Turing Machine</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.275994" gmp:reliability="0.275994"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=algorithm"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Nonpareil">
+    <dc:Title>Nonpareil</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.118743" gmp:reliability="0.118743"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Ruby"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Ruby"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Diamond"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Brilliant"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Brilliant"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=OPS5">
+    <dc:Title>OPS5</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.279790" gmp:reliability="0.279790"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=production%20system"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=production%20system"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=CLIPS"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Lisp"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=OPS83"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Common%20Lisp"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=interpreter"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=C5"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=C5"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=CParaOps5"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=OPS83">
+    <dc:Title>OPS83</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.079471" gmp:reliability="0.079471"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=OPS5"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Oblog">
+    <dc:Title>Oblog</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.275669" gmp:reliability="0.275669"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Prolog"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=PASSIM">
+    <dc:Title>PASSIM</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.065178" gmp:reliability="0.065178"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Pascal"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=PL/I">
+    <dc:Title>PL/I</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.095389" gmp:reliability="0.095389"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Early%20PL/I"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Programming%20Language/Cornell"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=recursive"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=interpreter"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=MPL"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Paradigms%20of%20AI%20Programming">
+    <dc:Title>Paradigms of AI Programming</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.125461" gmp:reliability="0.125461"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=compiler"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Prolog"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Prolog"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=interpreter"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Common%20Lisp"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Parallaxis">
+    <dc:Title>Parallaxis</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.041473" gmp:reliability="0.041473"/>
+    <gmp:peer gmp:peerType="parent" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=algorithm"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Modula-2"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Parallel%20Haskell">
+    <dc:Title>Parallel Haskell</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.248362" gmp:reliability="0.248362"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Haskell"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Pascal">
+    <dc:Title>Pascal</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.298883" gmp:reliability="0.298883"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=End%20Of%20Line"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=PASSIM"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=C"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Astral"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Joyce"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Simone"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=bondage-and-discipline%20language"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Pascal-P"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=bondage-and-discipline%20language"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Modula-2"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Rigel"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=BASIC"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Ada"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Ada"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Kamin's%20interpreters"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Kamin's%20interpreters"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=procedural%20language"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Pascal/L"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Pascal-P">
+    <dc:Title>Pascal-P</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.098564" gmp:reliability="0.098564"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Pascal"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Pascal/L">
+    <dc:Title>Pascal/L</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.065178" gmp:reliability="0.065178"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Pascal"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Portable%20Scheme%20Interpreter">
+    <dc:Title>Portable Scheme Interpreter</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.287565" gmp:reliability="0.287565"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=interpreter"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Programming%20Language/Cornell">
+    <dc:Title>Programming Language/Cornell</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.028616" gmp:reliability="0.028616"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=PL/I"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Prolog">
+    <dc:Title>Prolog</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.475988" gmp:reliability="0.475988"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=relational%20language"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Goedel"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=depth-first%20search"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Paradigms%20of%20AI%20Programming"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Paradigms%20of%20AI%20Programming"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=backtracking"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=backtracking"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=KL0"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=negation%20by%20failure"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=negation%20by%20failure"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=backward%20chaining"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=TABLOG"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Lambda-Prolog"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Quintus%20Prolog"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=LOGLISP"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=M-Prolog"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=d-Prolog"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=interpreter"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=declarative%20language"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=symbolic%20inference"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Kamin's%20interpreters"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Kamin's%20interpreters"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=logic%20programming"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=logic%20programming"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Qu-Prolog"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=artificial%20intelligence"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Aditi"/>
+    <gmp:peer gmp:peerType="parent" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=knowledge"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=QLOG"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Oblog"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=TEMPLOG"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Constraint%20Logic%20Programming"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Pure%20Lisp">
+    <dc:Title>Pure Lisp</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.114119" gmp:reliability="0.114119"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Lisp"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=side-effect"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=QLOG">
+    <dc:Title>QLOG</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.275669" gmp:reliability="0.275669"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Lisp"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Prolog"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Qu-Prolog">
+    <dc:Title>Qu-Prolog</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.275669" gmp:reliability="0.275669"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=scope"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Prolog"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Quintus%20Prolog">
+    <dc:Title>Quintus Prolog</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.275669" gmp:reliability="0.275669"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Prolog"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=REPL">
+    <dc:Title>REPL</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.206046" gmp:reliability="0.206046"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Early%20PL/I"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=RISC">
+    <dc:Title>RISC</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.007282" gmp:reliability="0.007282"/>
+    <gmp:peer gmp:peerType="synonym" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Reduced%20Instruction%20Set%20Computer"/>
+    <gmp:peer gmp:peerType="parent" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=machine%20code"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Rationalized%20C">
+    <dc:Title>Rationalized C</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.265660" gmp:reliability="0.265660"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=compiler"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Small-C"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Reduced%20Instruction%20Set%20Computer">
+    <dc:Title>Reduced Instruction Set Computer</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.000605" gmp:reliability="0.000605"/>
+    <gmp:peer gmp:peerType="synonym" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=RISC"/>
+    <gmp:peer gmp:peerType="parent" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=compiler"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Rigel">
+    <dc:Title>Rigel</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.065178" gmp:reliability="0.065178"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Pascal"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Ruby">
+    <dc:Title>Ruby</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.094405" gmp:reliability="0.094405"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Brilliant"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Brilliant"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Nonpareil"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Nonpareil"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Diamond"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=relational%20language"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=SPARK">
+    <dc:Title>SPARK</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.028616" gmp:reliability="0.028616"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Ada"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Simone">
+    <dc:Title>Simone</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.065178" gmp:reliability="0.065178"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Pascal"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Small-C">
+    <dc:Title>Small-C</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.202062" gmp:reliability="0.202062"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Rationalized%20C"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=C"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=C"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Split-C">
+    <dc:Title>Split-C</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.068516" gmp:reliability="0.068516"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=C"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=TABLOG">
+    <dc:Title>TABLOG</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.345780" gmp:reliability="0.345780"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Prolog"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=functional%20programming"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=interpreter"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=TEMPLOG">
+    <dc:Title>TEMPLOG</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.275669" gmp:reliability="0.275669"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Prolog"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=TMG">
+    <dc:Title>TMG</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.188303" gmp:reliability="0.188303"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=macro"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Early%20PL/I"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Vector%20C">
+    <dc:Title>Vector C</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.068516" gmp:reliability="0.068516"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=C"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Whetstone">
+    <dc:Title>Whetstone</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.295708" gmp:reliability="0.295708"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=compiler"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Yahoo">
+    <dc:Title>Yahoo</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.026817" gmp:reliability="0.026817"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=subject%20index"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=abstract%20syntax">
+    <dc:Title>abstract syntax</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.027884" gmp:reliability="0.027884"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=concrete%20syntax"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=concrete%20syntax"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=compiler"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=syntax"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=abstract%20syntax%20tree"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=abstract%20syntax%20tree"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=abstract%20syntax%20tree">
+    <dc:Title>abstract syntax tree</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.000000" gmp:reliability="0.000000"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=compiler"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=interpreter"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=interpreter"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=parser"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=abstract%20syntax"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=abstract%20syntax"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=concrete%20syntax"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=algorithm">
+    <dc:Title>algorithm</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.509699" gmp:reliability="0.509699"/>
+    <gmp:peer gmp:peerType="parent" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Parallaxis"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=backward%20chaining"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Brilliant"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Digital%20Signature%20Standard"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=declarative%20language"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=streaming"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=finite"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=MPEG-2"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=type%20inference"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=production%20system"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=reduction%20strategy"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=parser"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=brute%20force"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=depth-first%20search"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Nondeterministic%20Turing%20Machine"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=backtracking"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=applicative%20language">
+    <dc:Title>applicative language</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.632748" gmp:reliability="0.632748"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=functional%20language"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=declarative%20language"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=logic%20programming"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=artificial%20intelligence">
+    <dc:Title>artificial intelligence</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.108736" gmp:reliability="0.108736"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=symbolic%20inference"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=symbolic%20inference"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Goedel"/>
+    <gmp:peer gmp:peerType="synonym" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=AI"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=fifth%20generation%20language"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Prolog"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=knowledge%20representation"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=knowledge%20representation"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=assembler">
+    <dc:Title>assembler</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.058828" gmp:reliability="0.058828"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=macro"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=compiler"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=machine%20code"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=assembly%20language"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=assembly%20language"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=object%20code"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=assembly%20language">
+    <dc:Title>assembly language</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.105071" gmp:reliability="0.105071"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=C"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=macro"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=compiler"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Clean"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=machine%20language"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=machine%20code"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=machine%20code"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=assembler"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=assembler"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=backtracking">
+    <dc:Title>backtracking</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.005402" gmp:reliability="0.005402"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Prolog"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Prolog"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=microPLANNER"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=logic%20programming"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=logic%20programming"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=goal"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Extended%20Self-containing%20Prolog"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=depth-first%20search"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=depth-first%20search"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=algorithm"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=backward%20chaining">
+    <dc:Title>backward chaining</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.125244" gmp:reliability="0.125244"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=algorithm"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=forward%20chaining"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=forward%20chaining"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Prolog"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=logic%20programming"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=binary">
+    <dc:Title>binary</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.041473" gmp:reliability="0.041473"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=machine%20code"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Boolean%20algebra"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=bondage-and-discipline%20language">
+    <dc:Title>bondage-and-discipline language</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.057932" gmp:reliability="0.057932"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Ada"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Pascal"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Pascal"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=brute%20force">
+    <dc:Title>brute force</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.142448" gmp:reliability="0.142448"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=algorithm"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=byte-code%20compiler">
+    <dc:Title>byte-code compiler</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.233546" gmp:reliability="0.233546"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=compiler"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=compiler"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=call-by-name">
+    <dc:Title>call-by-name</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.064316" gmp:reliability="0.064316"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=evaluation%20strategy"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=macro"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=graph%20reduction"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=recursive"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=functional%20programming"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=functional%20programming"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=call-by-value"/>
+    <gmp:peer gmp:peerType="antonym" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=call-by-value"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=call-by-value">
+    <dc:Title>call-by-value</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.078688" gmp:reliability="0.078688"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=evaluation%20strategy"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=lazy%20evaluation"/>
+    <gmp:peer gmp:peerType="antonym" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=call-by-name"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=call-by-name"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=functional%20programming"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=compact">
+    <dc:Title>compact</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.169157" gmp:reliability="0.169157"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=C"/>
+    <gmp:peer gmp:peerType="synonym" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=finite"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=domain%20theory"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=compiler">
+    <dc:Title>compiler</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.529414" gmp:reliability="0.529414"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Paradigms%20of%20AI%20Programming"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=abstract%20syntax%20tree"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=machine%20language"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=source%20language"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=interpreter"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Rationalized%20C"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=declarative%20language"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=byte-code%20compiler"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=byte-code%20compiler"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=partial%20evaluation"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=programming%20language"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=assembly%20language"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=native%20compiler"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=native%20compiler"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=assembler"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=optimising%20compiler"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=optimising%20compiler"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Ada-O"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=portability"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=portability"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Whetstone"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=constant%20folding"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=object%20code"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=higher-order%20function"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=abstract%20syntax"/>
+    <gmp:peer gmp:peerType="parent" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Reduced%20Instruction%20Set%20Computer"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Early%20PL/I"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=scope"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=macro"/>
+    <gmp:peer gmp:peerType="parent" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=lexical%20analyser"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Hungarian%20Notation"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Miranda"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=concrete%20syntax">
+    <dc:Title>concrete syntax</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.000841" gmp:reliability="0.000841"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=abstract%20syntax"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=abstract%20syntax"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=syntax"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=abstract%20syntax%20tree"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=constant%20folding">
+    <dc:Title>constant folding</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.112387" gmp:reliability="0.112387"/>
+    <gmp:peer gmp:peerType="parent" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=partial%20evaluation"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=partial%20evaluation"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=compiler"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=d-Prolog">
+    <dc:Title>d-Prolog</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.275669" gmp:reliability="0.275669"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Prolog"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=declarative%20language">
+    <dc:Title>declarative language</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="1.000000" gmp:reliability="1.000000"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=inference%20rule"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=relational%20language"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=compiler"/>
+    <gmp:peer gmp:peerType="antonym" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=imperative%20language"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=algorithm"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=ontology"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=production%20system"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=ABSYS"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=ABSET"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=applicative%20language"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Prolog"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=interpreter"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=strength%20reduction"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=logic%20programming"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Haskell"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=programming%20language"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=procedural%20language"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=functional%20language"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=functional%20programming"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=depth-first%20search">
+    <dc:Title>depth-first search</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.027306" gmp:reliability="0.027306"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Prolog"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=backtracking"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=backtracking"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=algorithm"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=derived%20type">
+    <dc:Title>derived type</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.004912" gmp:reliability="0.004912"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=function"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Ada"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Ada"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Ada-O"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=C"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=domain">
+    <dc:Title>domain</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.178358" gmp:reliability="0.178358"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=ontology"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=image"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=function"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=domain%20theory"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Domain%20Name%20System"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=domain%20theory">
+    <dc:Title>domain theory</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.078198" gmp:reliability="0.078198"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=recursive"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=domain"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=compact"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=evaluation%20strategy">
+    <dc:Title>evaluation strategy</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.112400" gmp:reliability="0.112400"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=call-by-name"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=functional%20programming"/>
+    <gmp:peer gmp:peerType="synonym" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=reduction%20strategy"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=call-by-value"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=reduction"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=normal%20order%20reduction"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=lazy%20evaluation"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=fact">
+    <dc:Title>fact</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.370267" gmp:reliability="0.370267"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=knowledge%20representation"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=logic%20programming"/>
+    <gmp:peer gmp:peerType="parent" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=knowledge"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=production%20system"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=forward%20chaining"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=fdlibm">
+    <dc:Title>fdlibm</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.068516" gmp:reliability="0.068516"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=C"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=fifth%20generation%20language">
+    <dc:Title>fifth generation language</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.021370" gmp:reliability="0.021370"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=programming%20language"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=artificial%20intelligence"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=finite">
+    <dc:Title>finite</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.175834" gmp:reliability="0.175834"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=algorithm"/>
+    <gmp:peer gmp:peerType="synonym" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=compact"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=first%20generation%20language">
+    <dc:Title>first generation language</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.043275" gmp:reliability="0.043275"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=machine%20code"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=programming%20language"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=forward%20chaining">
+    <dc:Title>forward chaining</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.573925" gmp:reliability="0.573925"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=backward%20chaining"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=backward%20chaining"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=inference"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=goal"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=symbolic%20inference"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=production%20system"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=production%20system"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=fact"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=fprintf">
+    <dc:Title>fprintf</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.068516" gmp:reliability="0.068516"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=C"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=full%20laziness">
+    <dc:Title>full laziness</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.082339" gmp:reliability="0.082339"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=partial%20evaluation"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=graph%20reduction"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=function">
+    <dc:Title>function</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.235449" gmp:reliability="0.235449"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=partial%20function"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=image"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=image"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=derived%20type"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=inverse"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=inverse"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=domain"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=recursion"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=functional%20programming"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=functional%20programming"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=C"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=functional">
+    <dc:Title>functional</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.013959" gmp:reliability="0.013959"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=functional%20programming"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=higher-order%20function"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Lisp"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=functional%20language">
+    <dc:Title>functional language</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.461616" gmp:reliability="0.461616"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=stack"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=relational%20language"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=applicative%20language"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=FP"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=DACTL"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=functional%20programming"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=declarative%20language"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=functional%20programming">
+    <dc:Title>functional programming</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.602700" gmp:reliability="0.602700"/>
+    <gmp:peer gmp:peerType="parent" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=overloading"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=referential%20transparency"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Hope"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Hope"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=evaluation%20strategy"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=functional"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=reduction"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=LML"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Lisp"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Algebraic%20Logic%20Functional%20language"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=TABLOG"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Algebraic%20Logic%20Functional%20language"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Clean"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=FP"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=FP"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=monad"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=function"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=lazy%20evaluation"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=function"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=strict"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=side-effect"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=recursive"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Haskell"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Haskell"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Miranda"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=call-by-name"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=call-by-name"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=functional%20language"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Haskell%20Curry"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=declarative%20language"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=call-by-value"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=goal">
+    <dc:Title>goal</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.094657" gmp:reliability="0.094657"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=logic%20programming"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=logic%20programming"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Algebraic%20Logic%20Functional%20language"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=forward%20chaining"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=backtracking"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Lambda-Prolog"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=graph%20reduction">
+    <dc:Title>graph reduction</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.015566" gmp:reliability="0.015566"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=full%20laziness"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=call-by-name"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=lazy%20evaluation"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=string%20reduction"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=string%20reduction"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=reduction"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=hierarchy">
+    <dc:Title>hierarchy</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.060203" gmp:reliability="0.060203"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=subject%20index"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=higher-order%20function">
+    <dc:Title>higher-order function</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.000000" gmp:reliability="0.000000"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Haskell"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=functional"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=compiler"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=FP"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=image">
+    <dc:Title>image</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.168676" gmp:reliability="0.168676"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=function"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=function"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=domain"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=imperative%20language">
+    <dc:Title>imperative language</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.869793" gmp:reliability="0.869793"/>
+    <gmp:peer gmp:peerType="antonym" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=declarative%20language"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=programming%20language"/>
+    <gmp:peer gmp:peerType="synonym" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=procedural%20language"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=index">
+    <dc:Title>index</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.043275" gmp:reliability="0.043275"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=interpreter"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=subject%20index"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=inference">
+    <dc:Title>inference</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.206673" gmp:reliability="0.206673"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=knowledge"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=forward%20chaining"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=type%20inference"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=inference%20rule"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=symbolic%20inference"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=inference%20rule">
+    <dc:Title>inference rule</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.575657" gmp:reliability="0.575657"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=declarative%20language"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=symbolic%20inference"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Boolean%20algebra"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=inference"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=interpreter">
+    <dc:Title>interpreter</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.551319" gmp:reliability="0.551319"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Portable%20Scheme%20Interpreter"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Constraint%20Logic%20Programming"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=parser"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=C-Interp"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=compiler"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=C"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Paradigms%20of%20AI%20Programming"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=abstract%20syntax%20tree"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=abstract%20syntax%20tree"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=machine%20code"/>
+    <gmp:peer gmp:peerType="parent" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Lisp"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=index"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=source%20code"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=source%20code"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=lexical%20analyser"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=partial%20evaluation"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=TABLOG"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Prolog"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=BASIC"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=BASIC"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=declarative%20language"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=PL/I"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=portability"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=OPS5"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=object%20code"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=inverse">
+    <dc:Title>inverse</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.135289" gmp:reliability="0.135289"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=function"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=function"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=knowledge">
+    <dc:Title>knowledge</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.208406" gmp:reliability="0.208406"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=knowledge-based%20system"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=inference"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=ontology"/>
+    <gmp:peer gmp:peerType="parent" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=fact"/>
+    <gmp:peer gmp:peerType="parent" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Prolog"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=knowledge%20representation"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=knowledge%20representation">
+    <dc:Title>knowledge representation</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.136562" gmp:reliability="0.136562"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=subject%20index"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=ontology"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=fact"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=artificial%20intelligence"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=artificial%20intelligence"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=knowledge"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=knowledge-based%20system">
+    <dc:Title>knowledge-based system</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.051155" gmp:reliability="0.051155"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=knowledge"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Lisp%20Object-Oriented%20Programming%20System"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=lazy%20evaluation">
+    <dc:Title>lazy evaluation</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.252174" gmp:reliability="0.252174"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=strict"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=functional%20programming"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=graph%20reduction"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=call-by-value"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=evaluation%20strategy"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=lexical%20analyser">
+    <dc:Title>lexical analyser</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.027306" gmp:reliability="0.027306"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=interpreter"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=parser"/>
+    <gmp:peer gmp:peerType="parent" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=compiler"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=logic%20programming">
+    <dc:Title>logic programming</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.491956" gmp:reliability="0.491956"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=goal"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=goal"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Goedel"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Algebraic%20Logic%20Functional%20language"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Algebraic%20Logic%20Functional%20language"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=HiLog"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=stack"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=backtracking"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=backtracking"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=fact"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=negation%20by%20failure"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=backward%20chaining"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=applicative%20language"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Prolog"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Prolog"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=declarative%20language"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=symbolic%20inference"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=machine%20code">
+    <dc:Title>machine code</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.074055" gmp:reliability="0.074055"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=first%20generation%20language"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=binary"/>
+    <gmp:peer gmp:peerType="synonym" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=machine%20language"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=interpreter"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=source%20code"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=programming%20language"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=assembly%20language"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=assembly%20language"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=native%20compiler"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=assembler"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=portability"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=stack"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=object%20code"/>
+    <gmp:peer gmp:peerType="parent" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=RISC"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=machine%20language">
+    <dc:Title>machine language</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.080732" gmp:reliability="0.080732"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=compiler"/>
+    <gmp:peer gmp:peerType="synonym" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=machine%20code"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=assembly%20language"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=macro">
+    <dc:Title>macro</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.067614" gmp:reliability="0.067614"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=TMG"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Lisp"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=programming%20language"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=assembly%20language"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=call-by-name"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=assembler"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Common%20Lisp"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=compiler"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=microPLANNER">
+    <dc:Title>microPLANNER</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.247665" gmp:reliability="0.247665"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=backtracking"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=MIT"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Lisp"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=monad">
+    <dc:Title>monad</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.214976" gmp:reliability="0.214976"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=functional%20programming"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Haskell"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=multiC">
+    <dc:Title>multiC</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.068516" gmp:reliability="0.068516"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=C"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=native%20compiler">
+    <dc:Title>native compiler</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.223069" gmp:reliability="0.223069"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=compiler"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=compiler"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=machine%20code"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=negation%20by%20failure">
+    <dc:Title>negation by failure</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.137215" gmp:reliability="0.137215"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Prolog"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Prolog"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=logic%20programming"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=normal%20order%20reduction">
+    <dc:Title>normal order reduction</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.006211" gmp:reliability="0.006211"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=reduction%20strategy"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=evaluation%20strategy"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=reduction"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=object%20code">
+    <dc:Title>object code</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.126976" gmp:reliability="0.126976"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=source%20code"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=source%20code"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=compiler"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=assembler"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=machine%20code"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=interpreter"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=ontology">
+    <dc:Title>ontology</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.575657" gmp:reliability="0.575657"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=domain"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=knowledge%20representation"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=declarative%20language"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=knowledge"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=AI"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=subject%20index"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=optimising%20compiler">
+    <dc:Title>optimising compiler</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.213640" gmp:reliability="0.213640"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=compiler"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=compiler"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=partial%20evaluation"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=overloading">
+    <dc:Title>overloading</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.031955" gmp:reliability="0.031955"/>
+    <gmp:peer gmp:peerType="parent" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=functional%20programming"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Hope"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Haskell"/>
+    <gmp:peer gmp:peerType="parent" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Haskell"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Ada-O"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=polymorphism"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=polymorphism"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=parser">
+    <dc:Title>parser</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.012935" gmp:reliability="0.012935"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=BASIC"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=interpreter"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=abstract%20syntax%20tree"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=algorithm"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=lexical%20analyser"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=partial%20evaluation">
+    <dc:Title>partial evaluation</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.212546" gmp:reliability="0.212546"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=constant%20folding"/>
+    <gmp:peer gmp:peerType="parent" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=constant%20folding"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=full%20laziness"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=compiler"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=interpreter"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=optimising%20compiler"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=partial%20function">
+    <dc:Title>partial function</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.105241" gmp:reliability="0.105241"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=function"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=polymorphic">
+    <dc:Title>polymorphic</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.024339" gmp:reliability="0.024339"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Haskell"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Hope"/>
+    <gmp:peer gmp:peerType="synonym" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=polymorphism"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=polymorphism">
+    <dc:Title>polymorphism</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.017661" gmp:reliability="0.017661"/>
+    <gmp:peer gmp:peerType="parent" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Haskell"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=overloading"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=overloading"/>
+    <gmp:peer gmp:peerType="synonym" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=polymorphic"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=portability">
+    <dc:Title>portability</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.005402" gmp:reliability="0.005402"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=C"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=compiler"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=compiler"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=machine%20code"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=interpreter"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=procedural%20language">
+    <dc:Title>procedural language</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.666135" gmp:reliability="0.666135"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=C"/>
+    <gmp:peer gmp:peerType="synonym" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=imperative%20language"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Modula-2"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=recursion"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=declarative%20language"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=strength%20reduction"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Pascal"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=production%20system">
+    <dc:Title>production system</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.704132" gmp:reliability="0.704132"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=OPS5"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=OPS5"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=declarative%20language"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=symbolic%20inference"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=CLIPS"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=algorithm"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=fact"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=forward%20chaining"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=forward%20chaining"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=programming%20language">
+    <dc:Title>programming language</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.491956" gmp:reliability="0.491956"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=fifth%20generation%20language"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=first%20generation%20language"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=macro"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=compiler"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=imperative%20language"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=semantics"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=syntax"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=machine%20code"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=declarative%20language"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=recursion">
+    <dc:Title>recursion</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.262158" gmp:reliability="0.262158"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=function"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=tail%20recursion"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=tail%20recursion"/>
+    <gmp:peer gmp:peerType="synonym" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=recursive"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=recursive%20definition"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=procedural%20language"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=recursive">
+    <dc:Title>recursive</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.268835" gmp:reliability="0.268835"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Lisp"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=PL/I"/>
+    <gmp:peer gmp:peerType="parent" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=tail%20recursion"/>
+    <gmp:peer gmp:peerType="synonym" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=recursion"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=domain%20theory"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=call-by-name"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=functional%20programming"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=reduction%20strategy"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=strength%20reduction"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=stack"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=recursive%20definition">
+    <dc:Title>recursive definition</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.038950" gmp:reliability="0.038950"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=recursion"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=reduction">
+    <dc:Title>reduction</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.247163" gmp:reliability="0.247163"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=functional%20programming"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=evaluation%20strategy"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=string%20reduction"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=reduction%20strategy"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=normal%20order%20reduction"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=graph%20reduction"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=reduction%20strategy">
+    <dc:Title>reduction strategy</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.105723" gmp:reliability="0.105723"/>
+    <gmp:peer gmp:peerType="synonym" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=evaluation%20strategy"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=string%20reduction"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=normal%20order%20reduction"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=algorithm"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=reduction"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=recursive"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=referential%20transparency">
+    <dc:Title>referential transparency</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.132114" gmp:reliability="0.132114"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=functional%20programming"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=side-effect"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=relational%20language">
+    <dc:Title>relational language</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.666135" gmp:reliability="0.666135"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Prolog"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=declarative%20language"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=functional%20language"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Ruby"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=scope">
+    <dc:Title>scope</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.039113" gmp:reliability="0.039113"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Hungarian%20Notation"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Qu-Prolog"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=compiler"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=semantics">
+    <dc:Title>semantics</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.124705" gmp:reliability="0.124705"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=syntax"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=syntax"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=programming%20language"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=side-effect">
+    <dc:Title>side-effect</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.154019" gmp:reliability="0.154019"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Lisp"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=referential%20transparency"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=functional%20programming"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Pure%20Lisp"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=source%20code">
+    <dc:Title>source code</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.184067" gmp:reliability="0.184067"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=object%20code"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=object%20code"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=machine%20code"/>
+    <gmp:peer gmp:peerType="synonym" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=source%20language"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=interpreter"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=interpreter"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=source%20language">
+    <dc:Title>source language</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.195549" gmp:reliability="0.195549"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=compiler"/>
+    <gmp:peer gmp:peerType="synonym" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=source%20code"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=stack">
+    <dc:Title>stack</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.001656" gmp:reliability="0.001656"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=functional%20language"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=logic%20programming"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=MIT"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=machine%20code"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=recursive"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=streaming">
+    <dc:Title>streaming</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.152945" gmp:reliability="0.152945"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=algorithm"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=strength%20reduction">
+    <dc:Title>strength reduction</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.632748" gmp:reliability="0.632748"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=declarative%20language"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=recursive"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=procedural%20language"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=strict">
+    <dc:Title>strict</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.094657" gmp:reliability="0.094657"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=lazy%20evaluation"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=functional%20programming"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=string%20reduction">
+    <dc:Title>string reduction</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.023954" gmp:reliability="0.023954"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=reduction%20strategy"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=reduction"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=graph%20reduction"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=graph%20reduction"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=subject%20index">
+    <dc:Title>subject index</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.394068" gmp:reliability="0.394068"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=knowledge%20representation"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=hierarchy"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Yahoo"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=ontology"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=index"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=symbolic%20inference">
+    <dc:Title>symbolic inference</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.106514" gmp:reliability="0.106514"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=inference%20rule"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=artificial%20intelligence"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=artificial%20intelligence"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=production%20system"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=forward%20chaining"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Prolog"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=logic%20programming"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=inference"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=syntax">
+    <dc:Title>syntax</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.158091" gmp:reliability="0.158091"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Miranda"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=semantics"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=semantics"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=programming%20language"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=abstract%20syntax"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=concrete%20syntax"/>
+    <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=C-BC"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=tail%20recursion">
+    <dc:Title>tail recursion</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.021207" gmp:reliability="0.021207"/>
+    <gmp:peer gmp:peerType="parent" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=recursive"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=recursion"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=recursion"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=type%20inference">
+    <dc:Title>type inference</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.076466" gmp:reliability="0.076466"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=algorithm"/>
+    <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=inference"/>
+  </rdf:Description>
+</rdf:rdf>

@@ -1,0 +1,73 @@
+Signature Version 1.0
+
+
+Name:	vlum/graph/ArrayGraphModel.class
+Java-Bean:	False
+Digest-Algorithms:	SHA, MD5
+SHA-Digest:	rh26fjlan7lJbQyBHmlt5C2H4Aw=
+MD5-Digest:	XXytmWV4vqA3bCr9/Wtq2g==
+
+Name:	vlum/graph/GenericGraphModel.class
+Java-Bean:	False
+Digest-Algorithms:	SHA, MD5
+SHA-Digest:	M+0cStr0G9FQGg+/L/V74vu7dOc=
+MD5-Digest:	4a9rafPb6Zm2f/zs5yTOjA==
+
+Name:	vlum/graph/GenericGraphNode.class
+Java-Bean:	False
+Digest-Algorithms:	SHA, MD5
+SHA-Digest:	9wMiLENJNsQfnA01+dQTQ9/wW/c=
+MD5-Digest:	Rqf7NcVz4hWsOsJOscFWgg==
+
+Name:	vlum/graph/GenericGraphPeer.class
+Java-Bean:	False
+Digest-Algorithms:	SHA, MD5
+SHA-Digest:	gocMVXNDPdFQeAsrCnFAQe3bO8Y=
+MD5-Digest:	ALD+EHWLp/TeoLTDP3dRHw==
+
+Name:	vlum/graph/GraphModel.class
+Java-Bean:	False
+Digest-Algorithms:	SHA, MD5
+SHA-Digest:	iHS3R6u4o+UEAqqJ2RQBzoFHGts=
+MD5-Digest:	nDtx5IlOFZ7zNYk9iL/FQA==
+
+Name:	vlum/graph/GraphSetup.class
+Java-Bean:	False
+Digest-Algorithms:	SHA, MD5
+SHA-Digest:	Rxqis4ZaC6yKHMptUnwF5Gs4xlQ=
+MD5-Digest:	iNn46f0WSyhec6rOcUvFKA==
+
+Name:	Questions.class
+Java-Bean:	False
+Digest-Algorithms:	SHA, MD5
+SHA-Digest:	U3SGyF//jItLIAoZ1G54dK8w8EI=
+MD5-Digest:	+ilc8GG97gr8r3dK3XrCqw==
+
+Name:	vlum/servlets/rlogServlet.class
+Java-Bean:	False
+Digest-Algorithms:	SHA, MD5
+SHA-Digest:	FsKEgAPLUCVKc5sewmp+qNXYSnA=
+MD5-Digest:	K4uoILFMtJXoSbPLFXxg6w==
+
+Name:	squidge.class
+Java-Bean:	False
+Digest-Algorithms:	SHA, MD5
+SHA-Digest:	iH/liQsmmiT3M8zqJyEQqnqP3rU=
+MD5-Digest:	8YPIxw/AUbxz/A8XqjWqjw==
+
+Name:	squidgeBeanInfo.class
+Java-Bean:	False
+Digest-Algorithms:	SHA, MD5
+SHA-Digest:	NjC8JToAJXCmNpVTjgnVKII7SLw=
+MD5-Digest:	KxZ7KmYygs2/PQsGtOr+jA==
+
+Name:	SquidgePane.class
+Java-Bean:	False
+Digest-Algorithms:	SHA, MD5
+SHA-Digest:	cwG/+wG3Wd6BFXpnxC4sn5eSAYk=
+MD5-Digest:	Ureav8pCPlCBTGfp7FvbTw==
+
+Name:	vlum/graph
+Sealed:	True
+Name:	vlum/servlets
+Sealed:	True

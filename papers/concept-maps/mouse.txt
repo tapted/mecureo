@@ -1,0 +1,30 @@
+Graphical User Interface
+GUI
+icon
+Human Interface Device
+HID
+Douglas Engelbart
+input device
+pointing device
+mouse
+keyboard
+point
+click
+drag
+double-click
+right-click
+menu
+pointer
+context-sensitive menu
+touchpad
+trackpad
+Trackpoint
+trackball
+hamster
+tailless mouse
+laptop
+notebook
+mouse pad
+mouse mat
+optical mouse
+reference

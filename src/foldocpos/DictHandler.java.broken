@@ -1,0 +1,106 @@
+package foldocpos;
+
+import org.xml.sax.*;
+import org.xml.sax.helpers.*;
+import org.apache.xerces.parsers.SAXParser;
+
+public class DictHandler extends DefaultHandler {
+
+    String tag = null;
+    String type = null;
+    String lastword = "";
+    boolean sendStar = false;
+    
+    DictAdapter da;
+    public DictHandler(DictAdapter da) {
+	this.da = da;
+    }    
+
+
+    public void startElement(String uri,
+                             String localName,
+                             String qName,
+                             Attributes attributes)
+                  throws SAXException {
+	if (localName.equals("p")) {
+	    //System.out.println("\n<p>");
+	} else if (localName.equals("s")) {
+	    //System.out.print(" _ ");
+	} else if (localName.equals("t")) {
+            if (attributes.getLength() > 0)
+                type = attributes.getValue(0);
+            lastword = "";
+            //System.out.print(" ");
+	} else if (localName.equals("w")) {
+            //System.out.print(attributes.getValue(0));
+            if (tag == null && attributes.getLength() > 0)
+                tag = attributes.getValue(0);
+	} else {
+	}
+    }
+
+    public void endElement(String uri,
+                             String localName,
+                             String qName)
+                  throws SAXException {
+	//System.err.print("\n<<END: " + localName + ">>");
+	if (localName.equals("p")) {
+	    //System.out.println("</p>");
+	    da.endOfParagraph();
+	} else if (localName.equals("s")) {
+	    //System.out.println(".");
+	    da.endOfSentence();
+        } else if (localName.equals("w")) {
+	} else if (localName.equals("t")) {
+            if (tag != null && lastword.length() > 0) {
+                da.word(lastword, tag);
+            }
+            if (sendStar) {
+                sendStar = false;
+                da.word("*", tag);
+            }
+	    tag = type = null;
+	} else {
+	}
+    }
+
+    public void characters(char[] ch,
+                           int start,
+                           int length)
+                throws SAXException {
+        if (tag != null) {
+            String s = (new String(ch, start, length)).trim();
+            if (!s.equals("*")/*POSToker.alphalength(s) > 0*/) {
+                //String pair = lastword;
+                if (lastword == null || lastword.length() == 0) {
+                    lastword = s;
+                } else {
+                    lastword += " ";
+                    lastword += s;
+                }
+            } else if (lastword == null || lastword.length() == 0) {
+                da.word("*", tag);
+            } else {
+                sendStar = true;
+            }
+            //da.word(lastword, tag); //single only
+            /*
+            if (pair != null && type != null && !lastword.equals("*")) {
+                lastword = pair + " " + lastword; //also triples this way
+                da.word(lastword, tag);
+            } else {
+                da.word(lastword, tag);
+                }
+                */
+	    //System.out.print("[" + (new String(ch, start, length)).trim() + "]");
+    	}
+    }
+
+    public void endDocument() throws SAXException {
+        try {
+            da.endOfDefinition();
+        } catch (java.io.IOException ioe) {
+            ioe.printStackTrace();
+        }
+    }
+}

@@ -1,0 +1,95 @@
+Date: Wed, 19 Feb 2003 11:32:34 +1100
+From: tapted@it.usyd.edu.au ("Apted; Trent Heath")
+Subject: NLP, Update
+To: judy
+Reply-To: tapted@it.usyd.edu.au
+
+I'm not sure whether you got my last email - I know I didn't get my
+carbon copy. If not, it is here:
+
+Subject: An excellent demo query
+
+http://www.it.usyd.edu.au/~tapted/mecureo/doc/demodemo.txt
+
+
+The servers all seem to be playing up today - I couldn't log into my
+staff account, so am using the ugrad one and trying to ftp in, which
+has its own issues. Furthermore the XServer I'm running terminates when
+I try to open Netscape now. Also, I think EndNote is disabling figure
+cross references in Word2000 installed on all the ugrad PCs, which is
+becoming annoying. Dramas. But something has come up, and I may have to
+depart just after 2pm today, if that's okay [I'll only claim till 2].
+Maybe it's just as well with the server misbehaving; I'll rev-up Word
+at home and try and sort out these 4MB documents (I recently patched it
+with three service releases so maybe it's gonna stop being stupid).
+
+Neverthless, I'm writing up the experiment / instructions for the
+concept mapping experiment. And, when ssh to staff is working, working
+on the NLP classification [the rest of this email is a bit of a
+mind-dump that will probably be later incorporated in a formal
+write-up]:
+
+With regards to improving the number of classified links, the issue is
+this: The POS tagger identifies all the verbs, conjunctions and
+adjectives that give a 'sense' to the relationships in that sentence
+[around that word], but no NLP package I've come across [free or
+otherwise] is able to interpret that sense. WordNet can look up
+possible senses for a word, but they are descriptive and in regular
+English -- not machine readable. Furthermore it would be necessary to
+classify that sense into one of {parent, child, sibling, antonym,
+synonym, unknown} [WordNet does this for regular English but it does
+not work for Computer Science terms]. However, the POS tags make it
+safe[r] to extend the keywords list because they can be used to
+determine to which noun/posessive verb the keyword corresponds to; thus
+there are fewer incorrect classifications when there are ambiguous
+keywords in the keyword-relationship mapping.
+
+So I am working on extending that mapping by [manually] examining the
+keywords identified as applying to unclassified relationships that are
+'detected' in the Parser. This could take a while, particularly if
+existing classifications are checked for incorrect changes that may
+occur.
+
+For example, in the sentence in SQL:
+
+    An industry-standard language for creating, updating and, querying
+{relational database management systems}.
+
+'relational database management systems' matches the concept
+'relational database management system' but is not classified.
+
+The sentence is tagged thus:
+
+NN=[creating, updating, querying],
+NNS=[relational database management systems],
+JJ=[industry-standard],
+IN=[for]
+
+'language' is one of the 'computer science stopwords' mentioned in the
+write-up for link detection. It may be worthwhile making a special rule
+for these to them as a category, but this would not make a difference
+here as SQL is explicitly listed as being in the lanuage category, and
+so it is done already. Category treatment would allow the relationship
+to be represented without the disadvantage of having highly connected
+regular nodes [ie a blowout in query sizes].
+
+so 'industry-standard' and 'for' can be included as a {weak, normal,
+strong} child relationship. That is, SQL is a child of RDBMS. But that
+is where it starts to become subjective, and by no means could I call
+myself an 'expert'...
+
+I'll look in to why {creating, updating, querying} are classified as
+nouns and not as the '-ing' verb subcategory. It might be the comma
+after the 'and' [which was transcribed directly]. Although
+"industry-standard for" is still applicable and useful.
+
+And I did: When I removed the comma, 'querying' was an adjective, the
+others remained nouns - I guess this is a fundamental limitation of NLP
+-- if it was simply "An industry-standard language for creating,
+updating and querying." the tagger has it right [ie they should be
+nouns]. Or maybe grok isn't yet as sophisticated as is possible..
+
+
+I'm just about to pop out for some lunch - I can demo/explain the NLP
+rundemo.sh and querying results/improvements this afternoon [1:30 ~
+2:30 ish, perhaps].

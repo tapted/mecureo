@@ -1,0 +1,963 @@
+.lf 1 tcldgr.n
+'\"
+'\" Copyright (c) 1997, 1998, 1999 Lucent Technologies, Inc.
+'\"
+.lf 1 man.macros
+'\" The definitions below are for supplemental macros used in Tcl/Tk
+'\" manual entries.
+'\"
+'\" .AP type name in/out ?indent?
+'\"	Start paragraph describing an argument to a library procedure.
+'\"	type is type of argument (int, etc.), in/out is either "in", "out",
+'\"	or "in/out" to describe whether procedure reads or modifies arg,
+'\"	and indent is equivalent to second arg of .IP (shouldn't ever be
+'\"	needed;  use .AS below instead)
+'\"
+'\" .AS ?type? ?name?
+'\"	Give maximum sizes of arguments for setting tab stops.  Type and
+'\"	name are examples of largest possible arguments that will be passed
+'\"	to .AP later.  If args are omitted, default tab stops are used.
+'\"
+'\" .BS
+'\"	Start box enclosure.  From here until next .BE, everything will be
+'\"	enclosed in one large box.
+'\"
+'\" .BE
+'\"	End of box enclosure.
+'\"
+'\" .CS
+'\"	Begin code excerpt.
+'\"
+'\" .CE
+'\"	End code excerpt.
+'\"
+'\" .VS ?br?
+'\"	Begin vertical sidebar, for use in marking newly-changed parts
+'\"	of man pages.  If an argument is present, then a line break is
+'\"	forced before starting the sidebar.
+'\"
+'\" .VE
+'\"	End of vertical sidebar.
+'\"
+'\" .DS
+'\"	Begin an indented unfilled display.
+'\"
+'\" .DE
+'\"	End of indented unfilled display.
+'\"
+'\" .SO
+'\"	Start of list of standard options for a Tk widget.  The
+'\"	options follow on successive lines, in four columns separated
+'\"	by tabs.
+'\"
+'\" .SE
+'\"	End of list of standard options for a Tk widget.
+'\"
+'\" .OP cmdName dbName dbClass
+'\"	Start of description of a specific option.  cmdName gives the
+'\"	option's name as specified in the class command, dbName gives
+'\"	the option's name in the option database, and dbClass gives
+'\"	the option's class in the option database.
+'\"
+'\" .UL arg1 arg2
+'\"	Print arg1 underlined, then print arg2 normally.
+'\"
+'\" SCCS: @(#) man.macros 1.8 96/02/15 20:02:24
+'\"
+'\"	# Set up traps and other miscellaneous stuff for Tcl/Tk man pages.
+.if t .wh -1.3i ^B
+.nr ^l \n(.l
+.ad b
+'\"	# Start an argument description
+.de AP
+.ie !"\\$4"" .TP \\$4
+.el \{\
+.   ie !"\\$2"" .TP \\n()Cu
+.   el          .TP 15
+.\}
+.ie !"\\$3"" \{\
+.ta \\n()Au \\n()Bu
+\&\\$1	\\fI\\$2\\fP	(\\$3)
+.\".b
+.\}
+.el \{\
+.br
+.ie !"\\$2"" \{\
+\&\\$1	\\fI\\$2\\fP
+.\}
+.el \{\
+\&\\fI\\$1\\fP
+.\}
+.\}
+..
+'\"	# define tabbing values for .AP
+.de AS
+.nr )A 10n
+.if !"\\$1"" .nr )A \\w'\\$1'u+3n
+.nr )B \\n()Au+15n
+.\"
+.if !"\\$2"" .nr )B \\w'\\$2'u+\\n()Au+3n
+.nr )C \\n()Bu+\\w'(in/out)'u+2n
+..
+.AS Tcl_Interp Tcl_CreateInterp in/out
+'\"	# BS - start boxed text
+'\"	# ^y = starting y location
+'\"	# ^b = 1
+.de BS
+.br
+.mk ^y
+.nr ^b 1u
+.if n .nf
+.if n .ti 0
+.if n \l'\\n(.lu\(ul'
+.if n .fi
+..
+'\"	# BE - end boxed text (draw box now)
+.de BE
+.nf
+.ti 0
+.mk ^t
+.ie n \l'\\n(^lu\(ul'
+.el \{\
+.\"	Draw four-sided box normally, but don't draw top of
+.\"	box if the box started on an earlier page.
+.ie !\\n(^b-1 \{\
+\h'-1.5n'\L'|\\n(^yu-1v'\l'\\n(^lu+3n\(ul'\L'\\n(^tu+1v-\\n(^yu'\l'|0u-1.5n\(ul'
+.\}
+.el \}\
+\h'-1.5n'\L'|\\n(^yu-1v'\h'\\n(^lu+3n'\L'\\n(^tu+1v-\\n(^yu'\l'|0u-1.5n\(ul'
+.\}
+.\}
+.fi
+.br
+.nr ^b 0
+..
+'\"	# VS - start vertical sidebar
+'\"	# ^Y = starting y location
+'\"	# ^v = 1 (for troff;  for nroff this doesn't matter)
+.de VS
+.if !"\\$1"" .br
+.mk ^Y
+.ie n 'mc \s12\(br\s0
+.el .nr ^v 1u
+..
+'\"	# VE - end of vertical sidebar
+.de VE
+.ie n 'mc
+.el \{\
+.ev 2
+.nf
+.ti 0
+.mk ^t
+\h'|\\n(^lu+3n'\L'|\\n(^Yu-1v\(bv'\v'\\n(^tu+1v-\\n(^Yu'\h'-|\\n(^lu+3n'
+.sp -1
+.fi
+.ev
+.\}
+.nr ^v 0
+..
+'\"	# Special macro to handle page bottom:  finish off current
+'\"	# box/sidebar if in box/sidebar mode, then invoked standard
+'\"	# page bottom macro.
+.de ^B
+.ev 2
+'ti 0
+'nf
+.mk ^t
+.if \\n(^b \{\
+.\"	Draw three-sided box if this is the box's first page,
+.\"	draw two sides but no top otherwise.
+.ie !\\n(^b-1 \h'-1.5n'\L'|\\n(^yu-1v'\l'\\n(^lu+3n\(ul'\L'\\n(^tu+1v-\\n(^yu'\h'|0u'\c
+.el \h'-1.5n'\L'|\\n(^yu-1v'\h'\\n(^lu+3n'\L'\\n(^tu+1v-\\n(^yu'\h'|0u'\c
+.\}
+.if \\n(^v \{\
+.nr ^x \\n(^tu+1v-\\n(^Yu
+\kx\h'-\\nxu'\h'|\\n(^lu+3n'\ky\L'-\\n(^xu'\v'\\n(^xu'\h'|0u'\c
+.\}
+.bp
+'fi
+.ev
+.if \\n(^b \{\
+.mk ^y
+.nr ^b 2
+.\}
+.if \\n(^v \{\
+.mk ^Y
+.\}
+..
+'\"	# DS - begin display
+.de DS
+.RS
+.nf
+.sp
+..
+'\"	# DE - end display
+.de DE
+.fi
+.RE
+.sp
+..
+'\"	# SO - start of list of standard options
+.de SO
+.SH "STANDARD OPTIONS"
+.LP
+.nf
+.ta 4c 8c 12c
+.ft B
+..
+'\"	# SE - end of list of standard options
+.de SE
+.fi
+.ft R
+.LP
+See the \\fBoptions\\fR manual entry for details on the standard options.
+..
+'\"	# OP - start of full description for a single option
+.de OP
+.LP
+.nf
+.ta 4c
+Command-Line Name:	\\fB\\$1\\fR
+Database Name:	\\fB\\$2\\fR
+Database Class:	\\fB\\$3\\fR
+.fi
+.IP
+..
+'\"	# CS - begin code excerpt
+.de CS
+.RS
+.nf
+.ta .25i .5i .75i 1i
+..
+'\"	# CE - end code excerpt
+.de CE
+.fi
+.RE
+..
+.de UL
+\\$1\l'|0\(ul'\\$2
+..
+.lf 5 tcldgr.n
+.TH TCLDGR 1 "Tcl Extension"
+.BS
+'\" Note:  do not modify the .SH NAME line immediately below!
+.SH NAME
+Tcldgr \- dynamic graph manipulation in tcl
+.SH SYNOPSIS
+
+#!/bin/sh
+.br
+# next line is a comment in tcl \\
+.br
+exec tclsh "$0" ${1+"$@"}
+.br
+package require Tcldgr
+.BE
+
+.SH USAGE
+
+Requires the dynamic loading facilities of tcl7.6 or later.
+Does \fInot\fR require tk.
+
+.SH INTRODUCTION
+
+.B Tcldgr
+is a member of the 
+.B Tcldg
+family of extensions, another being
+.B Tcldgl
+(layouts).
+.B Tcldgr
+provides an interface to the graph manipulation facilities of 
+.B libgraph(3).
+
+This extension is an evolution from its
+.B tcldot
+heritage.
+The major differences are the "bindings" to graph for incremental graph
+events, and the removal to the companion package 
+.B Tcldgl
+of all layout features.
+
+All tcl commands used in this family of extensions use the prefix "dg".
+
+.SH COMMAND SUMMARY
+
+.B Tcldgr
+extends the
+.I Tcl
+(Tool Command Language).
+Tcl provides control flow (e.g., if, for, break),
+expression evaluation and several other features such as recursion,
+procedure definition, etc.
+Commands used in this man page but not defined (e.g.,
+.BR set ,
+.BR if ,
+.BR exec )
+are Tcl commands (see
+.B Tcl(n)
+for more details).
+
+.B Tcldgr
+initially adds only five commands to the 
+.B tcl
+interpreter, namely:
+.B dgnew,
+.B dgread,
+.B dgstring,
+.B dg,
+and
+.B dgreset.
+The command: \fBdgreset\fR is intended for use only in regression tests
+and is not documented further in these man pages.
+
+Many
+.B Tcldgr
+commands return a handle of a graph, node, or edge.
+Handles take forms like: "dgG0" "dgN5" "dgE20".  The prefix of handles
+is always "dg", the "G", "N", or "E", indicate the type of object 
+(Graph, Node, Edge), and the number is a unique ID across all dg 
+objects used in a single interpreter session.  
+IDs are reused if objects are deleted.
+
+There are two script styles supported by \fBTcldgr\fR,
+the style is selected by the first command used to create a
+graph in an interpreter.
+
+The first style is selected if
+\fBdgnew\fR, \fBdgread\fR, or \fBdgstring\fR are used.
+In this style the handles of created objects are themselves registered as 
+tcl commands to permit direct operations on the objects. In this case the
+\fBdg\fR command is deleted from the interpreter to prevent mixing
+styles in the script.
+The additional commands are all of the form:
+.nf
+	<handle> <method> <parameters>
+.fi
+
+In the second style, the only tcl command used is \fBdg\fR and
+handles are not registered as commands.  This style may be used if the
+user is concerned about pollution of the tcl command namespace.
+There isn't likely to be much difference in efficiency.
+Once \fBdg\fR is used the first time the commands \fBdgnew\fR, 
+\fBdgread\fR, and \fBdgstring\fR are deleted to prevent mixing of styles.
+The dg commands are:
+.nf
+	dg new <same parameters as dgnew>
+	dg read <same parameters as dgread>
+	dg string <same parameters as dgstring>
+	dg <handle> <method> <parameters>
+.fi
+
+The remainder of this man page uses the first style
+and the \fBdg ...\fR style is not further discussed.
+
+The commands and methods are described in detail below, but in summary:
+.HP
+Tcl commands are:
+.br
+dgnew, dgread, dgstring, dg, dgreset.
+.HP
+Graph methods are:
+.br
+addedge, addnode, addsubgraph, batch, bind, concatfile,
+countedges, countnodes, findedge, graphof,
+listattributes, listedgeattributes, listnodeattributes,
+listedges, listnodes, listsubgraphs, nextedge, nextnode,
+parentgraph, queryattributes,
+queryedgeattributes, querynodeattributes, set,
+setattributes, setedgeattributes, setnodeattributes,
+showname, showtype, write.
+.HP
+Node methods are:
+.br
+addedge, countedges, countinedges, countoutedges, delete,
+findedge, graphof, listattributes, listedges, listinedges,
+listoutedges, nextedge, nextinedge, nextoutedge,
+queryattributes, set, setattributes, showname.
+.HP
+Edge methods are: 
+.br
+delete, graphof, headof, listattributes, listnodes, listheadnodes,
+listtailnodes, queryattributes, set, setattributes, showname, tailof.
+
+.P
+Also, if a graph, node or edge has an attributeName that begins
+with '_' then the attributeName is accepted as a method somewhat like a
+method in an OO language.
+When the _attributeName is invoked then the attributeValue is interpreted
+as a script after
+first substituting and %g, %n, %e, or %a in the script with 
+.I graphHandle, nodeHandle, edgeHandle,
+and
+.I arglist
+from the command.   For example:
+.nf
+
+	 set g [dgnew graph]
+	 set n [$g addnode]
+	 $n set _mymethod {puts "msg from %n: %a"}
+	 $n _mymethod hello world
+
+.fi
+when evaluated will print out:
+.nf
+
+	 msg from dgN1: hello world
+.fi
+
+Common methods can be provided to all nodes, or edges, in a graph
+by use of:
+.nf
+
+	$g setnodeattribute _method {script...}
+	$g setedgeattribute _method {script...}
+.fi
+
+.SH GRAPH COMMANDS
+
+.TP
+\fBdgnew\fR \fIgraphType ?graphName? ?attributeName attributeValue? ?...?\fR
+
+creates a new empty graph and returns its 
+.I graphHandle.
+
+.I graphType
+can be any of:
+"graph," "digraph," "strictgraph," or "strictdigraph."
+(In digraphs edges have a direction from tail to head. "Strict" graphs
+or digraphs collapse multiple edges between the same pair of
+nodes into a single edge, and disallow self-edges.)
+
+Following the mandatory 
+.I graphType
+parameter the 
+.B dgnew
+command will accept an optional name for the graph and an
+arbitrary number of attribute name/value pairs.
+In Tcldgr (unlike tcldot) there are no predifined attributes,
+so the script programmer can freely use attributes for the
+application.
+e.g.
+.nf
+
+	set g [dgnew digraph G author "John Ellson"]
+.fi
+.TP
+\fBdgread\fR \fIfileHandle\fR
+
+reads in a dot-language description of a graph from a previously opened
+file identified by the 
+.I fileHandle.
+The command returns the
+.I graphHandle
+of the newly read graph.  e.g.
+.nf
+	
+	set f [open test.dot r]
+	set g [dgread $f]
+.fi
+.TP
+\fBdgstring\fR \fIstring\fR
+
+accepts a dot-language string description of a graph.
+The command returns the
+.I graphHandle
+of the newly read graph.  e.g.
+.nf
+	
+	set s "digraph G {a->b}"
+	set g [dgstring $s]
+.fi
+.TP
+\fIgraphHandle\fR \fBaddnode\fR \fI?nodeName? ?attributeName attributeValue? ?...?\fR
+
+creates a new node in the graph whose handle is
+.I graphHandle
+and returns its
+.I nodeHandle.
+The handle of a node is a string like: "dgN0" where the integer value is
+different for each node.
+An optional name may be provided for the node, followed by
+an arbitrary number of attribute name/value pairs.
+e.g.
+.nf
+	
+	set n [$g addnode "N" label "Top\\nNode" ]
+
+.fi
+Execution of \fBaddnode\fR will have the side effect of also executing
+any scripts that have been attached to the \fIinsert_node\fR event by the
+bind method on the graph.
+
+A possible cause of confusion in 
+.B Tcldgr
+is the distinction between handles, names, labels, and variables.
+The distinction is primarily in who owns them.
+Handles are owned by Tcldgr and are guaranteed to be unique within
+one interpreter session.  Typically handles are assigned to variables,
+like "n" above, for manipulation within a tcl script.
+Variables are owned by the programmer.
+Names are owned by the application that is using the
+graph, typically names are important when reading in a graph from
+an external program or file.  Labels are the text that is displayed with
+the node
+(or edge) when the graph is displayed, labels are meaningful to the
+reader of the graph.  Only the handles and variables are essential to 
+.B Tcldgr's
+ability to manipulate abstract graphs.  If a name is not specified then
+it defaults to a "%<num>" form where <num> is the numeric part of the handle.
+Unlike 
+.B tcldot,
+labels are no longer specifically provided for, but it is probably a
+good idea to continue to use the attributName "label" so that dot
+files can be interpreted by the older tools..
+
+.PD 0
+.TP
+\fIgraphHandle\fR \fBaddedge\fR \fItailNode headNode ?edgeName? ?attributeName attributeValue? ?...?\fR
+.TP
+\fInodeHandle\fR \fBaddedge\fR \fIheadNode ?edgeName? ?attributeName attributeValue? ?...?\fR
+.PD
+
+creates a new edge and returns its
+.I edgeHandle.
+The 
+.I tailNode 
+and
+.I headNode
+can be specified either by their
+.I nodeHandle
+or by their 
+.I nodeName
+e.g.
+.nf
+
+	set n [$g addnode]
+	set m [$g addnode M]
+	set p [$g addnode]
+	$g addedge $n M myedge label "NM"
+	$p addedge M label "PM"
+	$p addedge $n
+
+.fi
+The \fItailNode\fR and \fIheadNode\fR parameters are recognized as handles
+in preference to names, so it is best
+to avoid names like "dgN6" for nodes.  If there is potential
+for conflict then use
+.B findnode
+which gives preference to names over handles instead. 
+e.g.
+.nf
+
+	$g addnode "dgN6"
+	$g addnode "dgN99"
+	$g addedge [$g findnode "dgN6"] [$g findnode "dgN99"]
+
+.fi
+An optional name may be provided for the edge, followed by
+an arbitrary number of attribute name/value pairs.
+
+Execution of \fBaddedge\fR will have the side effect of also executing
+any scripts that have been attached to the \fIinsert_edge\fR event by the
+bind method on the graph.
+
+.TP
+\fIgraphHandle\fR \fBaddsubgraph\fR \fI?graphName? ?attributeName attributeValue? ?...?\fR
+
+creates a new subgraph in the graph and returns its
+.I graphHandle.
+If the
+.I graphName
+is omitted then the name of the subgraph defaults to it's 
+.I graphHandle.
+There can be an arbitrary number of attribute name/value pairs
+for the subgraph.
+e.g.
+.nf
+	
+	set sg [$g addsubgraph]
+.fi
+
+Execution of \fBaddsubgraph\fR will have the side effect of also executing
+any scripts that have been attached to the \fIinsert_graph\fR event by the
+bind method on the graph.
+
+.TP
+\fIgraphHandle\fR \fBbatch\fR \fIboolean\fI
+
+When set, batches up all events in a buffer until cleared.
+Initially batch is cleared so that events immediately
+invoke any scripts that have been attached with "bind".
+
+Some operations on the graph may result in multiple events, and so it is
+useful to be able to bracket the set of events generated by a single
+input action.  To support this,  all events (even singletons)
+reported by a graph are surrounded by "batch 1" ... "batch 0" events.
+These batch events can themselves be bound (see next section).
+If the batch command is used then the interval of the batched
+is enlarged to the interval of the commanded batching,
+thus allowing the user to define larger atomic transactions.
+
+.TP
+\fIgraphHandle\fR \fBbind\fR \fIgraphEvent ?+??script?\fI
+
+attaches a script to be executed whenever a specified event occurs.
+.I graphEvent
+can be any one of:
+
+.DS
+.ta 3c
+\fBbatch\fR	%g %a
+\fBinsert_graph\fR	%g
+\fBinsert_node\fR	%g %n
+\fBinsert_edge\fR	%g %t %e %h
+\fBmodify_graph\fR	%g %n %e %A %a
+\fBmodify_node\fR	%g %n %A %a
+\fBmodify_edge\fR	%g %e %A %a
+\fBdelete_graph\fR	%g
+\fBdelete_node\fR	%g %n
+\fBdelete_edge\fR	%g %e
+.DE
+
+Where the substitutions are:
+
+.DS
+.ta 1c
+%g	the graph handle
+%n	the node handle (or tail node handle)
+	or "node" when \fBmodify_graph\fR reports node attribute creation
+%t	tail node handle (%t is an alias for %n)
+%e	the edge handle 
+	or "edge" when \fBmodify_graph\fR reports edge attribute creation
+%h	head node handle (%h is an alias for %A)
+%A	the attribute name (or head node handle)
+%a	the attribute value ("0" or "1" for batch bindings)
+.DE
+
+If the \fIscript\fR parameter starts with a "+" then the binding is
+appended to any existing binding on the event, otherwise the binding
+replaces any existing binding.  Bindings can be deleted by use of a
+zero length script string.
+
+.B Debugging hint:
+To set up bindings to all possible events and parameters from a graph
+you can use:
+.nf
+
+	foreach b [$g bind] {$g bind $b "+puts \\"%g $b %n %e %A %a\\""}
+.fi
+
+.PD 0
+.TP
+\fIgraphHandle\fR \fBcountnodes\fR
+.TP
+\fIgraphHandle\fR \fBcountedges\fR
+.PD
+
+Returns the number of nodes, or edges, in the graph.
+
+.PD 0
+.TP
+\fInodeHandle\fR \fBcountedges\fR
+.TP
+\fInodeHandle\fR \fBcountinedges\fR
+.TP
+\fInodeHandle\fR \fBcountoutedges\fR
+.PD
+
+Returns the number of edges at a node.
+
+.PD 0
+.TP
+\fIgraphHandle\fR \fBconcatfile\fR \fIfileHandle\fR
+.TP
+\fIgraphHandle\fR \fBconcatstring\fR \fIdot_language_string\fR
+.PD
+
+Reads in a \fIdot\fR file from an open \fIfileHandle\fR,
+or from a string, and concatenates the graph to any existing graph
+in \fIgraphHandle\fR.
+
+(This mechanism was introduced so that event bindings could be 
+established on an empty graph before the file was read in, so that the
+callbacks occur for the contents of the file.  It is not clear
+that concatenating a graph to a non-empty graph produces intuitively
+predictable results.)
+
+.PD 0
+.TP 
+\fIgraphHandle\fR \fBdelete\fR
+.TP
+\fInodeHandle\fR \fBdelete\fR
+.TP
+\fIedgeHandle\fR \fBdelete\fR
+.PD
+
+Delete all data structures associated with the graph, node, edge
+from the internal storage of the interpreter.  Deletion of a node also
+results in the deletion of all subtending edges on that node.
+Deletion of a graph also results in the deletion of all nodes edges and
+subgraphs within that graph.
+
+Execution of graph, node or edge \fBdelete\fR will have the side effect
+of also executing any scripts that have been attached to the
+\fIdelete_graph\fR, \fIdelete_node\fR, \fIdelete_edge\fR events by the
+bind method on the graph.
+
+.PD 0
+.TP
+\fIgraphHandle\fR \fBfindnode\fR \fInodeName\fR
+.TP
+\fIgraphHandle\fR \fBfindedge\fR \fItailnodeName headNodeName\fR
+.TP
+\fInodeHandle\fR \fBfindedge\fR \fInodeName\fR
+.PD
+
+Each return the handle of the item if found, or an error if none are found.  
+For non-strict graphs when there are multiple edges between two nodes
+.B findedge
+will return an arbitrary edge from the set.
+\fIName\fR parameters to the \fBfind\fR method can be either names
+or handles, but priority is given to a name interpretation.
+
+.PD 0
+.TP
+\fIgraphHandle\fR \fBgraphof\fR
+.TP
+\fInodeHandle\fR \fBgraphof\fR
+.TP
+\fIedgeHandle\fR \fBgraphof\fR
+.PD
+
+Returns the handle of the root graph which contains the graph,
+subgraph, node, or edge.
+
+.TP
+\fIedgeHandle\fR \fBheadof\fR
+
+(Synonym for \fBlistheadnodes\fR.)
+
+.PD 0
+.TP
+\fIgraphHandle\fR \fBlistattributes\fR ?attributeNamePattern?
+.TP
+\fInodeHandle\fR \fBlistattributes\fR ?attributeNamePattern?
+.TP
+\fIedgeHandle\fR \fBlistattributes\fR ?attributeNamePattern?
+.PD
+
+Return a list of attribute names (attribute values are provided by
+\fBqueryattribute\fR).  If an attributeNamePattern is specified then 
+only those attributeNames that match the pattern are returned.
+The pattern can contain "*?[]" as in Tcl's string match command.
+
+.PD 0
+.TP
+\fIgraphHandle\fR \fBlistnodes\fR ?attributeName attributeValuePattern? ?...?
+.TP
+\fIgraphHandle\fR \fBlistedges\fR ?attributeName attributeValuePattern? ?...?
+.TP
+\fIgraphHandle\fR \fBlistsubgraphs\fR ?attributeName attributeValuePattern? ?...?
+.TP
+\fInodeHandle\fR \fBlistedges\fR ?attributeName attributeValuePattern? ?...?
+.TP
+\fInodeHandle\fR \fBlistinedges\fR ?attributeName attributeValuePattern? ?...?
+.TP
+\fInodeHandle\fR \fBlistoutedges\fR ?attributeName attributeValuePattern? ?...?
+.TP
+\fIedgeHandle\fR \fBlistnodes\fR ?attributeName attributeValuePattern? ?...?
+.TP
+\fIedgeHandle\fR \fBlistheadnodes\fR ?attributeName attributeValuePattern? ?...?
+.TP
+\fIedgeHandle\fR \fBlisttailnodes\fR ?attributeName attributeValuePattern? ?...?
+.PD
+
+Each return a list of handles of nodes, edges, or subgraphs, as appropriate.
+If an attributeName and attributeValuePattern pairs are specified then
+only those objects whose attributeValue match all of them are returned.
+The pattern matching supports "*?[]" as in Tcl's string match command.
+
+.PD 0
+.TP
+\fIgraphHandle\fR \fBnextedge\fR \fI?edgeHandle?\fR ?attributeName attributeValuePattern? ?...?
+.TP
+\fIgraphHandle\fR \fBnextnode\fR \fI?nodeHandle?\fR ?attributeName attributeValuePattern? ?...?
+.TP
+\fInodeHandle\fR \fBnextedge\fR \fI?edgeHandle?\fR ?attributeName attributeValuePattern? ?...?
+.TP
+\fInodeHandle\fR \fBnextinedge\fR \fI?edgeHandle?\fR ?attributeName attributeValuePattern? ?...?
+.TP
+\fInodeHandle\fR \fBnextoutedge\fR \fI?edgeHandle?\fR ?attributeName attributeValuePattern? ?...?
+.PD
+
+Provide an iteration through nodes or edges.  Returns the handle of the "next" node or edge that
+follows the one identified in first parameter that matches the
+attribute/value patterns.  If the first parameter
+is omitted then it returns the first node or edge that matches the
+attribute/value patterns.
+The pattern matching supports "*?[]" as in Tcl's string match command.
+
+.TP
+\fIgraphHandle\fR \fBparentgraph\fR
+
+If the graph is a subgraph the this method returns the handle
+of its parent graph.  If the graph is the root graph then this method
+returns a null string.  (See also: \fBgraphof\fR)
+
+.PD 0
+.TP
+\fIgraphHandle\fR \fBqueryattributes\fR \fIattributeName ?...?\fR
+.TP
+\fInodeHandle\fR \fBqueryattributes\fR \fIattributeName ?...?\fR
+.TP
+\fIedgeHandle\fR \fBqueryattributes\fR \fIattributeName ?...?\fR
+.PD
+
+Return a list of attribute values, one value for each of the
+attribute names provided with the method.  (See also the \fBset\fR
+method which can be used to query a single attribute without
+returning the value in a list.)
+
+.PD 0
+.TP
+\fIgraphHandle\fR \fBshowname\fR
+.TP
+\fInodeHandle\fR \fBshowname\fR
+.TP
+\fIedgeHandle\fR \fBshowname\fR
+.PD
+
+Each return the name of the graph, node, or edge.
+Edge names are of the form:
+"a->b" where "a" and "b" are the names of the nodes and the connector
+"->" indicates the tail-to-head direction of the edge. In undirected
+graphs the connector "--" is used.
+
+.PD 0
+.TP
+\fIgraphHandle\fR \fBset\fR \fIattributeName ?attributeValue?\fR
+.TP
+\fInodeHandle\fR \fBset\fR \fIattributeName ?attributeValue?\fR
+.TP
+\fIedgeHandle\fR \fBset\fR \fIattributeName ?attributeValue?\fR
+.PD
+
+Set, or query, (in the style of Tcl's set) one attribute name/value
+pair for a specific graph, node, or edge instance.
+
+Attributes whose 
+.I attributeName
+starts with the character '_' can be used to extend the method set of
+graphs, nodes or edges by evaluating the 
+.fIattributeValue
+as a script after first substituting %g %n %e %a with
+graphHandle, nodeHandle, edgeHandle and arglist.
+
+Execution of \fBset\fR with a new value, i.e. a string value different from the
+current value, will have the side effect
+of also executing any scripts that have been attached to the
+\fImodify_graph\fR, \fImodify_node\fR, or \fImodify_edge\fR events by the
+bind method on the graph.  Note that this is different from
+\fBsetattributes\fR which will execute scripts when a new value is
+written regardless of whether its string value has changed.
+
+.PD 0
+.TP
+\fIgraphHandle\fR \fBsetnodeattributes\fR \fIattributeName attributeValue ?...?\fR
+.TP
+\fIgraphHandle\fR \fBsetedgeattributes\fR \fIattributeName attributeValue ?...?\fR
+.PD
+
+Set one or more default attribute name/values that are to apply to
+all subsequent nodes, or edges unless overridden.
+
+Attributes whose 
+.I attributeName
+starts with the charater '_' can be used to extend the method set of
+nodes or edges by evaluating the 
+.fIattributeValue
+as a script after first substituting %g %n %e %a with
+graphHandle, nodeHandle, edgeHandle and arglist.
+
+Execution of \fBsetnodeattributes\fR, or \fBsetedgeattributes\fR,
+will have the side effect
+of also executing any scripts that have been attached to the
+\fImodify_node\fR, or \fImodify_edge\fR events by the
+bind method on the graph.
+
+.PD 0
+.TP
+\fIgraphHandle\fR \fBsetattributes\fR \fIattributeName attributeValue ?...?\fR
+.TP
+\fInodeHandle\fR \fBsetattributes\fR \fIattributeName attributeValue ?...?\fR
+.TP
+\fIedgeHandle\fR \fBsetattributes\fR \fIattributeName attributeValue ?...?\fR
+.PD
+
+Set one or more attribute name/value pairs for a specific graph, node,
+or edge instance.
+
+Attributes whose 
+.I attributeName
+starts with the charater '_' can be used to extend the method set of
+graphs, nodes or edges by evaluating the 
+.fIattributeValue
+as a script after first substituting %g %n %e %a with
+graphHandle, nodeHandle, edgeHandle and arglist.
+
+Execution of \fBsetattributes\fR,
+will have the side effect
+of also executing any scripts that have been attached to the
+\fImodify_graph\fR, \fImodify_node\fR, or \fImodify_edge\fR events by the
+bind method on the graph.
+
+(The only real advantage of \fBsetattributes\fR over \fBset\fR is
+that it allows multiple attributes to be set in a single atomic
+action. The other difference is that the bindings will be executed even
+if the string value of the attribute is the same as before.)
+
+.TP
+\fIedgeHandle\fR \fBtailof\fR
+
+(Synonym for \fBlisttailnodes\fR.)
+
+.TP
+\fIgraphHandle\fR \fBwrite\fR \fI?fileHandle?\fR
+
+Write a graph in the dot_language to the open file represented by
+.I fileHandle
+or, if
+.I fileHandle
+is omitted, then return the dot-language result as a string.
+
+
+.SH BUGS
+
+This man page is impossible to comprehend in a single reading.
+
+It would be useful to be able to delete individual parts of
+a binding that was built from "+" appended parts.
+
+It probably should be modified to use Tcl_Obj in tcl8.0 and later.
+
+.SH AUTHOR
+
+John Ellson (ellson@graphviz.org)
+
+.SH ACKNOWLEDGEMENTS
+
+John Ousterhout, of course, for 
+.B tcl
+and
+.B tk.
+Steven North and Eleftherios Koutsofios for
+.B dot, libgraph
+and
+.B libincr.
+Karl Lehenbauer and Mark Diekhans of NeoSoft
+for the dghandles.c code which was derived from tclXhandles.c.
+
+.SH KEYWORDS
+
+Tcldgr, graph, tcl, tk, dot, tcldot, graphviz.

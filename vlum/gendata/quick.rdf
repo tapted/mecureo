@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+
+<rdf:rdf
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:dc="http://purl.org/metadata/dublin_core/"
+  xmlns:gmp="http://www.gmp.usyd.edu.au/schema/resources/">
+
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=ABSYS">
+    <dc:Title>ABSYS</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.000000" gmp:reliability="0.000000"/>
+	 <gmp:peer gmp:peerType="parent" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=declarative%20language"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=database%20query%20language">
+    <dc:Title>database query language</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.500000" gmp:reliability="0.500000"/>
+	 <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=SQL"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=declarative%20language">
+    <dc:Title>declarative language</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="1.000000" gmp:reliability="1.000000"/>
+	 <gmp:peer gmp:peerType="antonym" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=procedural%20language"/>
+	 <gmp:peer gmp:peerType="child" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=ABSYS"/>
+	 <gmp:peer gmp:peerType="antonym" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=imperative%20language"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=GTSQL">
+    <dc:Title>GTSQL</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.496069" gmp:reliability="0.496069"/>
+	 <gmp:peer gmp:peerType="parent" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=SQL"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=imperative%20language">
+    <dc:Title>imperative language</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.350000" gmp:reliability="0.350000"/>
+	 <gmp:peer gmp:peerType="synonym" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=procedural%20language"/>
+	 <gmp:peer gmp:peerType="antonym" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=declarative%20language"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=procedural%20language">
+    <dc:Title>procedural language</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.316667" gmp:reliability="0.316667"/>
+	 <gmp:peer gmp:peerType="antonym" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=declarative%20language"/>
+	 <gmp:peer gmp:peerType="synonym" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=imperative%20language"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=SQL">
+    <dc:Title>SQL</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="1.000000" gmp:reliability="1.000000"/>
+	 <gmp:peer gmp:peerType="sibling" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=database%20query%20language"/>
+	 <gmp:peer gmp:peerType="parent" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Watcom%20International"/>
+	 <gmp:peer gmp:peerType="synonym" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Structured%20Query%20Language"/>
+	 <gmp:peer gmp:peerType="parent" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=GTSQL"/>
+	 <gmp:peer gmp:peerType="parent" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=System%20R"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Structured%20Query%20Language">
+    <dc:Title>Structured Query Language</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.966667" gmp:reliability="0.966667"/>
+	 <gmp:peer gmp:peerType="synonym" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=SQL"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=System%20R">
+    <dc:Title>System R</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.309563" gmp:reliability="0.309563"/>
+	 <gmp:peer gmp:peerType="parent" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=SQL"/>
+  </rdf:Description>
+  <rdf:Description about="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=Watcom%20International">
+    <dc:Title>Watcom International</dc:Title>
+    <gmp:results rdf:parseType="Resource" gmp:dataset="gmp:average" gmp:mark="0.000185" gmp:reliability="0.000185"/>
+	 <gmp:peer gmp:peerType="parent" rdf:resource="http://foldoc.doc.ic.ac.uk/foldoc/foldoc.cgi?query=SQL"/>
+  </rdf:Description>
+</rdf:rdf>

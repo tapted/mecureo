@@ -1,0 +1,41 @@
+computer
+storage
+disc
+tape
+"hard drive"
+CD
+"Compact Disc"
+"floppy disk"
+input
+processing
+output
+HID
+Human Interface Device
+joystick
+keyboard
+pointing device
+mouse
+stylus
+trackball
+trackpad
+hamster
+motherboard
+CPU
+cache
+register
+instruction register
+return address
+jump
+RAM
+ROM
+bus
+PCI
+ISA
+AGP
+sound card
+speaker
+monitor
+LCD
+CRT
+plasma
+shadow mask

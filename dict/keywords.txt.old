@@ -1,0 +1,56 @@
+#parent means current defn is a parent of next keyword
+#child means current defn is a child of next keyword
+#invalid is used to check keywords with more than one word in them
+compare:      very dissim
+variant:      strong child
+version:      strong child
+see:          very sibling
+is:           normal child
+replaced:     very sibling
+as:           invalid
+as in:        normal parent
+developed:    strong parent
+at:           weak parent
+by:           normal parent
+using:        strong child
+e:	      invalid
+e.g.:         very parent
+eg:	      very parent
+any:          invalid
+any of:       strong child
+for:          normal child
+like:         normal parent
+manufacturer: strong parent
+extension:    strong child
+compatible:   strong sibling
+has:          weak parent
+had:          weak parent
+archetypal:   very child
+uses:         normal parent
+used:         normal parent
+under:        normal child
+derived:      strong child
+possibly:     normal parent
+taught:       strong child
+introduces:   strong sibling
+based:        strong child
+requires:     normal parent
+implementations: normal parent
+subset:       very child
+known:        very sibling
+central:      strong child
+example:      normal child
+examples:     normal parent
+include:      strong parent
+opposite:     strong dissim
+opposed:      very dissim
+analogous:    very sibling
+recommended:	weak child
+assumes:	normal child
+requires:	strong child
+qualifying:	very child
+corequires:	strong sibling
+prohibits:	strong dissim
+teaches:	normal parent
+related:	strong sibling
+subcategories:	very parent

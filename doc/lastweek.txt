@@ -1,0 +1,23 @@
+Date: Mon, 24 Feb 2003 09:11:39 +1100
+From: tapted@it.usyd.edu.au ("Apted; Trent Heath")
+Subject: Last Week
+To: judy
+Reply-To: tapted@it.usyd.edu.au
+
+I realised this morning that this was going to be my last week - and a
+short one (2 days) because of the 2 days in the first week. I could
+come in another day to make up for the day I was sick though.
+
+So for now, I'm going to stop programming unless I uncover any bugs and
+put the keywords expansion on hold (although
+
+http://www.it.usyd.edu.au/~tapted/mecureo/rdfvlum.cgi?ontology=fdg%2Fdftag.fdg&w1.1=%22SQL%22&w2.1=%22declarative+language%22&distance=300.0&peerage=0&mode=num&Submit=Generate+Model
+
+made with the latest set, and latest features, has freakishly high (and
+reasonably accurate, even) classification of links for two source nodes
+that never got scanned by the unclassified link detector thingo.
+
+I'll concentrate on first writing up the concept mapping experiment in
+full and then doing a complete mind dump into a technical report on all
+the NLP stuff. With a parse of the case- and stem-matched ontologies
+running on another PC.

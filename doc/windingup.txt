@@ -1,0 +1,45 @@
+Date: Wed, 26 Feb 2003 13:01:59 +1100
+From: tapted@it.usyd.edu.au ("Apted; Trent Heath")
+Subject: Update, windup (take 2)
+To: judy
+Reply-To: tapted@it.usyd.edu.au
+
+My apologies for the last email - strange things happened when
+I tried to paste the link. I'll try again:
+
+All the javadocs have been updated, and contain the more detailed
+technical information. They are here:
+
+http://www.it.usyd.edu.au/~tapted/mecureo/doc/api-docs/index.html
+
+There are a few gaps that I will fill in time.
+
+I've adjusted the parsing flags so that "unkown" links will remain
+"unknown" in VLUM, rather than being grouped with explicit siblings.
+
+I'll need to re-parse the dictionaries for this to take effect though.
+In idle-time over the next week or so I'll get some closure on the
+keywords mapping and do a final parse. Trawling for unclassified
+links, determining a likely 'sense' and checking changed classifications
+is kinda time-consuming and a little arduous.
+
+The nlpwriteup has been updated with more information, and included
+is the current keywords mapping and stoplist. It is still here:
+
+http://www.it.usyd.edu.au/~tapted/mecureo/papers/nlpwriteup.doc
+
+I've also written in a workaround so that the concept map graphs
+can be viewed in VLUM (previously RDF would not be output if
+all the _nodes_ had a weight of 0, as they do for concept-map-
+generated graphs).
+
+Also, should I leave a printout of the experiment instructions
+somewhere?
+
+The final comparison should probably be done with the query result
+based on the complete/final keywords file.. although deciding
+whether to use stem-matching is still an issue. Ultimately, the
+links in the case- or otherwise-matched ontology will be a subset
+of those in the stem-matched ontology (apart from links detected
+that have a stronger relationship and hence override a weaker,
+relationship detected at a lower level).

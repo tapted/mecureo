@@ -1,0 +1,18 @@
+Java
+dynamic programming
+Smalltalk
+type
+class
+instantiation
+polymorphism
+object-oriented programming
+reuse
+abstract class
+inheritance
+dynamic binding
+programming fluid
+instance variable
+object
+multiple inheritance
+concrete class
+subtype

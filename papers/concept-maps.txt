@@ -1,0 +1,142 @@
+"Mouse"
+30
+
+Graphical User Interface
+GUI
+icon
+Human Interface Device
+HID
+Douglas Engelbart
+input device
+pointing device
+mouse
+keyboard
+point
+click
+drag
+double-click
+right-click
+menu
+pointer
+context-sensitive menu
+touchpad
+trackpad
+Trackpoint
+trackball
+hamster
+tailless mouse
+laptop
+notebook
+mouse pad
+mouse mat
+optical mouse
+reference
+
+"Graphical User Interface" GUI icon "Human Interface Device" HID "Douglas Engelbart" "input device" "pointing device" mouse keyboard point click drag double-click right-click menu pointer "context-sensitive menu" touchpad trackpad trackpoint trackball hamster "tailless mouse" laptop notebook "mouse pad" "mouse mat" "optical mouse" reference
+http://www.it.usyd.edu.au/~tapted/mecureo/nodesearch.cgi?words=%22Graphical+User+Interface%22+GUI+icon+%22Human+Interface+Device%22+HID+%22Douglas+Engelbart%22+%22input+device%22+%22pointing+device%22+mouse+keyboard+point+click+drag+double-click+right-click+menu+pointer+%22context-sensitive+menu%22+touchpad+trackpad+trackpoint+trackball+hamster+%22tailless+mouse%22+laptop+notebook+%22mouse+pad%22+%22mouse+mat%22+%22optical+mouse%22+reference&depth=0&peers=0
+
+
+"Address"
+24
+
+address
+CPU
+MMU
+Memory Management Unit
+register
+memory location
+main memory
+word
+address bus
+program counter
+pointer
+type
+object identifier
+cache
+e-mail address
+ISP
+Internet address
+IP address
+address resolution
+dot notation
+dot address
+ARP
+Address Resolution Protocol
+OID
+
+address CPU MMU "Memory Management Unit" register "memory location" "main memory" word "address bus" "program counter" pointer type "object identifier" cache "e-mail address" bus "Internet address" "IP address" "address resolution" "dot notation" "dot address" ARP "Address Resolution Protocol" OID
+
+
+
+"object-oriented programming"
+18
+
+Java
+dynamic programming
+Smalltalk
+type
+class
+instantiation
+polymorphism
+object-oriented programming
+reuse
+abstract class
+inheritance
+dynamic binding
+programming fluid
+instance variable
+object
+multiple inheritance
+concrete class
+subtype
+
+Java "dynamic programming" Smalltalk type class instantiation polymorphism "object-oriented programming" reuse "abstract class" inheritance "dynamic binding" "programming fluid" "instance variable" object "multiple inheritance" "concrete class" subtype
+
+
+
+"computer"
+
+computer
+storage
+disc
+tape
+"hard drive"
+CD
+"Compact Disc"
+"floppy disk"
+input
+processing
+output
+HID
+Human Interface Device
+joystick
+keyboard
+pointing device
+mouse
+stylus
+trackball
+trackpad
+hamster
+motherboard
+CPU
+cache
+register
+instruction register
+return address
+jump
+RAM
+ROM
+bus
+PCI
+ISA
+AGP
+sound card
+speaker
+monitor
+LCD
+CRT
+plasma
+shadow mask
+
+computer storage disc tape "hard drive" CD "Compact Disc" "floppy disk" input processing output HID "Human Interface Device" joystick keyboard "pointing device" mouse stylus trackball trackpad hamster motherboard CPU cache register "instruction register" "return address" jump RAM ROM bus PCI ISA AGP "sound card" "speaker" "monitor" "LCD" "CRT" plasma "shadow mask"
+
