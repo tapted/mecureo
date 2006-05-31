@@ -188,7 +188,7 @@ nl
                                  int MIN_LINKS,
                                  boolean vert,
                                  boolean lineStyles) throws IOException {
-        outputDOT(g, dot, MIN_KIDS, MIN_LINKS, vert, lineStyles, null);
+        outputDOT(g, dot, MIN_KIDS, MIN_LINKS, vert, lineStyles, null, "");
     }
 
     public static void autoDOTCluster(HashGraph g,
@@ -199,7 +199,7 @@ nl
         subgraphs.add("Target");
         subgraphs.add("Source");
         subgraphs.add("Common");
-        outputDOT(g, dot, MIN_KIDS, MIN_LINKS, true, true, subgraphs.iterator());
+        outputDOT(g, dot, MIN_KIDS, MIN_LINKS, true, true, subgraphs.iterator(), "");
     }
 
     //order for subgraphs (Strings) are
@@ -210,7 +210,8 @@ nl
                                  int MIN_LINKS,
                                  boolean vert,
                                  boolean lineStyles,
-                                 Iterator subgraphs) throws IOException {
+                                 Iterator subgraphs,
+								 String extra_dot) throws IOException {
 
         System.err.println("Outputting DOT...");
 
@@ -223,7 +224,7 @@ nl
 
         ArrayList outputSet = new ArrayList(); //of NodeNodeLinkSet s
 
-        dot.print("digraph G {\n  ");
+        dot.print("digraph G {\n  rankdir=\"LR\"\n  " + extra_dot);
         if (subgraphs != null) {
             //print the node listings for each subgraph then proceed as usual
             ArrayList[] subnodes = {new ArrayList(), new ArrayList(), new ArrayList()};
@@ -279,7 +280,7 @@ nl
                 if (!c.equals(n) && (c.size() + c.getBackLinks().size()) /*/ 2*/ >= MIN_LINKS) {
                     in.add(c);
                     kids.add(new NodeLink(c, ln.dotType()));
-                }
+                } 
             }
             for (Iterator back = n.backIter(); back.hasNext(); ) {
                 Link ln = (Link)back.next();

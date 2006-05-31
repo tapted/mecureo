@@ -112,7 +112,7 @@ public class Similarity {
         //commonSim will now be == 1.0
 
         /* Now penalise the similarity based on the uncommon parts */
-        if (pen.mode == pen.MODE_LOCAL) {
+        if (pen.mode == PenaltyFunc.MODE_LOCAL) {
             for (Iterator lit = leftOnly.iterator(); lit.hasNext(); )
                 pen.penaltyStep((Node)lit.next(), right);
             for (Iterator rit = rightOnly.iterator(); rit.hasNext(); )

@@ -5,7 +5,7 @@
 
 package posparser;
 
-import java.io.PrintStream;
+//import java.io.PrintStream;
 import opennlp.common.*;
 import opennlp.common.xml.NLPDocument;
 

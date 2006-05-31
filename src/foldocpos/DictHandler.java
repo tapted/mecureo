@@ -2,7 +2,7 @@ package foldocpos;
 
 import org.xml.sax.*;
 import org.xml.sax.helpers.*;
-import org.apache.xerces.parsers.SAXParser;
+//import org.apache.xerces.parsers.SAXParser;
 
 /**
  * An org.xml.sax.helpers.DefaultHandler to re-interpret

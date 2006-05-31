@@ -3,7 +3,7 @@ package foldocui;
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
-import javax.swing.border.*;
+//import javax.swing.border.*;
 
 public class Interface_AboutBox extends JDialog implements ActionListener {
 

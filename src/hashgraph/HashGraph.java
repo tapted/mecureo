@@ -488,7 +488,8 @@ public class HashGraph implements Cloneable, java.io.Serializable {
      * @see foldocml.Connection#grow(Iterator words, double depth)
      */
     public HashGraph grow(Iterator target, double amount, int maxNodes) {
-        clearNodeTemps();
+    	int sz = 0;
+        clearNodeTemps();        
         DataStructures.PairHeap pq = new DataStructures.PairHeap();
         //add all nodes in target to queue, with cost = 0
         for (Iterator it = target/*.nodeIterator()*/; it.hasNext(); ) {
@@ -497,7 +498,9 @@ public class HashGraph implements Cloneable, java.io.Serializable {
                 continue;
             n.cost = 0;
             n.noderef = pq.insert(n);
+            sz++;
         }
+        System.err.println("Growing from " + sz + " seed nodes" );
         Node eye = null;
         HashSet result = new HashSet();
         Iterator lit;
@@ -1145,7 +1148,7 @@ public class HashGraph implements Cloneable, java.io.Serializable {
      */
     public double minSpanWeight() {
         HashGraph ret = new HashGraph();
-        ret.FLAG_BACK_LINK = false;
+        HashGraph.FLAG_BACK_LINK = false;
         Set unlinked = new HashSet(nodes.values());
         HashSet edges = new HashSet();
         double weightSum = 0;
@@ -1286,5 +1289,14 @@ public class HashGraph implements Cloneable, java.io.Serializable {
 		}
     	}
     	return peerSum / peerN;
+    }
+    
+    public String statistcs() {
+    	StringBuffer sb = new StringBuffer();
+    	sb.append("\n              Density = "); sb.append(this.density());
+    	sb.append("\n                 Size = "); sb.append(this.size());
+    	sb.append("\nAverage       Weights = "); sb.append(this.averageWeights());
+    	sb.append("\nAverage Average Peers = "); sb.append(this.avgavgPeers());
+    	return sb.toString();
     }
 }

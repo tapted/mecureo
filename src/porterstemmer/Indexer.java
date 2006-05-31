@@ -90,6 +90,30 @@ public class Indexer {
             Collections.sort((ArrayList)it2.next());
     }
 
+    void resortMatchesByEditDistFrom(String str, ArrayList sdpa) {
+        for (Iterator it = sdpa.iterator(); it.hasNext(); ) {
+        	SDPair n = (SDPair)it.next();
+        	n.dist = EditDist.dist(str, n.str);
+        }
+        Collections.sort(sdpa);
+        foldoccmd.RunLog.log1.append(str + " --> " + sdpa + "\n");
+    }
+    
+    void filterListBy(String str, ArrayList sdpa) {
+    	int sz = sdpa.size();
+    	/* remove acronym-like words from sdpa if they are not an exact match */
+    	for (ListIterator it = sdpa.listIterator(); it.hasNext(); ) {
+    		String s = ((SDPair)it.next()).str;
+    		if  (!(s.indexOf(' ') >= 0) &&
+    			 !s.substring(1).equals(s.substring(1).toLowerCase()) && 
+    			 !s.equalsIgnoreCase(str)) {
+    			sz--;
+    			foldoccmd.RunLog.log2.append("Filt. " + s + "\t\t because it is acronym-like and unlike       " + str + "\t (" + sz + " remain)\n");
+    			it.remove();
+    		}
+    	}    		
+    }
+    
     /**
      * Return the component stemming matches to s
      * <p>Runs in O(1) of the wordList</p>
@@ -97,9 +121,21 @@ public class Indexer {
      * @return an array of &lt;distance, string&gt; pairs in the wordList that matched
      */
     public SDPair[] match(String s) {
+    	return match(s, 0);
+    }
+    public SDPair[] match(String s, int min_stemlen) {
         SDPair[] ret;
         int i = 0;
-        ArrayList sdpa = (ArrayList)stems.get(stem(s));
+        String stemmed = stem(s);
+        ArrayList sdpa = null;
+        if (s.length() >= min_stemlen) {
+        	sdpa = (ArrayList)stems.get(stemmed);
+        	if (sdpa != null) {
+        		sdpa = (ArrayList)sdpa.clone();
+        		filterListBy(s, sdpa);
+        		resortMatchesByEditDistFrom(s, sdpa);
+        	}
+        }
         if (sdpa == null)
             sdpa = new ArrayList(); //make a sentinel
         boolean inList = false;

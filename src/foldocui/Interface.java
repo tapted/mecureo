@@ -404,13 +404,24 @@ public class Interface extends JFrame {
         setMerge(false);
         if (currentGraph != null && jtfQuery.getText().length() > 0) {
             if (!currentGraph.contains(jtfQuery.getText())) {
-                jop.showMessageDialog(this, "That specified node does not exist in the selected graph", "Error", jop.ERROR_MESSAGE);
+                JOptionPane.showMessageDialog(this,
+                		                      "That specified node does not exist in the selected graph",
+											  "Error", 
+											  JOptionPane.ERROR_MESSAGE);
                 return;
             }
-            String sg = jop.showInputDialog(this, "Please specify a name for this subgraph", "Name", jop.PLAIN_MESSAGE);
+            String sg = JOptionPane.showInputDialog(this,
+            		                                "Please specify a name for this subgraph",
+													"Name",
+													JOptionPane.PLAIN_MESSAGE);
             double dist;
             try {
-                dist = Double.parseDouble(jop.showInputDialog(this, "Please enter a maximum distance", "Distance", jop.PLAIN_MESSAGE));
+                dist = Double.parseDouble
+				         (JOptionPane.showInputDialog
+				         		(this,
+				         		 "Please enter a maximum distance",
+								 "Distance",
+								 JOptionPane.PLAIN_MESSAGE));
             } catch (NumberFormatException nfe) {
                 jop.showMessageDialog(this, "You must enter a double", "Error", jop.ERROR_MESSAGE);
                 return;
@@ -485,7 +496,7 @@ public class Interface extends JFrame {
         if (currentGraph.size() < 1000 || jop.showConfirmDialog(this,
                "The selected graph is more than 1000 nodes, are you sure you wish to list them?",
                "Big Graph", jop.YES_NO_OPTION, jop.QUESTION_MESSAGE)
-                   == jop.YES_OPTION) {
+                   == JOptionPane.YES_OPTION) {
             listGraph(currentGraph);
         }
     }

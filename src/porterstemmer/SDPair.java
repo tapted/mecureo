@@ -12,6 +12,9 @@ public class SDPair implements Comparable {
         this.dist = dist;
         str = s;
     }
+    public String toString() {
+    	return str + ":" + dist;
+    }
     public int compareTo(Object o) {
         SDPair right = (SDPair)o;
         if (dist < right.dist)

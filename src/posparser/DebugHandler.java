@@ -2,7 +2,7 @@ package posparser;
 
 import org.xml.sax.*;
 import org.xml.sax.helpers.*;
-import org.apache.xerces.parsers.SAXParser;
+//import org.apache.xerces.parsers.SAXParser;
 
 /**
  * An XML callback handler that does debugging output dumps
