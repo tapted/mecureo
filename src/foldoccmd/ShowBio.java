@@ -79,10 +79,25 @@ public class ShowBio extends CgiApp {
         dumpStats();
         println("\nComparing models...");        
         dumpCompare();
-	}
-	
-	public static void main(String[] args) {
-        ShowBio app = new ShowBio();
-        app.cgiMain();
-	}
+        }
+
+        List collections_dot_list(Iterator it) {
+            List l = new ArrayList();
+            while (it.hasNext())
+                l.add(it.next());
+            return l;
+        }
+
+        public void tail() {
+            println("<form action=\"compimage.cgi\" method=\"POST\">");
+            BioParser.hiddenFormBio(collections_dot_list(cgi.getIterator("bio_a")), "bio_a", cgi.getValue("bio_a_name", "bio_a"));
+            BioParser.hiddenFormBio(collections_dot_list(cgi.getIterator("bio_b")), "bio_b", cgi.getValue("bio_b_name", "bio_a"));
+            BioParser.formTail(0, cgi);
+        }
+
+        public static void main(String[] args) {
+            ShowBio app = new ShowBio();
+            app.cgiMain();
+            app.tail();
+        }
 }

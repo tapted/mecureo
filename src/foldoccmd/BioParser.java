@@ -118,20 +118,20 @@ public class BioParser {
 		}
 		System.out.flush();
 	}
-		
-	public void hiddenFormBio(LinkedList cand, String bioname, String name) {
-		ListIterator lit = cand.listIterator();
-		System.out.println("</pre>");
-        System.out.println(HID_NAME + bioname + "_name" + HID_VALUE + name + FTAIL);
-        for (; lit.hasNext(); ) {
-            String so = (String)lit.next();
-            System.out.print(HID_NAME + bioname + HID_VALUE + /*"&quot;" +*/ so + /*"&quot;" +*/ FTAIL);
+
+        public static void hiddenFormBio(Collection cand, String bioname, String name) {
+            Iterator lit = cand.iterator();
+            System.out.println("</pre>");
+            System.out.println(HID_NAME + bioname + "_name" + HID_VALUE + name + FTAIL);
+            for (; lit.hasNext(); ) {
+                String so = (String)lit.next();
+                System.out.print(HID_NAME + bioname + HID_VALUE + /*"&quot;" +*/ so + /*"&quot;" +*/ FTAIL);
+            }
+            System.out.println("<pre>");
         }
-        System.out.println("<pre>");
-	}
 	
-	public void dumpBio(LinkedList cand, String name)  {
-		ListIterator lit = cand.listIterator();
+	public static void dumpBio(Collection cand, String name)  {
+		Iterator lit = cand.iterator();
 		System.out.println("</pre><h3>Terms extracted from " + name + "</h3><p>");
 		if (lit.hasNext()) {
 			String s = (String)lit.next();
@@ -141,8 +141,12 @@ public class BioParser {
 			System.out.print(DUMP_SEP + (String)lit.next());
 		System.out.println("\n</p><pre>");
     }
-	
-	public void formTail(int default_size) {
+
+        public static void formTail(int default_size, hallcgi.ShowParse cgi) {
+            formTail(default_size, "Generate Model", cgi);
+        }
+
+	public static void formTail(int default_size, String button_label, hallcgi.ShowParse cgi) {
         System.out.println("</pre><p>\n  <input type=\"text\" name=\"distance\" value=\"" + cgi.getValue("depth", Integer.toString(default_size)) + "\">");
         System.out.println("Distance / Nodes / Depth <br>");
         System.out.println("<input type=\"text\" name=\"peerage\" value=\"" + cgi.getValue("minKids", "0") + "\">");
@@ -150,7 +154,7 @@ public class BioParser {
         System.out.println("<input type=\"radio\" name=\"mode\" value=\"dist\">Weighted Distance<br>");
         System.out.println("<input type=\"radio\" name=\"mode\" value=\"num\" checked>Node Number<br>");
         System.out.println("<input type=\"radio\" name=\"mode\" value=\"depth\">Depth</blockquote></p>");
-        System.out.println("<input type=\"submit\" name=\"Submit\" value=\"Generate Model\">\n</p>");
+        System.out.println("<input type=\"submit\" name=\"Submit\" value=\"" + button_label + ">\n</p>");
 	}
 	
 	public void doMain() {
@@ -161,7 +165,7 @@ public class BioParser {
 		ontologyForm();
 		hiddenFormBio(bio1, "bio_a", cgi.getValue("bio_name", "First Bio"));
 		hiddenFormBio(bio2, "bio_b", cgi.getValue("bio_two_name", "Second Bio"));
-		formTail(bio1.size() + bio2.size());
+		formTail(bio1.size() + bio2.size(), cgi);
 		
 		dumpBio(bio1, cgi.getValue("bio_name", "First Bio"));
 		dumpBio(bio2, cgi.getValue("bio_two_name", "Second Bio"));
