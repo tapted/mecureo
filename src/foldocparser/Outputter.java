@@ -229,8 +229,10 @@ nl
             //print the node listings for each subgraph then proceed as usual
             ArrayList[] subnodes = {new ArrayList(), new ArrayList(), new ArrayList()};
 
+            int n = 0;
+
             //collect names
-            for(Iterator nodes = sg.iterator(); nodes.hasNext(); ) {
+            for(Iterator nodes = sg.iterator(); nodes.hasNext(); n++) {
                 Node n = (Node)nodes.next();
                 String ns = serialToStr(n.getSerial());
                 switch (n.temp) {
@@ -244,7 +246,7 @@ nl
                     subnodes[2].add(ns);
                     break;
                 default:
-                    throw new RuntimeException("Cannot cluster an unmerged graph");
+                    throw new RuntimeException("Cannot cluster an unmerged graph (the " + n + "th of " sg.size" nodes has no merge info)");
                 }
             }
 
