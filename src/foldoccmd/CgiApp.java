@@ -79,7 +79,10 @@ public abstract class CgiApp {
         	doMain();
         } catch (Exception ioe) {
             println(ioe);
-            ioe.printStackTrace(of);
+            if (of != null)
+                ioe.printStackTrace(of);
+            else
+                ioe.printStackTrace();
         } finally {
             println(html_tail());
         }
