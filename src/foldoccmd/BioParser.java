@@ -147,7 +147,7 @@ public class BioParser {
         }
 
 	public static void formTail(int default_size, String button_label, hallcgi.ShowParse cgi) {
-        System.out.println("</pre><p>\n  <input type=\"text\" name=\"distance\" value=\"" + cgi.getValue("depth", Integer.toString(default_size)) + "\">");
+        System.out.println("</pre><p>\n  <input type=\"text\" name=\"distance\" value=\"" + cgi.getValue("depth", cgi.getValue("distance", Integer.toString(default_size))) + "\">");
         System.out.println("Distance / Nodes / Depth <br>");
         System.out.println("<input type=\"text\" name=\"peerage\" value=\"" + cgi.getValue("minKids", "0") + "\">");
         System.out.println("Minimum Peerage</p>\n<p>Grow Mode (using Distance above):\n</p>\n<blockquote><p>");
