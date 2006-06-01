@@ -92,7 +92,8 @@ public class ShowBio extends CgiApp {
             println("<form action=\"compimage.cgi\" method=\"POST\">");
             BioParser.hiddenFormBio(collections_dot_list(cgi.getIterator("bio_a")), "bio_a", cgi.getValue("bio_a_name", "bio_a"));
             BioParser.hiddenFormBio(collections_dot_list(cgi.getIterator("bio_b")), "bio_b", cgi.getValue("bio_b_name", "bio_a"));
-            BioParser.formTail(0, cgi);
+            BioParser.formTail(0, "Show Clustered Graph Image", cgi);
+            println("</form>");
         }
 
         public static void main(String[] args) {

@@ -150,11 +150,11 @@ public class BioParser {
         System.out.println("</pre><p>\n  <input type=\"text\" name=\"distance\" value=\"" + cgi.getValue("depth", Integer.toString(default_size)) + "\">");
         System.out.println("Distance / Nodes / Depth <br>");
         System.out.println("<input type=\"text\" name=\"peerage\" value=\"" + cgi.getValue("minKids", "0") + "\">");
-        System.out.println("Minimum Peerage</p>\n<p>Grow Mode (using Distance above):\n<blockquote>");
+        System.out.println("Minimum Peerage</p>\n<p>Grow Mode (using Distance above):\n</p>\n<blockquote><p>");
         System.out.println("<input type=\"radio\" name=\"mode\" value=\"dist\">Weighted Distance<br>");
         System.out.println("<input type=\"radio\" name=\"mode\" value=\"num\" checked>Node Number<br>");
-        System.out.println("<input type=\"radio\" name=\"mode\" value=\"depth\">Depth</blockquote></p>");
-        System.out.println("<input type=\"submit\" name=\"Submit\" value=\"" + button_label + ">\n</p>");
+        System.out.println("<input type=\"radio\" name=\"mode\" value=\"depth\">Depth\n</p></blockquote><p>");
+        System.out.println("<input type=\"submit\" name=\"Submit\" value=\"" + button_label + "\">\n</p>");
 	}
 	
 	public void doMain() {
