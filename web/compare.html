@@ -1,0 +1,51 @@
+<HTML>
+<HEAD>
+<TITLE>Model Comparer</TITLE>
+
+<SCRIPT>
+function vlumChecks() {
+    with (document.urlForm) {
+        if (VLUM.checked) {
+            RDF.checked=true;
+            Err.checked=false;
+        }
+    }
+}
+
+function rdfChecks() {
+    with (document.urlForm) {
+        if (!RDF.checked) {
+            VLUM.checked=false;
+        }
+    }
+}
+
+function errChecks() {
+    with (document.urlForm) {
+        if (Err.checked) {
+            VLUM.checked=false;
+        }
+    }
+}
+</SCRIPT>
+
+</HEAD>
+
+<BODY bgcolor="#FFFFFF" text="#000000">
+
+<h1><center>
+Model Comparer
+</center></h1>
+<form name="urlForm" method="post" action="compare.cgi">
+  <p>The first bio: <input type="text" name="bio_name" value="First Bio" /><br />
+  <textarea cols="80" rows="10" name="bio" wrap="virtual"></textarea>
+  </p>
+  
+  <p>The second bio: <input type="text" name="bio_two_name" value="Second Bio" /><br />
+  <textarea cols="80" rows="10" name="bio_two" wrap="virtual"></textarea>
+  </p>
+  <input type="submit">
+</form>
+
+</BODY>
+</HTML>

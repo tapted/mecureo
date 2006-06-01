@@ -67,8 +67,8 @@ public class GraphLoader extends JDialog implements Poster {
         jpbProg.setValue((int)(d * jpbProg.getMaximum()));
         if (jpbProg.getValue() > last) {
             try {
-                curThread.sleep(10);
-                curThread.yield();
+                Thread.sleep(10);
+                Thread.yield();
             } catch (InterruptedException ie) {}
         }
     }
@@ -92,7 +92,7 @@ public class GraphLoader extends JDialog implements Poster {
         public void run() {
             try {
                 while (child.isAlive()) {
-                    child.sleep(1);
+                    Thread.sleep(1);
                     sleep(time);
                 }
             } catch (InterruptedException ie) {}

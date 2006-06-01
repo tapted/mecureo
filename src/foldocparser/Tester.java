@@ -1,6 +1,5 @@
 package foldocparser;
 
-
 /**
  * An obsolete generic tester
  */

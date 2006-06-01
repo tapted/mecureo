@@ -102,6 +102,16 @@ public class Connection {
             foldocparser.tools.OutputDOT.outputDOT(g, out, minKids, minLinks);
         out.flush();
     }
+    
+    public static void outputClusteredDOT(HashGraph g, PrintWriter out, int minKids, int minLinks, String lhs_name, String rhs_name, String extra_dot) throws IOException {
+        ArrayList subgraphs = new ArrayList();
+        subgraphs.add(lhs_name);
+        subgraphs.add(rhs_name);
+        subgraphs.add("Common");
+        foldocparser.Outputter.outputDOT(g, out, minKids, minLinks, true, true, subgraphs.iterator(), extra_dot);
+        out.flush();
+    }
+    
 
     /**
      * Output a model as [textual] 'dot' language to standard output using default settings

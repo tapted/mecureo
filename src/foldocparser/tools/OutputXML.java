@@ -27,7 +27,7 @@ import foldocparser.*;
  */
 public class OutputXML {
 
-	private static final String RDF_HEADER = "<?xml version=\"1.0\" encoding=\"ISO-8859-1\" ?>" +		"\n<resultset>" +		"\n";
+	private static final String RDF_HEADER = "<?xml version=\"1.0\" encoding=\"ISO-8859-1\" ?>" +		"\n<resultset>" +		"\n";
 
 	private static final String RDF_TAIL = "</resultset>";
 	

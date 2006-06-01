@@ -1,0 +1,152 @@
+<HTML>
+<HEAD>
+<TITLE>Model Grower</TITLE>
+
+<SCRIPT>
+function vlumChecks() {
+    with (document.urlForm) {
+        if (VLUM.checked) {
+            RDF.checked=true;
+            Err.checked=false;
+        }
+    }
+}
+
+function rdfChecks() {
+    with (document.urlForm) {
+        if (!RDF.checked) {
+            VLUM.checked=false;
+        }
+    }
+}
+
+function errChecks() {
+    with (document.urlForm) {
+        if (Err.checked) {
+            VLUM.checked=false;
+        }
+    }
+}
+</SCRIPT>
+
+</HEAD>
+
+<BODY bgcolor="#FFFFFF" text="#000000">
+<h1><center>
+Model Grower
+</center></h1>
+<h2>The <a href="usabilitygrow.html">Usability Grower</a> provides an interface to the <a href="http://www.usabilityfirst.com" title="Usability First: Welcome">Usability First</a> HCI Glossary</h2>
+<p><h3>
+To grow a model within the FOLDOC-generated ontology
+</h3></p>
+<form name="urlForm" method="get" action="nodesearch.cgi">
+  Enter some words to 'grow':
+  <input type="text" name="words" size="40" value="SQL &quot;declarative language&quot;">
+  (separate with spaces, enclose multi-word nodes with double quotes)
+  <br>
+  Enter the distance to grow:
+  <input type="text" name="depth" size="10" value="30">
+  (this is how deep the resulting graph goes)
+  <br>
+  Enter a minimum peerage:
+  <input type="text" name="peers" size="10" value="0">
+  (this makes the graph smaller by removing nodes who
+  have fewer than this number of peers in the original graph)
+  <br>
+  <input type="checkbox" name="RDF" value="rdf" onClick="rdfChecks()">Output RDF
+  <input type="checkbox" name="VLUM" value="vlum" onClick="vlumChecks()" enabled="false">Try and open in VLUM<br>
+  <input type="checkbox" name="Err" value="txt" onClick="errChecks()">Output Progress/Textual DOT<br>
+  <input type="submit">
+</form>
+
+For example (or just use the default, but this is also interesting, not too big and shows the stemmer in action):<br>
+<pre>
+"declaratively languaged" executable
+0.6
+0
+</pre>
+<h4>UPDATE!</b></h4>
+Clicking 'Submit Query' will now scan the query and redirect you to a generated page
+that lists &quot;close&quot; matches to each of the query words in a table.<br>
+This is done first by analysing stem matchings (using the Porters stemmer) and then,
+if the first resulted in no matches, by performing a substring scan of nodes
+in the graph (indicated by '(deep)' after the row header).<br>
+You can then check any of the nodes in the table, followed by 'Generate Graph' to
+make the gif file<br>
+The first page should always appear in less than about ten seconds<br>
+<br><br>
+What follows applies to the generated graph:<br>
+<br>
+It takes a while for a few reasons:<br>
+ - it needs to load the ontology (over 1MB)<br>
+ - java is slow<br>
+ - dot is complex (it has a lot of work to do)<br>
+ - the gif generated is large<br>
+<h4>A Note about server load:</h4>
+<p>
+Part of the script is executed in Java.<br>
+On the ugrad machines, this means that it needs to be run on congoX
+(the dps don't let us ugrads run Java on black/white/shade/mono/grey
+for some reason). The shell script that the dps wrote to do this
+for us brings up a prompt saying <br><code>
+Are you sure you want to do continue connecting (yes/no)?
+</code><br>
+about 80% of the time, Which requires someone to physically type in
+"y-e-s-enter", and I haven't cracked this one yet (neither printf "yes\n" | java ...
+nor yes yes | java ... worked)<br>
+The current solution is to rsh into congoX manually.<br>
+Problem is now picking the X, because there's a chance that
+the X you pick will be down, overloaded or just not accepting connections.<br>
+Currently it's using congo4.. just because 2 and 3 were down when I wrote
+this, and 1 was down yesterday.<br>
+If you get no response after a couple of minutes, chances are the
+currently enabled congo is down or something like that.
+</p>
+<h4>A Note about query matching:</h4>
+<p>
+The system currently relies on exact matches (including case) to find
+the query nodes. If you get a blank image, then none of the strings
+in the query could be matched. If some of the nodes are missing, then
+either they were not matched, or they were filtered out by the
+minimum peerage parameter.
+</p>
+<h4>A Note about query size:</h4>
+<p>
+Keep in mind that the number of nodes in the original output graph (before
+being subjected to the minimum peerage) is exponentially proportional to the
+depth. So if depth=1.0 results in 50 nodes, then depth=2.0 might result
+in around 2500 nodes, for which there is no chance of generating a
+legally dimensioned gif. The actual result is less due to the ontology
+being a graph, rather than a tree, and its scope.<br>
+For example, using the query "SQL":
+<br><pre>
+depth=0.5    29 nodes    34 edges
+depth=1.0   733 nodes  1686 edges
+depth=1.5  5157 nodes 18336 edges
+depth=2.0 10761 nodes 35976 edges
+</pre>
+</p>
+<p>
+Note that dot will happily output a gif with illegal dimensions (even
+if it takes a year) - sometimes a browser will display a screenfull
+and then crap itself, either showing something completely black or
+reporting an error. Check the dimensions in the title bar. You may
+be able to save it and open it somewhere else, but you're probably
+better off just decreasing depth or increasing peerage.
+</p><p>
+If you want to see what it's doing up to the point it sends it to dot,
+submit the query, press stop, then replace "quickdot.cgi" in the address
+with "dottext.cgi".<br>
+Depending on your browser, this may or may not show the loading
+progress (10%...20%...etc...100%).
+</p><p>
+This version should never take longer than about 30 seconds to complete.<br>
+If the query size is more than about 100 nodes, try increasing the
+minimum peerage. <br>
+If the dot output is too large then either dot won't cope, or the gif it makes
+is really big and takes ages to download.
+</p>
+
+
+</BODY>
+</HTML>

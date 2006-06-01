@@ -1,0 +1,67 @@
+<HTML>
+<HEAD>
+<TITLE>Model Comparer</TITLE>
+
+<SCRIPT>
+function vlumChecks() {
+    with (document.urlForm) {
+        if (VLUM.checked) {
+            RDF.checked=true;
+            Err.checked=false;
+        }
+    }
+}
+
+function rdfChecks() {
+    with (document.urlForm) {
+        if (!RDF.checked) {
+            VLUM.checked=false;
+        }
+    }
+}
+
+function errChecks() {
+    with (document.urlForm) {
+        if (Err.checked) {
+            VLUM.checked=false;
+        }
+    }
+}
+</SCRIPT>
+
+</HEAD>
+
+<BODY bgcolor="#FFFFFF" text="#000000">
+
+<h1><center>
+Model Comparer
+</center></h1>
+<form name="urlForm" method="post" action="compare.cgi">
+  <p>The first bio: <input type="text" name="bio_name" value="Judy's Bio" /><br />
+  <textarea cols="80" rows="10" name="bio" wrap="virtual">Judy Kay is an Associate Professor at the School of Information Technologies (formerly, Basser Department of Computer Science) at the University of Sydney. She is a principal in the  Smart Internet Technology Research Group which conducts fundamental as well as applied research in user-adapted systems.
+
+The core of her work is to represent and manage personalisation that ensures the user can maintain control, being able to scrutinise and control the whole process of personalisation: the user can determine what is modelled about them, how this is managed and how it is used. The core technologies to come from this are the Personis user modelling server and Personis-Lite.
+
+The testbed areas are in ubiquitous, pervasive computing as well as intelligent teaching systems. The latter reflect the research group's work in teaching computer science and in building teaching systems that help develop reflective, deep learners. Major initiatives include the Assess self-assessment system, SIMPRAC a simulation environment that supports reflective learning of medical management, VLUM and SIV novel interfaces to support reflection based on large user models, the Tutor scrutably adaptive hypertext framework, the SATS scrutably adaptive teaching system and the JITT (Just-in-time Training) support for workplace learning.
+
+The group has significant deployed research, including a user-based CPU scheduling system, the FairShare Scheduler. Recent major grants to the group include the Smart Internet Technology CRC and Science Lectureships - Building the Internet Workforce.
+
+She has over 100 publications in the areas of personalisation and teaching and learning. These appear in top conferences and journals in this area: the User Modeling conferences; the User Modeling and User-Adapted Interaction journal; and Communications of the ACM. This work has led to the invited keynote addresses at major conferences: UM'94 User Modeling Conference; IJCAI'95 International Joint Conference on Artificial Intelligence; ICCE'97, International Conference on Computers in Education; and ITS'2000, Intelligent Tutoring Systems.
+
+There is a tight link between her teaching and research. She has led major projects in the teaching and learning of Computer Science, especially programming. These are both in research into building the individualised elearning systems of the future and improved teaching and learning of computer science. These research aspects are central to the School of Information Technologies' Computer Science Education Research Group. She has won one personal and one group Award for Teaching Excellence. She is a member of the Editorial Board for UMUAI User modeling and User-Adapted Interaction: the Journal of Personalization Research and UAIS Universal Access to the Information Society and is Associate Editor for IJAIED, the International Journal of Artificial Intelligence in Education.
+
+Her research and scholarship activities are in the four area described below. </textarea>
+  </p>
+  
+  <p>The second bio: <input type="text" name="bio_two_name" value="Trent's Bio" /><br />
+  <textarea cols="80" rows="10" name="bio_two" wrap="virtual">In March 2005, Trent Apted started his PhD at the University of Sydney after working with NICTA for one year as a research engineer on Project Nightingale; a joint research project with the University of Sydney and the Smart Internet CRC. In his PhD work, Trent is exploring the potential of the "tabletop interface" as a platform for formal and informal face-to-face collaboration, multimedia display and exchange, information visualisation and entertainment.
+
+After studies in 2003, Trent was awarded the University Medal and first class Honours in the Bachelor of Computer Science and Technology (Advanced) at the University of Sydney. For his honours thesis he investigated learning techniques for interactive tangible user interfaces, or "Smart Toys", and graduated with the highest fourth-year weighted average mark in the Faculty of Science. While undertaking his degree he did tutoring and gained experience in a range of computer science disciplines including machine learning, knowledge representation, database design, computer security, networking and user interfaces as a result of coursework and research projects while participating in the Science Talented Student Programme.
+
+During the last two years of his undergraduate degree, he published papers in four international conferences and submitted a paper to the International Journal on Continuing Education and Lifelong Learning (special issue on Concepts and Ontologies in WBES), which appeared in 2004. He has since published work in a number of workshops, as his new research matures. </textarea>
+  </p>
+  <input type="submit">
+</form>
+
+</BODY>
+</HTML>
