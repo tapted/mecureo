@@ -26,8 +26,8 @@ public class BioImage extends ShowBio {
         merged = bio_a.costMerge(bio_b, Integer.parseInt(cgi.getValue("infinity", "5")));
         try {
             Connection.outputClusteredDOT(merged, pw,
-                                          Integer.parseInt(cgi.getValue("minKids", "1")),
-                                          Integer.parseInt(cgi.getValue("minLinks", "1")),
+                                          Integer.parseInt(cgi.getValue("minKids", cgi.getValue("peerage", "1"))),
+                                          Integer.parseInt(cgi.getValue("minLinks", cgi.getValue("peerage", "1"))),
                                           bio_a_name, bio_b_name,
                                           "");
         } catch (java.io.IOException ioe) {
