@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<rdf:RDF
+    xml:base="http://www.it.usyd.edu.au/~niu/ontology"
+    xmlns:sago="http://www.it.usyd.edu.au/~niu/ontology/sago#"
+    xmlns:dct="http://purl.org/dc/terms/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+
+  <skos:Concept rdf:about="SOFT2130">
+    <skos:prefLabel>SOFT2130</skos:prefLabel>
+    <skos:definition>After this course, students are expected to posses the following skills Code 1. Ability to read and write correct, clean code in C that allocates, deallocates and manages memory. 2. Understanding of common memory-related errors (such as memory leaks, dangling pointers) and how to avoid these. Higher performance could involve detecting errors in example code, and fixing them using debuggers (see below). 3. Ability to read and write code that correctly uses the main standard library functions, especially for IO, file handling, and string handling. Higher performance could involve elegant use of these functions, particularly avoiding idioms which are extremely inefficient. 4. Ability to correctly implement standard linked list data structures. Higher performance could involve slightly more complicated structures such as binary search trees. Process 1. Ability to use code quality strategies appropriate for C, including preprocessor techniques, and use of common idioms 2. Experience of following a thorough automated testing regime using tools such as make, diff, scripts to present the outcomes, and a tool to manage regression testing. Higher performance could involve ability to construct such a regime. 3. Experience in using debugging tools. Unix 1. Understanding of the approach and concepts of Unix, including its tools philosophy, processes (including pipes and redirection), the file system, and the shell. Generic 1. Ability to learn to use Unix commands and system calls (including usage of flags etc) from online manual system.</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="Core">
+    <skos:prefLabel>Core</skos:prefLabel>
+    <skos:definition>categories {SOFT2130} The essential concepts that students must learn to pass SOFT2130. These are {Similar concepts in both C and Java} , {Pointers} , {Pointers with Strings} , {Pointers with Arrays} and {Dynamic Data Structures}</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="Similar%20concepts%20in%20both%20C%20and%20Java">
+    <skos:prefLabel>Similar concepts in both C and Java</skos:prefLabel>
+    <skos:definition>categories {Core}</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="Integer%20Devision">
+    <skos:prefLabel>Integer Devision</skos:prefLabel>
+    <skos:definition>categories {Similar concepts in both C and Java} Integer division is division in which the fractional part remainder is discarded. In C an integer 5 divided by another integer 2 will result in an integer answer 2 instead of a floating point number 2. 5.</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="Control%20Flow">
+    <skos:prefLabel>Control Flow</skos:prefLabel>
+    <skos:definition>categories {Similar concepts in both C and Java} All the elements of the programming language that affect the order of execution of the statement in a program. For both Java and C, these are the selections constructs (if, if-else and switch) the loops or iteration structures, (for, while and do-while), jump statements (break, continues, return and goto), as well as the basic default flow means that statements are executed in the order they appear on the page.</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="Function%20Arguments">
+    <skos:prefLabel>Function Arguments</skos:prefLabel>
+    <skos:definition>categories {Similar concepts in both C and Java} Also called function parameters. A value or reference passed to a function or procedure or subroutine or command or program by the caller.</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="Arrays">
+    <skos:prefLabel>Arrays</skos:prefLabel>
+    <skos:definition>categories {Similar concepts in both C and Java} A collection of identically typed data items distinguished by their indices. The number of dimensions an array depends on the language but is usually unlimited.</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="Scope">
+    <skos:prefLabel>Scope</skos:prefLabel>
+    <skos:definition>categories {Similar concepts in both C and Java} The scope of an identifier is the region of a program source within which it represents a certain thing. For both C and Java, the basic scope rules are much the same. One of the important things that you will learn in this course is about the runtime storage of data once you understand this, you will appreciate why scope operates as it does. So, for example, you will realise why the code in one function cannot access data that is declared within another.</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="Confusion%20over%20behaviour%20of%20pre%2d%20and%20post%2ddecrement">
+    <skos:prefLabel>Confusion over behaviour of pre- and post-decrement</skos:prefLabel>
+    <skos:definition>categories {Similar concepts in both C and Java} A common student misconception over the behaviour of pre- and post- decrement or increment when applied in function arguments.</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="Integer%20Division%20and%20Integer%20Remainder">
+    <skos:prefLabel>Integer Division and Integer Remainder</skos:prefLabel>
+    <skos:definition>categories {Similar concepts in both C and Java} A common misconception of students. Unable to distinguish between the operator and the  operator.</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="EOF%20for%20detecting%20the%20end%20of%20input">
+    <skos:prefLabel>EOF for detecting the end of input</skos:prefLabel>
+    <skos:definition>categories {Similar concepts in both C and Java} A common misconception of students. Unable to use the EOF character to detect the end of input for standard IO and File IO.</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="Good%20Use%20of%20Indentation">
+    <skos:prefLabel>Indentation</skos:prefLabel>
+    <skos:definition>categories {Similar concepts in both C and Java} It refers to white spaces inside a program, which does not affect the semantics in both Java and C. Good use of indentation may improve the readability of a program.</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="Useful%20Identifier%20Names">
+    <skos:prefLabel>Identifier</skos:prefLabel>
+    <skos:definition>categories {Similar concepts in both C and Java} A non-reserved word, or non-keyword, used to identify. It is a good programming style to have meaningful identifier names.</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="Coding%20Style">
+    <skos:prefLabel>Coding Style</skos:prefLabel>
+    <skos:definition>categories {Core} Programming style</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="Good%20Use%20of%20Indentation">
+    <skos:prefLabel>Good Use of Indentation</skos:prefLabel>
+    <skos:definition>categories {Coding Style} Good programming style. Use appropriate and consistent indentation to make the program readable, especially to others</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="meaningful%20Identifier%20Names">
+    <skos:prefLabel>Meaningful Identifier Names</skos:prefLabel>
+    <skos:definition>categories {Coding Style} Good programming style. Identifier names should be meaningful.</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="Use%20of%20Constants">
+    <skos:prefLabel>Use of Constants</skos:prefLabel>
+    <skos:definition>categories {Coding Style} Good programming style. Use constants to avoid magic numbers.</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="Comments">
+    <skos:prefLabel>Comments</skos:prefLabel>
+    <skos:definition>categories {Coding Style} Good programming style. Always comment code sections that are non-trivial. In Java, always provide java style comments, ie pre and post conditions and etc.</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="Pointers">
+    <skos:prefLabel>Pointers</skos:prefLabel>
+    <skos:definition>categories {Core} Pointers and Related</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="Pure%20Pointers">
+    <skos:prefLabel>Pure Pointers</skos:prefLabel>
+    <skos:definition>categories {Pointers} An address, from the point of view of a programming language. A pointer may be typed (as they are in C), with its type indicating the type of data to which it points.</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="Pointers%20with%20strings">
+    <skos:prefLabel>Pointers with strings</skos:prefLabel>
+    <skos:definition>categories {Pointers} In C, a string is a series of characters terminated by the ' 0' special character. Characters in the string can be accessed and manipulated, and are usually done so, with a character pointer.</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="Pointers%20with%20arrays">
+    <skos:prefLabel>Pointers with arrays</skos:prefLabel>
+    <skos:definition>categories {Pointers} In C, elements in an array can always be access by using the array variable in a pointer fashion.</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="Automic%20comparison%20of%20strings">
+    <skos:prefLabel>Automic comparison of strings</skos:prefLabel>
+    <skos:definition>categories {Pointers} A common student misconception. Unable to compare two strings correctly, ie use   to compare two strings, like comparing two uniquely typed variables.</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="Dynamic%20Data%20Structure">
+    <skos:prefLabel>Dynamic Data Structure</skos:prefLabel>
+    <skos:definition>categories {Core} Linked Lists</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="The%20Notion%20of%20Linked%20List">
+    <skos:prefLabel>The Notion of Linked List</skos:prefLabel>
+    <skos:definition>categories {Dynamic Data Structure} A data structure in which each element contains a pointer to the next element, thus forming a linear list. A doubly linked list contains pointers to both the next and previous elements.</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="Linked%20List%20Traversal">
+    <skos:prefLabel>Linked List Traversal</skos:prefLabel>
+    <skos:definition>categories {Dynamic Data Structure} Traverse a linked list.</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="Linked%20List%20Creation">
+    <skos:prefLabel>Linked List Creation</skos:prefLabel>
+    <skos:definition>categories {Dynamic Data Structure} Create a linked list.</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="Linked%20List%20Insertion">
+    <skos:prefLabel>Linked List Insertion</skos:prefLabel>
+    <skos:definition>categories {Dynamic Data Structure} Insert a node into a particular position of a linked list.</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="Linked%20List%20Deletion">
+    <skos:prefLabel>Linked List Deletion</skos:prefLabel>
+    <skos:definition>categories {Dynamic Data Structure} Delete a node or several nodes from a linked list.</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="Memory%20Allocation%20for%20Linked%20Lists">
+    <skos:prefLabel>Memory Allocation for Linked Lists</skos:prefLabel>
+    <skos:definition>categories {Dynamic Data Structure} When allocating memory for a linked list; not only nodes of the linked list needs memory but possibly members of the node also require memory allocation</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="Standard%20Library%20Functions">
+    <skos:prefLabel>Standard Library Functions</skos:prefLabel>
+    <skos:definition>categories SOFT2130 Common library functions</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="IO%20Functions">
+    <skos:prefLabel>IO Functions</skos:prefLabel>
+    <skos:definition>categories {Standard Library Functions} Functions that deal with input and output.</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="String%20Functions">
+    <skos:prefLabel>String Functions</skos:prefLabel>
+    <skos:definition>categories {Standard Library Functions} Functions that deal with strings, such as strcpy () and strcmp ().</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="Other%20Functions">
+    <skos:prefLabel>Other Functions</skos:prefLabel>
+    <skos:definition>categories {Standard Library Functions} Other functions that students need to know, such as atoi ().</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="Memory%20Models">
+    <skos:prefLabel>Memory Models</skos:prefLabel>
+    <skos:definition>categories {SOFT2130} Memory issues</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="StaticGlobalExternConst%20Memory">
+    <skos:prefLabel>StaticGlobalExternConst Memory</skos:prefLabel>
+    <skos:definition>categories {Memory Models} An area of process memory space used for storing staticglobalexternconst variables.</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="Stack%20Memory">
+    <skos:prefLabel>Stack Memory</skos:prefLabel>
+    <skos:definition>categories {Memory Models} An area of process memory space used to store variables that correspond to non-static local variables and call-by-value parameter variables. The sizes of these allocations are fixed at the time of compilation but their addresses will vary depending on when the function which defines them is called. Their contents are not immediately initialised and must be explicitly initialised by the programmer upon entry to the function or when they become visible in scope.</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="Heap%20Memory">
+    <skos:prefLabel>Heap Memory</skos:prefLabel>
+    <skos:definition>categories {Memory Models} An area of memory used for memory allocation where blocks of memory are allocated and freed in an arbitrary order and the pattern of allocation and size of blocks is not known until run time.</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="Memory%20Allocation">
+    <skos:prefLabel>Memory Allocation</skos:prefLabel>
+    <skos:definition>categories {Memory Models} Use functions such as malloc to allocate heap memory for variables.</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="Memory%20De%2dallocation">
+    <skos:prefLabel>Memory De-allocation</skos:prefLabel>
+    <skos:definition>categories {Memory Models} De-allocate heap memory used by the program with the free () function.</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="Accessing%20De%2dallocated%20Memory">
+    <skos:prefLabel>Accessing De-allocated Memory</skos:prefLabel>
+    <skos:definition>categories {Memory Models} After freeing some allocated heap memory from a program, any pointer that still points to that part of the memory should not be used again.</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="Integer%20Finiteness">
+    <skos:prefLabel>Integer Finiteness</skos:prefLabel>
+    <skos:definition>categories {Memory Models} An integer variable in memroy has a fixed size. This means an integer variable cannot hold an infinitely large or small integer.</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="Floating%20Point%20Number%20Representation">
+    <skos:prefLabel>Floating Point Number Representation</skos:prefLabel>
+    <skos:definition>categories {Memory Models} Understand how floating point numbers are represented in memory and recognition that they lose some accuracy in memory.</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="The%20Memory%20Over%2drun%20Problem">
+    <skos:prefLabel>The Memory Over-run Problem</skos:prefLabel>
+    <skos:definition>categories {Memory Models} The memory over-run problem occurs when insufficient memory is allocated and the program tries to copy a set of data larger than the memory can hold, usually causing segmentation fault.</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="UNIX">
+    <skos:prefLabel>UNIX</skos:prefLabel>
+    <skos:definition>categories {SOFT2130} UNIX issues</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="Basic%20UNIX%20Commands">
+    <skos:prefLabel>Basic UNIX Commands</skos:prefLabel>
+    <skos:definition>categories {UNIX} Common and useful UNIX commands</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="UNIX%20Philosophy">
+    <skos:prefLabel>UNIX Philosophy</skos:prefLabel>
+    <skos:definition>categories {UNIX} Understand the structure of UNIX file system, file security, UNIX pipes and redirections.</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="C%20Compiler">
+    <skos:prefLabel>C Compiler</skos:prefLabel>
+    <skos:definition>categories {UNIX} GCC and the common flags.</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="UNIX%20Shell%20Scripting">
+    <skos:prefLabel>UNIX Shell Scripting</skos:prefLabel>
+    <skos:definition>categories {UNIX} Simple UNIX scripting, especially for testing purposes.</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="Concurrency">
+    <skos:prefLabel>Concurrency</skos:prefLabel>
+    <skos:definition>categories {SOFT2130} Multi-processing and multi-threading</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="Testing">
+    <skos:prefLabel>Testing</skos:prefLabel>
+    <skos:definition>categories {SOFT2130} Code Testing</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="Advanced%20Learning%20Objectives">
+    <skos:prefLabel>Advanced Learning Objectives</skos:prefLabel>
+    <skos:definition>categories {SOFT2130} More difficult concepts</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="Preprocessor">
+    <skos:prefLabel>Preprocessor</skos:prefLabel>
+    <skos:definition>categories {Advanced Learning Objectives} A preprocessor is a program that handles textual macro substitution and conditional compilation and inclusion of other files.</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="Process%20Management">
+    <skos:prefLabel>Process Management</skos:prefLabel>
+    <skos:definition>categories {Advanced Learning Objectives} Managing operating system's processes using functions such as fork () and wait ().</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="Sorting%20and%20Searching">
+    <skos:prefLabel>Sorting and Searching</skos:prefLabel>
+    <skos:definition>categories {Advanced Learning Objectives} Functions that perform sort and search.</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="Dynamic%20Data%20Structures">
+    <skos:prefLabel>Dynamic Data Structures</skos:prefLabel>
+    <skos:scopeNote>hyperlink</skos:scopeNote>
+  </skos:Concept>
+</rdf:RDF>

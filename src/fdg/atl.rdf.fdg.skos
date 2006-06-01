@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<rdf:RDF
+    xml:base="http://www.it.usyd.edu.au/~niu/ontology"
+    xmlns:sago="http://www.it.usyd.edu.au/~niu/ontology/sago#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+
+  <skos:Concept rdf:about="Data%20mining">
+    <sago:cweight>1.000000</sago:cweight>
+    <skos:prefLabel>Data mining</skos:prefLabel>
+    <skos:scopeNote>category</skos:scopeNote>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="Dynamic%20Content%20Engines">
+    <sago:cweight>0.794792</sago:cweight>
+    <skos:prefLabel>Dynamic Content Engines</skos:prefLabel>
+    <skos:definition>Initially, users will be working with fairly generic concept mapping functionality in the shared whiteboard. We are interested beyond that in dynamic content, such as Petri Nets, UML tools, or dynamic modelling tools. A core requirement is that such engines should be able to provide automatic feedback on syntactical problems, obeyance of constraints, etc.</skos:definition>
+    <skos:broader rdf:resource="#Smart%20Pen%20Grading%20System">
+      <sago:keyword sago:source="Smart Pen Grading System">such as</sago:keyword>
+      <sago:strength>strong</sago:strength>
+      <sago:type>parent</sago:type>
+      <sago:weight>0.350000</sago:weight>
+    </skos:broader>
+    <skos:narrower rdf:resource="#Education%20Based%20Projects">
+      <sago:keyword sago:source="Education Based Projects">are</sago:keyword>
+      <sago:strength>normal</sago:strength>
+      <sago:type>child</sago:type>
+      <sago:weight>0.635500</sago:weight>
+    </skos:narrower>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="Education%20Based%20Projects">
+    <sago:cweight>0.525138</sago:cweight>
+    <skos:prefLabel>Education Based Projects</skos:prefLabel>
+    <skos:definition>We are conducting studies into collaborative net-based learning as it occurs in groups of 3-5 members who work on more or less complex project assignments (instructional design, interface design). We are in particular interested in studying the effect that communication management tools (Jermann et al, 2001; Reimann, 2003) have on interaction and learning.	In this context, we can accommodate a number of development projects and would be interested to work with Honours students. Most of them do not require any Flash (ActionScript) knowledge, but can be realized in any language that fits the task. We assume that the projects would be realized on a server based on the records that can be fetched from the database (we use MySQL). Possible topics <sago:linkRef rdf:resource="Visualisation"><sago:linkRef rdf:resource="Pattern%2dMatching"><sago:linkRef rdf:resource="Personalisation"><sago:linkRef rdf:resource="Dynamic%20Content%20Engines">are</sago:linkRef></sago:linkRef></sago:linkRef></sago:linkRef> Data mining, Pattern-Matching, Personalisation, Visualisation, and Dynamic Content Engines.</skos:definition>
+    <skos:broader rdf:resource="#Visualisation">
+      <sago:keyword sago:source="Education Based Projects">are</sago:keyword>
+      <sago:strength>normal</sago:strength>
+      <sago:type>parent</sago:type>
+      <sago:weight>0.595000</sago:weight>
+    </skos:broader>
+    <skos:broader rdf:resource="#Pattern%2dMatching">
+      <sago:keyword sago:source="Education Based Projects">are</sago:keyword>
+      <sago:strength>normal</sago:strength>
+      <sago:type>parent</sago:type>
+      <sago:weight>0.500000</sago:weight>
+    </skos:broader>
+    <skos:broader rdf:resource="#Personalisation">
+      <sago:keyword sago:source="Education Based Projects">are</sago:keyword>
+      <sago:strength>normal</sago:strength>
+      <sago:type>parent</sago:type>
+      <sago:weight>0.550000</sago:weight>
+    </skos:broader>
+    <skos:broader rdf:resource="#Dynamic%20Content%20Engines">
+      <sago:keyword sago:source="Education Based Projects">are</sago:keyword>
+      <sago:strength>normal</sago:strength>
+      <sago:type>parent</sago:type>
+      <sago:weight>0.635500</sago:weight>
+    </skos:broader>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="Interative%20Tour%20Guide">
+    <sago:cweight>0.657466</sago:cweight>
+    <skos:prefLabel>Interative Tour Guide</skos:prefLabel>
+    <skos:definition>Information for projects in the area of the plantmuseumgarden... guide. To make this project small enough for this unit, and to make it link well with the rest of the reading in the unit, you are expected to tackle it by making use of existing tools (see those listed at the right) and developed as part of the reseach in the SITRG since you then have access to the person who built the system and can help you (and wants to see it in use). You will possibly use the tools Scrutably adaptive Teaching <sago:linkRef rdf:resource="Scrutable%20Adaptive%20Hypertext"><sago:linkRef rdf:resource="Scrutable%20Inference%20Viewer"><sago:linkRef rdf:resource="Verified%20Concept%20Mapping">system</sago:linkRef></sago:linkRef></sago:linkRef>, Scrutable Adaptive Hypertext, Scrutable Inference Viewer, and Verified Concept Mapping.</skos:definition>
+    <skos:broader rdf:resource="#Scrutable%20Adaptive%20Hypertext">
+      <sago:keyword sago:source="Interative Tour Guide">system</sago:keyword>
+      <sago:strength>normal</sago:strength>
+      <sago:type>parent</sago:type>
+      <sago:weight>0.500000</sago:weight>
+    </skos:broader>
+    <skos:broader rdf:resource="#Scrutable%20Inference%20Viewer">
+      <sago:keyword sago:source="Interative Tour Guide">system</sago:keyword>
+      <sago:strength>normal</sago:strength>
+      <sago:type>parent</sago:type>
+      <sago:weight>0.550000</sago:weight>
+    </skos:broader>
+    <skos:broader rdf:resource="#Verified%20Concept%20Mapping">
+      <sago:keyword sago:source="Interative Tour Guide">system</sago:keyword>
+      <sago:strength>normal</sago:strength>
+      <sago:type>parent</sago:type>
+      <sago:weight>0.595000</sago:weight>
+    </skos:broader>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="Mecureo">
+    <sago:cweight>0.727754</sago:cweight>
+    <skos:prefLabel>Mecureo</skos:prefLabel>
+    <skos:definition>A tool that builds lightweight ontologies. It represents an ontology as a digraph. Each edge has a weight. A small weight indicates an edge that connects concepts that are closely related. This is important since it means we can reason about the closeness of any arbitrary pair of concepts in the ontology. We identify the shortest path between them and add the weight values on all the intervening edges. When MECUREO performs a process like this, it performs a breadth-first expansion from a single concept to all those concepts that have a direct link to that concept. We <sago:linkRef rdf:resource="Ontology">describe</sago:linkRef> two concepts as peers if there is a relationship linking them in the ontology.</skos:definition>
+    <skos:broader rdf:resource="#Scrutable%20Inference%20Viewer">
+      <sago:keyword sago:source="Scrutable Inference Viewer">uses</sago:keyword>
+      <sago:strength>normal</sago:strength>
+      <sago:type>parent</sago:type>
+      <sago:weight>0.760852</sago:weight>
+    </skos:broader>
+    <skos:broader rdf:resource="#Ontology">
+      <sago:keyword sago:source="Mecureo">describe</sago:keyword>
+      <sago:strength>normal</sago:strength>
+      <sago:type>parent</sago:type>
+      <sago:weight>0.635500</sago:weight>
+    </skos:broader>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="MOST">
+    <sago:cweight>1.000000</sago:cweight>
+    <skos:prefLabel>MOST</skos:prefLabel>
+    <skos:scopeNote>category</skos:scopeNote>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="Ontology">
+    <sago:cweight>0.254443</sago:cweight>
+    <skos:prefLabel>Ontology</skos:prefLabel>
+    <skos:definition>A conceptualisation consists of a set of entities (such as objects and concepts) that may be used to express knowledge and relationships. People have their own internal conceptualisations of different domains. In (Gruber, 1993), an ontology is an explicit specification of a conceptualisation. This means that the objects, concepts, relationships in a conceptualisation are specified so that it can form a point of reference for a domain. Because the ontology is explicit, it forms a shared and common understanding that eliminates terminological and conceptual ambiguity. The ontology provides a basis for communication between people who have different contextual viewpoints, inter-operability among dissimilar systems by forming a common vocabulary, and allow for system engineering benefits (Uschold and Gruninger, 1996). Ontologies have the potential to ease the task of creating metadata by providing a common vocabulary of terms and relationships for a domain. Ontologies can also be <sago:linkRef rdf:resource="User%20Model">used</sago:linkRef> to structure user models and readily provide a way to do inference.</skos:definition>
+    <skos:broader rdf:resource="#Scrutable%20Inference%20Viewer">
+      <sago:keyword sago:source="Scrutable Inference Viewer">automatically</sago:keyword>
+      <sago:strength>weak</sago:strength>
+      <sago:type>parent</sago:type>
+      <sago:weight>1.000000</sago:weight>
+    </skos:broader>
+    <skos:narrower rdf:resource="#Mecureo">
+      <sago:keyword sago:source="Mecureo">describe</sago:keyword>
+      <sago:strength>normal</sago:strength>
+      <sago:type>child</sago:type>
+      <sago:weight>0.635500</sago:weight>
+    </skos:narrower>
+    <skos:narrower rdf:resource="#User%20Model">
+      <sago:keyword sago:source="Ontology">used</sago:keyword>
+      <sago:strength>weak</sago:strength>
+      <sago:type>child</sago:type>
+      <sago:weight>0.800000</sago:weight>
+    </skos:narrower>
+    <skos:broader rdf:resource="#Test">
+      <sago:keyword sago:source="Test">as in</sago:keyword>
+      <sago:strength>normal</sago:strength>
+      <sago:type>parent</sago:type>
+      <sago:weight>0.550000</sago:weight>
+    </skos:broader>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="Pattern%2dMatching">
+    <sago:cweight>0.895886</sago:cweight>
+    <skos:prefLabel>Pattern-Matching</skos:prefLabel>
+    <skos:definition>An engine that matches descriptions of patterns against the data and identifies those parts of the data that are covered by the patterns. For instance, we know about patterns that indicate conflict among group members. Could be written in any language, but Perl and Prolog come particularly to mind.</skos:definition>
+    <skos:narrower rdf:resource="#Education%20Based%20Projects">
+      <sago:keyword sago:source="Education Based Projects">are</sago:keyword>
+      <sago:strength>normal</sago:strength>
+      <sago:type>child</sago:type>
+      <sago:weight>0.500000</sago:weight>
+    </skos:narrower>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="Personalisation">
+    <sago:cweight>0.679330</sago:cweight>
+    <skos:prefLabel>Personalisation</skos:prefLabel>
+    <skos:definition>Information is displayed to individuals and groups based on specific differences among individualsgroups. For instance, in a more or less directive form.</skos:definition>
+    <skos:narrower rdf:resource="#Education%20Based%20Projects">
+      <sago:keyword sago:source="Education Based Projects">are</sago:keyword>
+      <sago:strength>normal</sago:strength>
+      <sago:type>child</sago:type>
+      <sago:weight>0.550000</sago:weight>
+    </skos:narrower>
+    <skos:broader rdf:resource="#Smart%20Pen%20Grading%20System">
+      <sago:keyword sago:source="Smart Pen Grading System">such as</sago:keyword>
+      <sago:strength>strong</sago:strength>
+      <sago:type>parent</sago:type>
+      <sago:weight>0.395000</sago:weight>
+    </skos:broader>
+    <skos:broader rdf:resource="#Test">
+      <sago:keyword sago:source="Test">such</sago:keyword>
+      <sago:strength>normal</sago:strength>
+      <sago:type>parent</sago:type>
+      <sago:weight>0.595000</sago:weight>
+    </skos:broader>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="Personis%20Lite">
+    <sago:cweight>0.823007</sago:cweight>
+    <skos:prefLabel>Personis Lite</skos:prefLabel>
+    <skos:definition>A user modelling server that emphasises scrutability and user control. Using the basic ideas of evidence accretion and resolution, systems can easily manipulate user models while maintaining a degree of accountability to enable the user to see what is happening. Personis Lite is implemented in Python.</skos:definition>
+    <skos:narrower rdf:resource="#Search%20Algorithm%20Tutor">
+      <sago:keyword sago:source="Search Algorithm Tutor">system</sago:keyword>
+      <sago:strength>normal</sago:strength>
+      <sago:type>child</sago:type>
+      <sago:weight>0.550000</sago:weight>
+    </skos:narrower>
+    <skos:broader rdf:resource="#User%20Model">
+      <sago:keyword sago:source="Personis Lite">using</sago:keyword>
+      <sago:strength>normal</sago:strength>
+      <sago:type>parent</sago:type>
+      <sago:weight>0.550000</sago:weight>
+    </skos:broader>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="Scrutable%20Adaptive%20Hypertext">
+    <sago:cweight>0.791773</sago:cweight>
+    <skos:prefLabel>Scrutable Adaptive Hypertext</skos:prefLabel>
+    <skos:definition>Scrutably adaptive hypertext provides a framework for constructing personalised presentation of information. In particular, learners with different goals will be taught differently. For example, in my garden tour in my garden, I need to know how to look after the plants. Other people may simply want to know what the plants are, whether the berries are edible, perhaps the origin of the plant and, if they're really into plants, latin names, lists of near relatives etc. This would build on the work of Serena Potts in her excellent project. Starting point involves use of the system. Next stage involves python.</skos:definition>
+    <skos:narrower rdf:resource="#Interative%20Tour%20Guide">
+      <sago:keyword sago:source="Interative Tour Guide">system</sago:keyword>
+      <sago:strength>normal</sago:strength>
+      <sago:type>child</sago:type>
+      <sago:weight>0.500000</sago:weight>
+    </skos:narrower>
+    <skos:related rdf:resource="#Search%20Algorithm%20Tutor">
+      <sago:keyword sago:source="Search Algorithm Tutor"></sago:keyword>
+      <sago:strength>normal</sago:strength>
+      <sago:type>unknown</sago:type>
+      <sago:weight>0.500000</sago:weight>
+    </skos:related>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="Scrutable%20Inference%20Viewer">
+    <sago:cweight>0.000000</sago:cweight>
+    <skos:prefLabel>Scrutable Inference Viewer</skos:prefLabel>
+    <skos:definition>Personalised teaching about plantspaintings etc <sago:linkRef rdf:resource="User%20Model">based</sago:linkRef> upon a visualised user model. The idea here is to give the user an overview of what they might learn and what the system recommends they learn (by making it stand out in the visualisation). This is based on ontologies and visualisation of them. This presents the user with an overview the domain so they can easily see what the system thinks they are interested in. You use Mecureo (by Trent Apted) for automatically building ontologies from existing dictionaries, thesuari etc. and SIV interface (by Andrew Lum, based on thesis work for James Uther) for visualising large user models. He and Andrew Lum (who invented SIV and uses Mecureo extensively) have agreed to provide some support for this task. You need to enhance the interface to enable the user to show what they want information about and we start by making a fake feed into the system for the user's current relevant concept. A later stage could use location to define this eg if located in front of the Mona Lisa, we trigger interest in one or both of Mona Lisa or Leonardo da Vinci.</skos:definition>
+    <skos:broader rdf:resource="#User%20Model">
+      <sago:keyword sago:source="Scrutable Inference Viewer">based</sago:keyword>
+      <sago:strength>normal</sago:strength>
+      <sago:type>parent</sago:type>
+      <sago:weight>0.734280</sago:weight>
+    </skos:broader>
+    <skos:related rdf:resource="#Mecureo">
+      <sago:keyword sago:source="Scrutable Inference Viewer"></sago:keyword>
+      <sago:strength>normal</sago:strength>
+      <sago:type>unknown</sago:type>
+      <sago:weight>0.671950</sago:weight>
+    </skos:related>
+    <skos:broader rdf:resource="#Ontology">
+      <sago:keyword sago:source="Scrutable Inference Viewer">based</sago:keyword>
+      <sago:strength>normal</sago:strength>
+      <sago:type>parent</sago:type>
+      <sago:weight>0.595000</sago:weight>
+    </skos:broader>
+    <skos:narrower rdf:resource="#Interative%20Tour%20Guide">
+      <sago:keyword sago:source="Interative Tour Guide">system</sago:keyword>
+      <sago:strength>normal</sago:strength>
+      <sago:type>child</sago:type>
+      <sago:weight>0.550000</sago:weight>
+    </skos:narrower>
+    <skos:broader rdf:resource="#Visualisation">
+      <sago:keyword sago:source="Scrutable Inference Viewer">based</sago:keyword>
+      <sago:strength>normal</sago:strength>
+      <sago:type>parent</sago:type>
+      <sago:weight>0.635500</sago:weight>
+    </skos:broader>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="Scrutably%20adaptive%20Teaching%20System">
+    <sago:cweight>1.000000</sago:cweight>
+    <skos:prefLabel>Scrutably adaptive Teaching System</skos:prefLabel>
+    <skos:scopeNote>category</skos:scopeNote>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="Search%20Algorithm%20Tutor">
+    <sago:cweight>0.781362</sago:cweight>
+    <skos:prefLabel>Search Algorithm Tutor</skos:prefLabel>
+    <skos:definition>This project consists in building a web-based intelligent tutor to help students learn about search algorithms, practice using them and understanding their advantagesinconvenients and differences between them. Tools of possible use Scrutable Adaptive Hypertext, Scrutably adaptive Teaching System, MOST, Personis Lite.</skos:definition>
+    <skos:related rdf:resource="#Scrutable%20Adaptive%20Hypertext">
+      <sago:keyword sago:source="Search Algorithm Tutor"></sago:keyword>
+      <sago:strength>normal</sago:strength>
+      <sago:type>unknown</sago:type>
+      <sago:weight>0.500000</sago:weight>
+    </skos:related>
+    <skos:broader rdf:resource="#Personis%20Lite">
+      <sago:keyword sago:source="Search Algorithm Tutor">system</sago:keyword>
+      <sago:strength>normal</sago:strength>
+      <sago:type>parent</sago:type>
+      <sago:weight>0.550000</sago:weight>
+    </skos:broader>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="Semantic%20Web">
+    <sago:cweight>1.000000</sago:cweight>
+    <skos:prefLabel>Semantic Web</skos:prefLabel>
+    <skos:scopeNote>category</skos:scopeNote>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="Smart%20Pen%20Grading%20System">
+    <sago:cweight>0.678289</sago:cweight>
+    <skos:prefLabel>Smart Pen Grading System</skos:prefLabel>
+    <skos:definition>This project is based on using the Inoto pen and its special paper to create a natural interface that enables teachers to set a quiz for their students, print it on the special paper, then use the pen to grade the homework. At its simplest, this project involves using the pen to capture the comments the teacher has written and send them to the student. A next step is to enable the teacher to create short cut marks that they write on the script as they find problems and then a detailed description of the meaning of these is delivered to the students. Another important next step <sago:linkRef rdf:resource="Student%20Model">is</sago:linkRef> to use the teacher grading marks to build student models, which represent what each student knows and does not know. This can then be the foundation for peronalised teaching. This is <sago:linkRef rdf:resource="Dynamic%20Content%20Engines"><sago:linkRef rdf:resource="Personalisation">such as</sago:linkRef></sago:linkRef> semantic web and dynamic content engines, personalisation.</skos:definition>
+    <skos:broader rdf:resource="#Student%20Model">
+      <sago:keyword sago:source="Smart Pen Grading System">is</sago:keyword>
+      <sago:strength>weak</sago:strength>
+      <sago:type>parent</sago:type>
+      <sago:weight>0.800000</sago:weight>
+    </skos:broader>
+    <skos:narrower rdf:resource="#Dynamic%20Content%20Engines">
+      <sago:keyword sago:source="Smart Pen Grading System">such as</sago:keyword>
+      <sago:strength>strong</sago:strength>
+      <sago:type>child</sago:type>
+      <sago:weight>0.350000</sago:weight>
+    </skos:narrower>
+    <skos:narrower rdf:resource="#Personalisation">
+      <sago:keyword sago:source="Smart Pen Grading System">such as</sago:keyword>
+      <sago:strength>strong</sago:strength>
+      <sago:type>child</sago:type>
+      <sago:weight>0.395000</sago:weight>
+    </skos:narrower>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="Student%20Model">
+    <sago:cweight>0.646014</sago:cweight>
+    <skos:prefLabel>Student Model</skos:prefLabel>
+    <skos:definition>See User Model.</skos:definition>
+    <skos:narrower rdf:resource="#Smart%20Pen%20Grading%20System">
+      <sago:keyword sago:source="Smart Pen Grading System">is</sago:keyword>
+      <sago:strength>weak</sago:strength>
+      <sago:type>child</sago:type>
+      <sago:weight>0.800000</sago:weight>
+    </skos:narrower>
+    <skos:related rdf:resource="#User%20Model">
+      <sago:keyword sago:source="Student Model">see</sago:keyword>
+      <sago:strength>very strong</sago:strength>
+      <sago:type>sibling</sago:type>
+      <sago:weight>0.100000</sago:weight>
+    </skos:related>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="Test">
+    <sago:cweight>0.699112</sago:cweight>
+    <skos:prefLabel>Test</skos:prefLabel>
+    <skos:definition>This as . This is <sago:linkRef rdf:resource="Ontology">as in</sago:linkRef> . This such moo . This is such as .</skos:definition>
+    <skos:narrower rdf:resource="#Ontology">
+      <sago:keyword sago:source="Test">as in</sago:keyword>
+      <sago:strength>normal</sago:strength>
+      <sago:type>child</sago:type>
+      <sago:weight>0.550000</sago:weight>
+    </skos:narrower>
+    <skos:broader rdf:resource="#User%20Model">
+      <sago:keyword sago:source="Test"></sago:keyword>
+      <sago:strength>strong</sago:strength>
+      <sago:type>parent</sago:type>
+      <sago:weight>0.300000</sago:weight>
+    </skos:broader>
+    <skos:narrower rdf:resource="#Personalisation">
+      <sago:keyword sago:source="Test">such</sago:keyword>
+      <sago:strength>normal</sago:strength>
+      <sago:type>child</sago:type>
+      <sago:weight>0.595000</sago:weight>
+    </skos:narrower>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="User%20Model">
+    <sago:cweight>0.312851</sago:cweight>
+    <skos:prefLabel>User Model</skos:prefLabel>
+    <skos:definition>Kobsa and Wahlster define a user model as a knowledge source containing explicit assumptions about all relevant aspects of the user that can be decoupled from the rest of the system (Kobsa and Wahlster, 1989). Jameson presents a number of ways the system can use the model to help the user (Jameson et al., 1997) - Helping the user find information - Tailor information presentation to the user - Adapt an interface to the user - Choose suitable instructional exercises or interventions - Give the user feedback about their knowledge - Support collaboration - Predict the user's future behaviour There are many terms that are synonymous with user model. The term student model or learner model is a user model in a teaching context. Adaptive teaching systems attempt to model the learner knowledge in a student model. In (Holt et al., 1994), they define student model as the system's beliefs about the learner's knowledge. The student model is said to be explicit if it is used to make decisions about what the student should learn (McCalla, 1992).</skos:definition>
+    <skos:narrower rdf:resource="#Scrutable%20Inference%20Viewer">
+      <sago:keyword sago:source="Scrutable Inference Viewer">based</sago:keyword>
+      <sago:strength>normal</sago:strength>
+      <sago:type>child</sago:type>
+      <sago:weight>0.500000</sago:weight>
+    </skos:narrower>
+    <skos:narrower rdf:resource="#Visualisation">
+      <sago:keyword sago:source="Visualisation">based</sago:keyword>
+      <sago:strength>normal</sago:strength>
+      <sago:type>child</sago:type>
+      <sago:weight>0.500000</sago:weight>
+    </skos:narrower>
+    <skos:narrower rdf:resource="#Personis%20Lite">
+      <sago:keyword sago:source="Personis Lite"></sago:keyword>
+      <sago:strength>strong</sago:strength>
+      <sago:type>child</sago:type>
+      <sago:weight>0.300000</sago:weight>
+    </skos:narrower>
+    <skos:related rdf:resource="#Student%20Model">
+      <sago:keyword sago:source="User Model">term</sago:keyword>
+      <sago:strength>weak</sago:strength>
+      <sago:type>sibling</sago:type>
+      <sago:weight>0.800000</sago:weight>
+    </skos:related>
+    <skos:broader rdf:resource="#Ontology">
+      <sago:keyword sago:source="Ontology">used</sago:keyword>
+      <sago:strength>weak</sago:strength>
+      <sago:type>parent</sago:type>
+      <sago:weight>0.800000</sago:weight>
+    </skos:broader>
+    <skos:narrower rdf:resource="#Test">
+      <sago:keyword sago:source="Test"></sago:keyword>
+      <sago:strength>strong</sago:strength>
+      <sago:type>child</sago:type>
+      <sago:weight>0.300000</sago:weight>
+    </skos:narrower>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="Verified%20Concept%20Mapping">
+    <sago:cweight>0.876105</sago:cweight>
+    <skos:prefLabel>Verified Concept Mapping</skos:prefLabel>
+    <skos:definition>Enable definition of what in a space a user is interested in using verified concept mapping. This is a really nice system built by Larent Cimolino and has been used in several projects related to pervasive computing. We have support available from David Carmichael who is currently using it to tackle the invisibility problem. Starting this project would simply involve installing and using the software as a teacher to construct a suitable conceptlink set for the museumgardenetc. Then, you could make some individual maps or invite people to do so as a basis for personalised information.</skos:definition>
+    <skos:narrower rdf:resource="#Interative%20Tour%20Guide">
+      <sago:keyword sago:source="Interative Tour Guide">system</sago:keyword>
+      <sago:strength>normal</sago:strength>
+      <sago:type>child</sago:type>
+      <sago:weight>0.595000</sago:weight>
+    </skos:narrower>
+  </skos:Concept>
+
+  <skos:Concept rdf:about="Visualisation">
+    <sago:cweight>0.462670</sago:cweight>
+    <skos:prefLabel>Visualisation</skos:prefLabel>
+    <skos:definition>In the first instance, visualisation <sago:linkRef rdf:resource="User%20Model">based</sago:linkRef> on queries to the database, in a later stage visualisations of patterns, user model content, etc.</skos:definition>
+    <skos:narrower rdf:resource="#Education%20Based%20Projects">
+      <sago:keyword sago:source="Education Based Projects">are</sago:keyword>
+      <sago:strength>normal</sago:strength>
+      <sago:type>child</sago:type>
+      <sago:weight>0.595000</sago:weight>
+    </skos:narrower>
+    <skos:broader rdf:resource="#User%20Model">
+      <sago:keyword sago:source="Visualisation">based</sago:keyword>
+      <sago:strength>normal</sago:strength>
+      <sago:type>parent</sago:type>
+      <sago:weight>0.500000</sago:weight>
+    </skos:broader>
+    <skos:broader rdf:resource="#Scrutable%20Inference%20Viewer">
+      <sago:keyword sago:source="Scrutable Inference Viewer">making</sago:keyword>
+      <sago:strength>weak</sago:strength>
+      <sago:type>parent</sago:type>
+      <sago:weight>0.850000</sago:weight>
+    </skos:broader>
+  </skos:Concept>
+
+</rdf:RDF>

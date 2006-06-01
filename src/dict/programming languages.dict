@@ -1,0 +1,86 @@
+Integer Division
+
+	[#Integer Division]
+	Integer division is division in which the fractional part remainder is discarded.
+
+Control Flow
+
+	[#Control Flow]
+	(Or "flow of control") The sequence of execution of instructions in a program.
+	This is determined at run time by the input data and by the control structures
+	(e.g. {if statements}) used in the program.
+
+If Statements
+
+	[If Statement]
+	Conditional statements. They are a type of {control flow}.
+
+Function Arguments
+
+	[#Function Arguments]
+	Function arguments or parameters are values or references passed into a function. In some programming languages that are strongly typed, the argument's type is specified when the function is defined; in others, the types of function arguments may be inferred automatically.
+
+Arrays
+
+	[#Arrays]
+	A collection of identically typed data items distinguished by their indices. The number of dimensions an array depends on the language but is usually unlimited.
+
+Scope
+
+	[#Scope]
+	The scope of an identifier is the region of a program source within which it represents a certain thing. This usually extends from the place where it is declared to the end of the smallest enclosing block (begin/end or procedure/function body). An inner block may contain a redeclaration of the same identifier in which case the scope of the outer declaration does not include (is "shadowed" or "occluded" by) the scope of the inner.
+
+Good Use of Indentation
+
+	[#Good Use of Indentation]
+	Good programming style. Use appropriate indentation to make the program readable, especially to others
+
+Useful Identifier Names
+
+	[#Useful Identifier Names]
+	Good programming style. Identifier names should be meaningful.
+
+Use of Constants
+
+	[#Use of Constants]
+	Good programming style. Use constants to avoid magic numbers.
+
+Comments
+
+	[#Comments]
+	Good programming style. Always comment code sections that are non-trivial.
+
+Linked List
+
+	[#Linked List]
+	A data structure in which each element contains a pointer to the next element, thus forming a linear list. A doubly linked list contains pointers to both the next and previous elements.
+
+Stack Memory
+
+	[#Stack Memory]
+	An area of process memory space used to store variables that correspond to non-static local variables and call-by-value parameter variables. The sizes of these allocations are fixed at the time of compilation but their addresses will vary depending on when the function which defines them is called. Their contents are not immediately initialised and must be explicitly initialised by the programmer upon entry to the function or when they become visible in scope.
+
+StaticGlobalExternConst Memory
+
+	[#StaticGlobalExternConst Memory]
+	An area of process memory space used for storing static/global/extern/const variables.
+
+Heap Memory
+
+	[#Heap Memory]
+	An area of memory used for memory allocation where blocks of memory are allocated and freed in an arbitrary order and the pattern of allocation and size of blocks is not known until run time.
+
+Integer Finiteness
+
+	[#Integer Finiteness]
+	An integer variable in memroy has a fixed size. This means an integer variable cannot hold an infinitely large or small integer.
+
+Floating Point Number Representation Problem
+
+	[#Floating Point Number Representation]
+	Floating point numbers lose some accuracy in memory.
+
+The Memory Over-run Problem
+
+	[#The Memory Over-run Problem]
+	The memory over-run problem occurs when insufficient memory is allocated and the program tries to copy a set of data larger than the memory can hold, usually causing segmentation fault.

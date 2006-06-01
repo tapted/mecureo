@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<rdf:RDF
+    xml:base="http://www.it.usyd.edu.au/~niu/ontology"
+    xmlns:sago="http://www.it.usyd.edu.au/~niu/ontology/sago#"
+    xmlns:dct="http://purl.org/dc/terms/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+
+  <skos:Concept rdf:about="UNIX">
+    <skos:prefLabel>UNIX</skos:prefLabel>
+    <skos:definition>This is the trademark registered by Bell Laboratories for an operating system developed in the mid-70's.</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="access%20mode">
+    <skos:prefLabel>Access Mode</skos:prefLabel>
+    <skos:definition>Each file on UNIX has associated with it an access mode. This allows the file's owner to restrict access to the file, by allowing or disallowing read, write, or execute permission for the file or directory. These permissions can be granted or removed to the owner himselfherself, or to members of the owner's group, or to all users. Related *6 pathname *5 Categories *6 UNIX *5</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="argument">
+    <skos:prefLabel>Argument</skos:prefLabel>
+    <skos:definition>Also called a parameter. An argument provides a command with supplementary information about when, how or on what to perform its function. Related *6 file *5 , *6 flags *5</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="asynchronous">
+    <skos:prefLabel>Asynchronous</skos:prefLabel>
+    <skos:definition>The shell makes it possible to execute a command, and prompt for further commands without waiting for the previous command to terminate. The command that has been set running is said to run asynchronously. Related *6 process *5</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="parameter">
+    <skos:prefLabel>Parameter</skos:prefLabel>
+    <skos:definition>See argument.</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="ascii">
+    <skos:prefLabel>ASCII</skos:prefLabel>
+    <skos:definition>An acronym for American Standard Code for Information Interchange, and pronounced asskey. It is used widely throughout the computer industry as a standard code for representing characters.</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="character">
+    <skos:prefLabel>Character</skos:prefLabel>
+    <skos:definition>Characters are used to represent the symbols people use for written communication. This is done by assigning to each symbol a unique numerical code. Many of the devices that go to make up a computer system are used for translating these codes to and from a form that people can understand. For example, pressing a key on a terminal causes a character to be sent to the computer. Similarly, the computer may send a character to a line printer to cause it to be printed on paper.</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="compiler">
+    <skos:prefLabel>Compiler</skos:prefLabel>
+    <skos:definition>Translates ( compiles ) high level programs into the corresponding primitive operations. The resulting sequence of instructions can then be executed. Related *6 interpreter *5</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="control%2dd">
+    <skos:prefLabel>Control-d</skos:prefLabel>
+    <skos:definition>See end-of-file.</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="current%20directory">
+    <skos:prefLabel>Current directory</skos:prefLabel>
+    <skos:definition>At any time, a user has a current directory, or is said to be in a certain directory. All file names not beginning with referred to by the user will be created, or searched for, in the current directory. For convenience, the current directory is given the special name . ( that is, dot ). Also, the directory which contains the current directory is called .. ( the parent directory ). Related *6 home directory *5 , *6 pathname *5 Categories *6 UNIX *5</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="default">
+    <skos:prefLabel>Default</skos:prefLabel>
+    <skos:definition>Many commands allow the user to modify their action by the inclusion of optional arguments. If these options are not specified, the command is said to default to some particular action - that is, default values are used for the options. If properly selected, default values save needless typing. Related *6 flags *5</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="UNIX%20Directory">
+    <skos:prefLabel>Directory</skos:prefLabel>
+    <skos:definition>A directory in UNIX is simply a special type of file used to group together a collection of files. Related *6 current directory *5 , *6 file *5 , *6 home directory *5 , *6 pathname *5 , *6 link *5 Categories *6 UNIX *5</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="editor">
+    <skos:prefLabel>Editor</skos:prefLabel>
+    <skos:definition>A program that allows a user to create and modify arbitrary files of text. These files might contain a program, a list of commands, or a letter to your mum.</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="End%20of%20File">
+    <skos:prefLabel>End-of-File</skos:prefLabel>
+    <skos:definition>EOF. Many UNIX commands allow information required by the command to be entered directly from the terminal, rather than from a file. However, there must be some way to indicate the end of such input. This is done by typing, at the beginning of a new line, an end-of-file character, usually the control-d character. Categories *6 UNIX *5</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="executable">
+    <skos:prefLabel>Execution</skos:prefLabel>
+    <skos:definition>Execution is simply the action, by a computer, of performing the set of instructions contained in a program. For a program to be executable, it must be in a form either directly understood by the computer, or able to interpreted by another program ( such as the shell ). Related *6 interpreter *5 , *6 process *5 , *6 program *5</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="exit%20status">
+    <skos:prefLabel>Exit status</skos:prefLabel>
+    <skos:definition>One of the facilities offered by UNIX is the ability of programs to provide an exit status when they have completed execution. This value will typically be used by commands to indicate that they successfully preformed the requested operation ( the so-called true exit status, with a value of zero ). Another program, such as the shell, may inspect this value and perform some appropriate action like reporting an error or running another program. Related *6 program *5</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="UNIX%20File">
+    <skos:prefLabel>File</skos:prefLabel>
+    <skos:definition>A file is a mechanism for the storage of some item or items of information. Related *6 directory *5 , *6 link *5 , *6 memory *5 Categories *6 UNIX *5</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="filter">
+    <skos:prefLabel>Filter</skos:prefLabel>
+    <skos:definition>A filter is a program that read information from one source, processing this in some way, and generating one stream of output. by joining filters together end-to-end using the pipe mechanism, it is possible to construct powerful tools from simple building blocks, or to expand the function of a command. Many of the commands of UNIX are designed to be used as filters. Also, the output format for many commands allow them to be filtered. While it would be possible to provide the who command with the ability to produce the type of information just shown, the existing commands are simpler. The UNIX philosophy is that it is better to provide a set of tools which can be joined together to perform a given function, than a collection of complex and unwieldy commands. Categories *6 UNIX *5</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="flags">
+    <skos:prefLabel>Flags</skos:prefLabel>
+    <skos:definition>In UNIX parlance, a flag is a name for an attribute that has a small range of possible values. For example, there is a No-login flag with each user's account - if the flag is set, he may not login. If it is not set, he may. Many UNIX commands use flags as arguments ( usually prefixed by a - ) to turn on or off some facility of the command. The access mode of a file is indicated by a set of flags that allow or inhibit certain ways of using the file. Also, each user has a set of permission flags that bestow upon him certain privileges and restrictions. Categories *6 UNIX *5</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="groups">
+    <skos:prefLabel>Groups</skos:prefLabel>
+    <skos:definition>UNIX provides the facility of groups, where several users working on a project may be made members of the same group. This allows each member access to the group's files without necessarily making them available to the public. On some UNIX systems, certain classes of users may be forbidden from using this facility. Related *6 access mode *5 Categories *6 UNIX *5</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="UNIX%20Home%20Directory">
+    <skos:prefLabel>Home Directory</skos:prefLabel>
+    <skos:definition>This is a user's initial current directory; that is, the directory the user finds himself in immediately after logging on. Categories *6 UNIX *5</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="interpreter">
+    <skos:prefLabel>Interpreter</skos:prefLabel>
+    <skos:definition>An interpreter is a program that directly executes another program, or a set of commands. This is in contrast with a compiler, which translates the program into a form that can then be executed, either by the computer itself, or by an interpreter.</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="link">
+    <skos:prefLabel>Link</skos:prefLabel>
+    <skos:definition>A file consists of two distinct parts - its name, which is stored in a directory, and the body of information contained in the file proper. A link is simply the connection between these parts. UNIX allows any file body to have multiple links to it - that is, one body of information can have more than one name. Categories *6 UNIX *5</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="metacharacter">
+    <skos:prefLabel>Metacharacter</skos:prefLabel>
+    <skos:definition>A metacharacter is a character which is used to represent some other sequence of characters. This is analogous to the use of pronumerals in algebra. Metacharacters are used in patterns to represent things like the end of a line of text. As in algebra, the meaning of a metacharacter may change depending on its context.</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="newline">
+    <skos:prefLabel>Newline</skos:prefLabel>
+    <skos:definition>This is a control character used by UNIX to mark the end of a line of text.</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="pathname">
+    <skos:prefLabel>Pathname</skos:prefLabel>
+    <skos:definition>The UNIX file system is organised as a tree of directories. Therefore, to name a particular file to be accessed, it is necessary to specify the chain of directories that one must pass through to reach the file. This list of names is called a pathname, since it gives the path to be followed to find some file. As with any path there must be a point to start from. Related *6 access mode *5 Categories *6 UNIX *5</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="pattern">
+    <skos:prefLabel>Pattern</skos:prefLabel>
+    <skos:definition>There are several UNIX commands that process text based upon the occurrence of certain patterns of characters within the text. Patterns may make use of metacharacters to construct more complicated patterns.</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="Pipes">
+    <skos:prefLabel>Pipes</skos:prefLabel>
+    <skos:definition>One of the novel facilities of UNIX is the pipe. This mechanism allows the output of one command or program to be used as the input of another simultaneously executing program. For example, ls X mc Related *6 filter *5 Categories *6 UNIX *5</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="permissions">
+    <skos:prefLabel>Permissions</skos:prefLabel>
+    <skos:definition>See *6 access mode *5 .</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="process">
+    <skos:prefLabel>Process</skos:prefLabel>
+    <skos:definition>A process is a mechanism for the execution of programs. Every command or program executing on a computer has an associated process. After a user logs on, a process is created to execute the shell, so that the user may enter commands. Most UNIX systems impose a limit to the number of processes that a user can have at one time. Related *6 asynchronous *5</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="program">
+    <skos:prefLabel>Program</skos:prefLabel>
+    <skos:definition>To make a computer do anything at all, it is necessary to give it a series of instructions called a program. These programs are written in so-called computer languages, of which there are several hundred. However, before a program can be executed by the computer, it is usually necessary to translate it into a form that the computer's electronics can execute ( machine instructions ). Related *6 execution *5 , *6 process *5</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="prompt">
+    <skos:prefLabel>Prompt</skos:prefLabel>
+    <skos:definition>This is a series of one or more characters printed by a program to indicate that the user should enter some information. For example, the shell normally prints a percent-sign  to indicate that it is ready to execute command. Categories *6 UNIX *5</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="read%2dahead">
+    <skos:prefLabel>Read-ahead</skos:prefLabel>
+    <skos:definition>UNIX allows a user to type in characters at a terminal at any time, even when not explicitly asked for ( this facility is called read-ahead ). These characters will be saved up, and used for any later requests for input. This means, for example, that it is not necessary to wait for a program like the shell or editor to prompt for a command before typing it in. Categories *6 UNIX *5</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="redirection">
+    <skos:prefLabel>Redirection</skos:prefLabel>
+    <skos:definition>See *6 standard input and output *5 .</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="shell">
+    <skos:prefLabel>Shell</skos:prefLabel>
+    <skos:definition>The shell, otherwise known as sh ( l ), is a program that accepts commands from a user, and arranges for the commands to be executed. It also provides many other useful facilities to make life easier. These include file redirection, the construction of pipelines, the running of asynchronous commands, the construction of argument lists, and even a shell programming language. With all these wonderful features, it is a pity that the shell manual sh ( l ) is mercilessly unreadable. Categories *6 UNIX *5</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="Standard%20Input%20and%20Output">
+    <skos:prefLabel>Standard Input and Output</skos:prefLabel>
+    <skos:definition>Many UNIX commands accept their input from the standard input, and produce output on the standard output. UNIX usually arranges that the standard input corresponds to the keyboard, and standard output corresponds to the display. The shell provides a facility called inputoutput redirection, that allows this correspondence to be changed for any command.</skos:definition>
+  </skos:Concept>
+  <skos:Concept rdf:about="working%20directory">
+    <skos:prefLabel>Working directory</skos:prefLabel>
+    <skos:definition>See *6 current directory *5 .</skos:definition>
+  </skos:Concept>
+</rdf:RDF>

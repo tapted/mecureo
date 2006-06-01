@@ -1,0 +1,1 @@
+javahog -mx128m -classpath ~/lib/grok-exe-0.6.0.jar:../src foldocpos.POSParse usability.dict.gz -lc ucategories.txt -m 0 umtag.fdg

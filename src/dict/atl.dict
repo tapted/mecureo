@@ -1,0 +1,213 @@
+Visualisation
+
+	In the first instance, visualisation based on queries to the database, in a later 
+	stage visualisations of patterns, user model content, etc. 
+
+MOST
+
+	MOST, a teaching model for identifying learning objectives in terms of 
+	topics/levels of difficulties and sequencing exercises (see Kalina).
+
+Personis Lite
+
+	A user modelling server that emphasises scrutability and user control. Using the basic ideas
+	of evidence accretion and resolution, systems can easily manipulate user models while 
+	maintaining a degree of accountability to enable the user to see what is happening. Personis
+	Lite is implemented in Python.
+
+Interative Tour Guide
+
+	Information for projects in the area of the plant/museum/garden/... guide. To make 
+	this project small enough for this unit, and to make it link well with the rest of 
+	the reading in the unit, you are expected to tackle it by making use of existing 
+	tools (see those listed at the right) and developed as part of the reseach in the 
+	SITRG since you then have access to the person who built the system and can help 
+	you (and wants to see it in use). You will possibly use the tools Scrutably adaptive 
+	Teaching System, Scrutable Adaptive Hypertext, Scrutable Inference Viewer, and
+	Verified Concept Mapping.
+
+Search Algorithm Tutor
+
+	This project consists in building a web-based intelligent 
+	tutor to help students learn about search algorithms, practice 
+	using them and understanding their advantages/inconvenients 
+	and differences between them. Tools of possible use: Scrutable 
+	Adaptive Hypertext, Scrutably adaptive Teaching System, MOST,
+	Personis Lite.
+
+Data mining
+
+	Data mining and machine learning methods could be applied to the data 
+	to identify patterns in users' behavior. We are particularly interested 
+	in sequence analysis (using Hidden Markov Models, for instance), using 
+	various measures of groups' success as criterion. 
+
+Education Based Projects
+
+	We are conducting studies into collaborative net-based learning 
+	as it occurs in groups of 3-5 members who work on more or less 
+	complex project assignments (instructional design, interface design). 
+	We are in particular interested in studying the effect that communication 
+	management tools (Jermann et al, 2001; Reimann, 2003) have on 
+	interaction and learning.	
+	In this context, we can accommodate a number of development projects and 
+	would be interested to work with Honours students. Most of them do not 
+	require any Flash (ActionScript) knowledge, but can be realized in any 
+	language that fits the task. We assume that the projects would be realized 
+	on a server based on the records that can be fetched from the database 
+	(we use MySQL). Possible topics are: Data mining, Pattern-Matching,
+	Personalisation, Visualisation, and Dynamic Content Engines.
+
+Pattern-Matching
+
+	An engine that matches descriptions of patterns against the data and 
+	identifies those parts of the data that are covered by the patterns. For 
+	instance, we know about patterns that indicate conflict among group members. 
+	Could be written in any language, but Perl and Prolog come particularly to 
+	mind. 
+
+Personalisation
+
+	Information is displayed to individuals and groups based on specific differences 
+	among individuals/groups. For instance, in a more or less directive form. 
+
+Dynamic Content Engines
+
+	Initially, users will be working with fairly generic concept mapping functionality 
+	in the shared whiteboard. We are interested beyond that in dynamic content, such 
+	as Petri Nets, UML tools, or dynamic modelling tools. A core requirement is that 
+	such engines should be able to provide automatic feedback on syntactical problems, 
+	obeyance of constraints, etc.
+
+Scrutably adaptive Teaching System
+
+	Provides a framework for system builder to readily mark up existing documents so 
+	that SATS automatically constructs a sequence of web pages to present to the user. 
+	Provides support for alternate teaching agents. SATS inventor, Sam Holden, has 
+	agreed to assist. He has built a beautiful, elegant system that reflects Sam's 
+	excellence as a programmer and clear thinking designer; this tool and project is 
+	an excellent opportunity to learn from him and his system. Starting point involves 
+	use of the system. This system lets the learner identify a learning goal and the 
+	system will determine how to teach it according to the learning preferences and 
+	other user characteristics. Next stage involves perl, though wrappers in other 
+	languages are possible and Sam has agreed to help.
+
+Scrutable Adaptive Hypertext
+
+	Scrutably adaptive hypertext provides a framework for constructing personalised 
+	presentation of information. In particular, learners with different goals will be 
+	taught differently. For example, in my garden tour in my garden, I need to know how 
+	to look after the plants. Other people may simply want to know what the plants are, 
+	whether the berries are edible, perhaps the origin of the plant and, if they're 
+	really into plants, latin names, lists of near relatives etc. This would build on 
+	the work of Serena Potts in her excellent project. Starting point involves use of 
+	the system. Next stage involves python.
+
+Scrutable Inference Viewer
+
+	Personalised teaching about plants/paintings etc based upon a visualised user model. 
+	The idea here is to give the user an overview of what they might learn and what the 
+	system recommends they learn (by making it stand out in the visualisation). This is 
+	based on ontologies and visualisation of them. This presents the user with an 
+	overview the domain so they can easily see what the system "thinks" they are interested 
+	in. You use Mecureo (by Trent Apted) for automatically building ontologies from 
+	existing dictionaries, thesuari etc. and SIV interface (by Andrew Lum, based on thesis 
+	work for James Uther) for visualising large user models. He and Andrew Lum (who invented 
+	SIV and uses Mecureo extensively) have agreed to provide some support for this task. 
+	You need to enhance the interface to enable the user to show what they want information 
+	about and we start by making a fake feed into the system for the user's current relevant 
+	concept. A later stage could use location to define this eg if located in front of the 
+	Mona Lisa, we trigger interest in one or both of "Mona Lisa" or "Leonardo da Vinci".
+
+Verified Concept Mapping
+
+	Enable definition of what in a space a user is interested in using verified concept mapping. 
+	This is a really nice system built by Larent Cimolino and has been used in several projects 
+	related to pervasive computing. We have support available from David Carmichael who is 
+	currently using it to tackle the invisibility problem. Starting this project would simply 
+	involve installing and using the software as a teacher to construct a suitable concept/link 
+	set for the museum/garden/etc. Then, you could make some individual maps or invite people to 
+	do so as a basis for personalised information. 
+
+Smart Pen Grading System
+
+	This project is based on using the Inoto pen and its special paper to create a natural 
+	interface that enables teachers to set a quiz for their students, print it on the special 
+	paper, then use the pen to grade the homework.  
+	At its simplest, this project involves using the pen to capture the comments the teacher 
+	has written and send them to the student. 
+	A next step is to enable the teacher to create short cut marks that they write on the 
+	script as they find problems and then a detailed description of the meaning of these is 
+	delivered to the students. 
+	Another important next step is to use the teacher grading marks to build student models, 
+	which represent what each student knows and does not know. This can then be the foundation 
+	for peronalised teaching.
+	This is such as semantic web and dynamic content engines, personalisation.
+
+Semantic Web
+
+	The majority of content on the Web today has been designed to be human readable. However 
+	currently there is no reliable way for machines to parse the semantics. The Semantic Web 
+	(Berners-Lee et al., 2001) is a vision for the future of the Web where software agents 
+	can roam from page to page and carry out complex task for users. In order for this to 
+	happen, structured collections of information and sets of inference rules must be available 
+	for computers to use for automated reasoning. The language must also be expressive enough 
+	to allow data and rules from any knowledge representation system to be exported to the web 
+	easily.
+
+Mecureo
+
+	A tool that builds lightweight ontologies. It represents an ontology as a digraph. 
+	Each edge has a weight. A small weight indicates an edge that connects concepts that are 
+	closely related. This is important since it means we can reason about the closeness of any 
+	arbitrary pair of concepts in the ontology. We identify the shortest path between them and 
+	add the weight values on all the intervening edges. When MECUREO performs a process like 
+	this, it performs a breadth-first expansion from a single concept to all those concepts 
+	that have a direct link to that concept. We describe two concepts as peers if there is a 
+	relationship linking them in the ontology. 
+
+Ontology
+
+	A conceptualisation consists of a set of entities (such as objects and concepts) that may be
+	used to express knowledge and relationships. People have their own internal conceptualisations 
+	of different domains. In (Gruber, 1993), an ontology is an explicit specification of a 
+	conceptualisation. This means that the objects, concepts, relationships in a conceptualisation 
+	are specified so that it can form a point of reference for a domain.
+	Because the ontology is explicit, it forms a shared and common understanding that eliminates 
+	terminological and conceptual ambiguity. The ontology provides a basis for communication 
+	between people who have different contextual viewpoints, inter-operability among dissimilar 
+	systems by forming a common vocabulary, and allow for system engineering benefits (Uschold 
+	and Gruninger, 1996).
+	Ontologies have the potential to ease the task of creating metadata by providing a common 
+	vocabulary of terms and relationships for a domain. Ontologies can also be used to structure
+	user models and readily provide a way to do inference.
+
+User Model
+
+	Kobsa and Wahlster define a user model as a knowledge source containing explicit assumptions 
+	about all relevant aspects of the user that can be decoupled from the rest of the system 
+	(Kobsa and Wahlster, 1989). Jameson presents a number of ways the system can use the model 
+	to help the user (Jameson et al., 1997):
+	- Helping the user find information
+	- Tailor information presentation to the user
+	- Adapt an interface to the user
+	- Choose suitable instructional exercises or interventions
+	- Give the user feedback about their knowledge
+	- Support collaboration
+	- Predict the user's future behaviour
+	There are many terms that are synonymous with user model. The term student model or learner 
+	model is a user model in a teaching context. Adaptive teaching systems attempt to model the 
+	learner knowledge in a student model. In (Holt et al., 1994), they define student model as 
+	the system's beliefs about the learner's knowledge. The student model is said to be explicit 
+	if it is used to make decisions about what the student should learn (McCalla, 1992).
+
+Student Model
+
+	See User Model.
+
+Test
+
+	This as {User Model}.
+	This is as in {ontology}.
+	This such moo {Personalisation}.
+	This is such as <Mecureo2>.
