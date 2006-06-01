@@ -746,7 +746,7 @@ public class HashGraph implements Cloneable, java.io.Serializable {
      *
      * O(n) - max {size(). density()}
      */
-    public String toString() { /*fold00*/
+    public String toString() { /*FOLD00*/
         String s = "";
         Iterator it = nodeIterator();
         while (it.hasNext()) {
@@ -762,7 +762,7 @@ public class HashGraph implements Cloneable, java.io.Serializable {
      * @param link wether to [shallow] copy links
      * @return
      */
-    public HashGraph merge(HashGraph other, boolean link) { /*fold00*/
+    public HashGraph merge(HashGraph other, boolean link) { /*FOLD00*/
         HashGraph ret = new HashGraph();
         ret.nodes = (HashMap)nodes.clone(); //shallow copy
         for (Iterator it = other.nodeIterator(); it.hasNext();) {
@@ -794,7 +794,7 @@ public class HashGraph implements Cloneable, java.io.Serializable {
      * Get as many links as possible from <code>from</code> that include nodes in <code>this</code>
      * @param from
      */
-    public void copyLinks(HashGraph from) { /*fold00*/
+    public void copyLinks(HashGraph from) { /*FOLD00*/
         for (Iterator it = nodeIterator(); it.hasNext();) {
             Node parent = (Node)it.next();
             //get each node from 'from', if it exists
@@ -828,7 +828,7 @@ public class HashGraph implements Cloneable, java.io.Serializable {
      * @param otherInf the penalty for a disjoint node originating from <code>other</code>
      * @return the merged model
      */
-    public HashGraph costMerge(HashGraph other, double thisInf, double otherInf) { /*fold00*/
+    public HashGraph costMerge(HashGraph other, double thisInf, double otherInf) { /*FOLD00*/
         HashGraph ret = new HashGraph();
         //first get an unique set of nodes from this.
         //maintain cost values, but ignore links for now.
@@ -873,7 +873,7 @@ public class HashGraph implements Cloneable, java.io.Serializable {
      * @param infinity = otherInf = thisInf
      * @return
      */
-    public HashGraph costMerge(HashGraph other, double infinity) { /*fold00*/
+    public HashGraph costMerge(HashGraph other, double infinity) { /*FOLD00*/
         return costMerge(other, infinity, infinity);
     }
 

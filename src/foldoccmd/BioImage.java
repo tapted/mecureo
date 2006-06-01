@@ -22,8 +22,8 @@ public class BioImage extends ShowBio {
 
     void dumpCompare() {
         java.io.PrintWriter pw = new java.io.PrintWriter(System.out);
-        println("Merging...");
-        merged = bio_a.merge(bio_b, false);
+        System.err.println("Merging...");
+        merged = bio_a.costMerge(bio_b, Integer.parseInt(cgi.getValue("infinity", "5")));
         try {
             Connection.outputClusteredDOT(merged, pw,
                                           Integer.parseInt(cgi.getValue("minKids", "1")),
