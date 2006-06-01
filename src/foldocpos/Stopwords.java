@@ -12,7 +12,12 @@ import java.util.HashSet;
  */
 public class Stopwords extends HashSet {
 
-    public Stopwords() {
+    /**
+	 * versioning for serailsation
+	 */
+	private static final long serialVersionUID = 1L;
+
+	public Stopwords() {
         this("stopwords.txt");
     }
     

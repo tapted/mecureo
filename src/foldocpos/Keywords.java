@@ -1,7 +1,7 @@
 package foldocpos;
 
 import java.io.*;
-import java.util.HashMap;
+import java.util.*;
 
 import foldocparser.Token;
 
@@ -15,8 +15,37 @@ import foldocparser.Token;
  */
 public class Keywords extends HashMap {
 
+    /**
+     * versioning for serailsation
+     */
+    private static final long serialVersionUID = 1L;
+
     public Keywords() {
         this("keywords.txt");
+    }
+
+    /**
+     * Check for mutli-word keywords -- if the first word is also
+     * a valid keyword, change the flag to include K_LONGER.
+     */
+    private void longerCheck() {
+        //System.err.println("Checking for K_LONGER candidates..");
+        for (Iterator it = keySet().iterator(); it.hasNext(); ) {
+            String s = (String)it.next();
+            int pos = s.indexOf(' ');
+            if (pos > 0) {
+                String first = s.substring(0, pos);
+                Token tfirst = (Token)get(first);
+                if  (tfirst != null &&
+                     ((tfirst.getFlags() & Token.M_KEYTYPE & Token.K_INVALID) == 0)) {
+                    //System.err.println(s + " begins with " + first + ", which is not invalid -- marking K_LONGER");
+                    tfirst.setFlags(tfirst.getFlags() | Token.K_LONGER);
+//                    if (((((Token)get(first)).getFlags() & Token.M_KEYTYPE) & (Token.K_INVALID | Token.K_LONGER)) != 0) {
+//                        System.err.println("(((((Token)get("+first+")).getFlags() & Token.M_KEYTYPE) & (Token.K_INVALID | Token.K_LONGER))) != 0 is now true");
+//                    }
+                }
+            }
+        }
     }
     
     public Keywords(String fileName) {
@@ -24,7 +53,7 @@ public class Keywords extends HashMap {
         //parse the keywords file
         //parent means current defn is a parent of next keyword
         //child means current defn is a child of next keyword
-        java.util.Map FLAGS = new HashMap();
+        java.util.Map<String, Integer> FLAGS = new HashMap<String, Integer>();
         FLAGS.put("weak", new Integer(Token.WEAK));
         FLAGS.put("normal", new Integer(Token.NORMAL));
         FLAGS.put("strong", new Integer(Token.STRONG));
@@ -45,6 +74,10 @@ public class Keywords extends HashMap {
             while (l != null && (l.length() == 0 || l.charAt(0) == '#'))
                 l = in.readLine();
             while (l != null) {     //for each line/keyword
+            	if (l.matches("\\s*#.*")) {
+            		l = in.readLine();
+            		continue;
+            	}
                 l = l.toLowerCase();
                 int pos = 0;
                 String key;
@@ -52,7 +85,7 @@ public class Keywords extends HashMap {
                 //read key (up to ':')
                 for (; pos < l.length() && l.charAt(pos) != ':'; ++pos);
                 if (pos >= l.length()) {
-                    System.err.println("error in keywords.txt: line without key");
+                    System.err.println("error in keywords.txt: line \""+l+"\" without key");
                 } else {
                     key = l.substring(0, pos);
                     while (pos < l.length()) {    //for each flag
@@ -78,7 +111,8 @@ public class Keywords extends HashMap {
                 l = in.readLine();
             } //next line
 	    in.close();
-	    System.err.println("Read in " + size() + " keywords from " + fileName + ".");
+            System.err.println("Read in " + size() + " keywords from " + fileName + ".");
+            longerCheck();
         } catch (IOException ioe) {
             System.err.println("Unexpected IOException reading " + fileName + ":");
             System.err.println(ioe);

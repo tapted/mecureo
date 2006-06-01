@@ -12,7 +12,11 @@ import hashgraph.*;
  * @version 0.4
  */
 public class GraphLoader extends JDialog implements Poster {
-    private JPanel jpnlLoading = new JPanel();
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	private JPanel jpnlLoading = new JPanel();
     private JLabel jlblLoading = new JLabel();
     private JProgressBar jpbProg = new JProgressBar();
     private JLabel jlblPercent = new JLabel();

@@ -5,7 +5,6 @@
 
 package posparser;
 
-import java.io.PrintStream;
 import opennlp.common.*;
 import opennlp.common.xml.NLPDocument;
 
@@ -19,32 +18,32 @@ import opennlp.common.xml.NLPDocument;
  */
 public class GetPosDoc {
 
-    Pipeline pipeline;
+	Pipeline pipeline;
 
-    public GetPosDoc() {
-	System.err.print("Initialising NLP Parser... ");
-        String args1[] = {
-            "opennlp.grok.preprocess.sentdetect.EnglishSentenceDetectorME",
-            "opennlp.grok.preprocess.tokenize.EnglishTokenizerME",
-            "opennlp.grok.preprocess.postag.EnglishPOSTaggerME",
-            "opennlp.grok.preprocess.namefind.EnglishNameFinderME"
-        };
+	public GetPosDoc() {
+		System.err.print("Initialising NLP Parser... ");
+		String args1[] = {
+			"opennlp.grok.preprocess.sentdetect.EnglishSentenceDetectorME",
+			"opennlp.grok.preprocess.tokenize.EnglishTokenizerME",
+			"opennlp.grok.preprocess.postag.EnglishPOSTaggerME",
+			"opennlp.grok.preprocess.namefind.EnglishNameFinderME"
+		};
 
-        try {
-            pipeline = new Pipeline(args1);
-	    System.err.println("Initialised.");
-        } catch(PipelineException pipelineexception) {
-            System.out.println("Pipeline error: " + pipelineexception.toString());
-        }
-    }
+		try {
+			pipeline = new Pipeline(args1);
+			System.err.println("Initialised.");
+		} catch(PipelineException pipelineexception) {
+			System.out.println("Pipeline error: " + pipelineexception.toString());
+		}
+	}
 
-    public NLPDocument getDoc(Object input) {
-        try {
-            return pipeline.run(input);
-        } catch(PipelineException pipelineexception) {
-            System.out.println("Pipeline error: " + pipelineexception.toString());
-        }
-	return null;
-    }
+	public NLPDocument getDoc(Object input) {
+		try {
+			return pipeline.run(input);
+		} catch(PipelineException pipelineexception) {
+			System.out.println("Pipeline error: " + pipelineexception.toString());
+		}
+		return null;
+	}
 
 }

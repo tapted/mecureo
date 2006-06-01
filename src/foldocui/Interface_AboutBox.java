@@ -3,11 +3,14 @@ package foldocui;
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
-import javax.swing.border.*;
 
 public class Interface_AboutBox extends JDialog implements ActionListener {
 
-    private JPanel panel1 = new JPanel();
+    /**
+	 * versioning for serailsation
+	 */
+	private static final long serialVersionUID = 1L;
+	private JPanel panel1 = new JPanel();
     private JPanel panel2 = new JPanel();
     private JPanel insetsPanel1 = new JPanel();
     private JPanel insetsPanel2 = new JPanel();

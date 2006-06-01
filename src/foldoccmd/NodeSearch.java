@@ -63,17 +63,21 @@ public class NodeSearch {
         System.out.println("<p>Select the nodes you wish to appear in the output graph and click 'Generate Graph' to generate the gif file<br>");
         System.out.println("The numbers in brackets are an indication of the accuracy of the match (lower is better)</p>");
 
-        System.out.print("<form name=\"ChooseWords\" method=\"get\" action=\""); /*quickdot.cgi\">");*/
-
-        boolean rdf = false, txt = false, vlum = false;
+ 
+        boolean rdf = false, txt = false, vlum = false, owl = false;
         for (++nonString; nonString < args.length; ++nonString) {
+        	System.out.println("<!-- BLAH BLAH " + args[nonString] + "-->");
             if (args[nonString].equals("rdf"))
                 rdf = true;
+			if (args[nonString].equals("owl"))
+				owl = true;
             if (args[nonString].equals("txt"))
                 txt = true;
             if (args[nonString].equals("vlum"))
             	vlum = true;
         }
+
+		System.out.print("<form name=\"ChooseWords\" method=\"get\" action=\""); /*quickdot.cgi\">");*/
 
         /** TODO: make this more flexible */
         String prepend = "";
@@ -88,28 +92,30 @@ public class NodeSearch {
             System.out.println(prepend + "quickrdf.cgi\">");
         else if (txt)
             System.out.println(prepend + "dottext.cgi\">");
+		else if (owl)
+			System.out.println(prepend + "quickowl.cgi\">");
         else
             System.out.println(prepend + "quickdot.cgi\">");
         
         if (prepend.length() != 0) {
         	System.out.println("Ontology:<blockquote>");
-        	System.out.println("  <input type=\"radio\" name=\"ontology\" value=\"fdg/usability.fdg\">Matched (stems)<br>");
-        	System.out.println("  <input type=\"radio\" name=\"ontology\" value=\"fdg/udetectont.fdg\">Matched with Link Detection<br>");
-        	System.out.println("  <input type=\"radio\" name=\"ontology\" value=\"fdg/umatchdetect.fdg\">Matched with <i>matched</i> Link Detection<br>");
-        	System.out.println("  <input type=\"radio\" name=\"ontology\" value=\"fdg/unlpdetect.fdg\">Matched with <b>NLP</b> Link Detection<br>");
-        	System.out.println("  <input type=\"radio\" name=\"ontology\" value=\"fdg/unlpcasedetect.fdg\" checked>Matched with <i>case-matched <b>NLP</b></i> Link Detection<br>");
-        	System.out.println("  <input type=\"radio\" name=\"ontology\" value=\"fdg/unlpstemdetect.fdg\">Matched with <i>stem-matched <b>NLP</b></i> Link Detection<br>");
+        	System.out.println("  <input type=\"radio\" name=\"ontology\" value=\"/usr/hons2001/alum/lib/html/demos/mecureo/fdg/usability.fdg\">Matched (stems)<br>");
+        	System.out.println("  <input type=\"radio\" name=\"ontology\" value=\"/usr/hons2001/alum/lib/html/demos/mecureo/fdg/udetectont.fdg\">Matched with Link Detection<br>");
+        	System.out.println("  <input type=\"radio\" name=\"ontology\" value=\"/usr/hons2001/alum/lib/html/demos/mecureo/fdg/umatchdetect.fdg\">Matched with <i>matched</i> Link Detection<br>");
+        	System.out.println("  <input type=\"radio\" name=\"ontology\" value=\"/usr/hons2001/alum/lib/html/demos/mecureo/fdg/unlpdetect.fdg\">Matched with <b>NLP</b> Link Detection<br>");
+        	System.out.println("  <input type=\"radio\" name=\"ontology\" value=\"/usr/hons2001/alum/lib/html/demos/mecureo/fdg/unlpcasedetect.fdg\" checked>Matched with <i>case-matched <b>NLP</b></i> Link Detection<br>");
+        	System.out.println("  <input type=\"radio\" name=\"ontology\" value=\"/usr/hons2001/alum/lib/html/demos/mecureo/fdg/unlpstemdetect.fdg\">Matched with <i>stem-matched <b>NLP</b></i> Link Detection<br>");
                 System.out.println("</blockquote>");
         } else {
         	System.out.println("Ontology:<blockquote>");
-        	System.out.println("  <input type=\"radio\" name=\"ontology\" value=\"fdg/matchedont.fdg\">Matched (stems, no detection)<br>");
-        	System.out.println("  <input type=\"radio\" name=\"ontology\" value=\"fdg/submatchedont.fdg\">Substring matched<br>");
-        	System.out.println("  <input type=\"radio\" name=\"ontology\" value=\"fdg/detectedont.fdg\">Matched with Link Detection 1 (exact)<br>");
-        	System.out.println("  <input type=\"radio\" name=\"ontology\" value=\"fdg/insense.fdg\">Matched with Link Detection 3 (case insensitive)<br>");
-        	System.out.println("  <input type=\"radio\" name=\"ontology\" value=\"fdg/stemmed.fdg\">Matched with Link Detection 4 (component stems)<br>");
-        	System.out.println("  <input type=\"radio\" name=\"ontology\" value=\"fdg/dftag.fdg\">Matched with <b>NLP</b> Link Detection<br>");
-        	System.out.println("  <input type=\"radio\" name=\"ontology\" value=\"fdg/fcasetag.fdg\" checked>Matched with <i>case-matched <b>NLP</b></i> Link Detection<br>");
-        	System.out.println("  <input type=\"radio\" name=\"ontology\" value=\"fdg/fmatchtag.fdg\">Matched with <i>stem-matched <b>NLP</b></i> Link Detection<br>");
+        	System.out.println("  <input type=\"radio\" name=\"ontology\" value=\"/usr/hons2001/alum/lib/html/demos/mecureo/fdg/matchedont.fdg\">Matched (stems, no detection)<br>");
+        	System.out.println("  <input type=\"radio\" name=\"ontology\" value=\"/usr/hons2001/alum/lib/html/demos/mecureo/fdg/submatchedont.fdg\">Substring matched<br>");
+        	System.out.println("  <input type=\"radio\" name=\"ontology\" value=\"/usr/hons2001/alum/lib/html/demos/mecureo/fdg/detectedont.fdg\">Matched with Link Detection 1 (exact)<br>");
+        	System.out.println("  <input type=\"radio\" name=\"ontology\" value=\"/usr/hons2001/alum/lib/html/demos/mecureo/fdg/insense.fdg\">Matched with Link Detection 3 (case insensitive)<br>");
+        	System.out.println("  <input type=\"radio\" name=\"ontology\" value=\"/usr/hons2001/alum/lib/html/demos/mecureo/fdg/stemmed.fdg\">Matched with Link Detection 4 (component stems)<br>");
+        	System.out.println("  <input type=\"radio\" name=\"ontology\" value=\"/usr/hons2001/alum/lib/html/demos/mecureo/fdg/dftag.fdg\">Matched with <b>NLP</b> Link Detection<br>");
+        	System.out.println("  <input type=\"radio\" name=\"ontology\" value=\"/usr/hons2001/alum/lib/html/demos/mecureo/fdg/fcasetag.fdg\" checked>Matched with <i>case-matched <b>NLP</b></i> Link Detection<br>");
+        	System.out.println("  <input type=\"radio\" name=\"ontology\" value=\"/usr/hons2001/alum/lib/html/demos/mecureo/fdg/fmatchtag.fdg\">Matched with <i>stem-matched <b>NLP</b></i> Link Detection<br>");
                 System.out.println("</blockquote>");
 		}        	
         	

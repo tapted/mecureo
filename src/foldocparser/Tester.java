@@ -1,7 +1,5 @@
 package foldocparser;
 
-import java.io.*;
-import java.util.zip.*;
 
 /**
  * An obsolete generic tester

@@ -9,6 +9,7 @@ import java.util.*;
  * @author Trent Apted
  * @version 0.9
  */
+@SuppressWarnings("unchecked")
 public class Path {
     /** the path */
     private LinkedList path;

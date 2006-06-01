@@ -2,7 +2,6 @@ package foldocparser;
 
 import java.io.*;
 import java.util.zip.*;
-import java.util.*;
 import hashgraph.*;
 
 /**
@@ -75,7 +74,7 @@ public class Parse {
             System.err.println("You must specify an output filename");
             return;
         }
-	System.err.print("Using detect match level: ");
+	System.out.println("Using detect match level: ");
 	switch (Parser.MATCH_LEVEL) {
 	    case (-1): System.out.println("-1: No Matching"); break;
             case (0): System.out.println(" 0: Exact Matching Only"); break;
@@ -92,7 +91,7 @@ public class Parse {
 
         Parser p = new Parser();
         g = p.parse(args[0]);
-        System.out.println("Categories");
+        System.err.print("Categories");
         java.util.Iterator it = p.categories.values().iterator();
         for (;it.hasNext();)
             System.out.println(it.next());
@@ -101,7 +100,7 @@ public class Parse {
 
         g.writeData(oos);
 
-        System.out.println("Output graph to " + args[args.length - 1]);
+        System.err.print("Output graph to " + args[args.length - 1]);
 
         showCStats(g);
 

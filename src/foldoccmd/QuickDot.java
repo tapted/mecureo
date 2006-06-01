@@ -53,9 +53,22 @@ public class QuickDot {
         }
         System.err.println("Loading " + args[0]);
 
-        Connection conn = Connection.connect(new
-java.io.File(QuickRdf.getenv("ROOT",
-"") + args[0]));
+		boolean FULL_GRAPH = false;
+		for (int idx = 1; idx < args.length; ++idx) {
+			System.err.println("args[" + idx + "] = " + args[idx]);
+			if (args[idx].equals("FULL_GRAPH")) {
+				FULL_GRAPH = true;
+			}
+		}
+
+		PrintWriter pw = new PrintWriter(System.out);
+		Connection conn = Connection.connect(new java.io.File(QuickRdf.getenv("ROOT", "") + args[0]));
+
+		if (FULL_GRAPH) {
+			HashGraph g = Connection.openGraph(new java.io.File(QuickRdf.getenv("ROOT", "") + args[0])); 
+			Connection.outputDOT(g, pw, minKids, minKids);
+			return;
+		}
 
 		String mode = "dist";
         if (nonString + 2 < args.length)
@@ -70,7 +83,7 @@ java.io.File(QuickRdf.getenv("ROOT",
         	query = conn.grow(nodes.iterator(), depth);
         }
         System.err.println("Query size is " + query.size() + " nodes");
-        PrintWriter pw = new PrintWriter(System.out);
+
         Connection.outputDOT(query, pw, minKids, minKids);
 //	pw.close();
     }

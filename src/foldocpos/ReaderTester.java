@@ -25,9 +25,9 @@ public class ReaderTester {
         }
         
         String s;
-        POSParser parser = new POSParser();
+        //POSParser parser = new POSParser();
         DictHandler dh = new DictHandler(new DebugDictAdapter());
-        //DictHandler dh = new DictHandler(new POSToker(parser, in));
+        //DictHandler dh = new DictHandler(new POSTokenizer(parser, in));
         
         while ((s = in.nextDef()) != null) {
             System.out.println("\n\n" + s);

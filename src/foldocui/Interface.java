@@ -10,10 +10,15 @@ import javax.swing.border.*;
 import java.io.*;
 import java.util.*;
 import foldocparser.*;
+import foldocparser.tools.*;
 import hashgraph.*;
 
 public class Interface extends JFrame {
-    private JPanel contentPane;
+    /**
+	 * versioning for serailsation
+	 */
+	private static final long serialVersionUID = 1L;
+	private JPanel contentPane;
     private JMenuBar jMenuBar1 = new JMenuBar();
     private JMenu jMenuFile = new JMenu();
     private JMenuItem jMenuFileExit = new JMenuItem();
@@ -39,12 +44,17 @@ public class Interface extends JFrame {
     private JButton jbtnList = new JButton();
     private JTextField jtfQuery = new JTextField();
     private JButton jbtnRDF = new JButton();
+    private JButton jbtnOWL = new JButton();
     private JButton jbtnDOT = new JButton();
+	private JButton jbtnXML = new JButton();
+	private JButton jbtnPeers = new JButton();
     private JMenuItem jMenuFileOpen = new JMenuItem();
     private JMenuItem jMenuFileSave = new JMenuItem();
     private JMenu jMenuOutput = new JMenu();
     private JMenuItem jMenuRDF = new JMenuItem();
+	private JMenuItem jMenuOWL = new JMenuItem();
     private JMenuItem jMenuDOT = new JMenuItem();
+	private JMenuItem jMenuXML = new JMenuItem();    
     private JMenuItem jMenuClustDOT = new JMenuItem();
     private JButton jbtnGenerate = new JButton();
     private JMenu jMenuInput = new JMenu();
@@ -144,6 +154,14 @@ public class Interface extends JFrame {
                 jbtnRDF_actionPerformed(e);
             }
         });
+		jbtnOWL.setMinimumSize(new Dimension(59, 27));
+		jbtnOWL.setToolTipText("Output the selected graph to OWL Lite");
+		jbtnOWL.setText("OWL");
+		jbtnOWL.addActionListener(new java.awt.event.ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				jbtnOWL_actionPerformed(e);
+			}
+		});
         jbtnDOT.setToolTipText("Output the selected graph to dot for the DOT graph generator");
         jbtnDOT.setText("DOT");
         jbtnDOT.addActionListener(new java.awt.event.ActionListener() {
@@ -151,6 +169,13 @@ public class Interface extends JFrame {
                 jbtnDOT_actionPerformed(e);
             }
         });
+		jbtnXML.setToolTipText("Output the selected graph to XML");
+		jbtnXML.setText("XML");
+		jbtnXML.addActionListener(new java.awt.event.ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				jbtnXML_actionPerformed(e);
+			}
+		});
         jtfQuery.setMinimumSize(new Dimension(40, 21));
         jMenuFileOpen.setText("Open Graph From File...");
         jMenuFileOpen.addActionListener(new java.awt.event.ActionListener() {
@@ -171,6 +196,12 @@ public class Interface extends JFrame {
                 jbtnRDF_actionPerformed(e);
             }
         });
+		jMenuOWL.setText("Output to OWL...");
+		jMenuOWL.addActionListener(new java.awt.event.ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				jbtnOWL_actionPerformed(e);
+			}
+		});
         jMenuDOT.setText("Output to DOT...");
         jMenuDOT.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(ActionEvent e) {
@@ -254,7 +285,10 @@ public class Interface extends JFrame {
         jToolBar.add(jbtnMerge, null);
         jToolBar.add(jbtnList, null);
         jToolBar.add(jbtnRDF, null);
+		jToolBar.add(jbtnOWL, null);
         jToolBar.add(jbtnDOT, null);
+		jToolBar.add(jbtnXML, null);
+		jToolBar.add(jbtnPeers, null);
         jMenuHelp.add(jMenuHelpAbout);
         jMenuBar1.add(jMenuFile);
         jMenuBar1.add(jMenuInput);
@@ -278,7 +312,8 @@ public class Interface extends JFrame {
         jMenuFile.add(jMenuFileSave);
         jMenuFile.addSeparator();
         jMenuFile.add(jMenuFileExit);
-        jMenuOutput.add(jMenuRDF);
+		jMenuOutput.add(jMenuRDF);
+		jMenuOutput.add(jMenuOWL);
         jMenuOutput.add(jMenuDOT);
         jMenuOutput.add(jMenuClustDOT);
         jMenuOutput.addSeparator();
@@ -370,6 +405,8 @@ public class Interface extends JFrame {
     boolean growing = false;
     private ExtFilter fdgFilter = new ExtFilter(".fdg", "FOLDOC graphs (*.fdg)");
     private ExtFilter rdfFilter = new ExtFilter(".rdf", "RDF files (*.rdf)");
+	private ExtFilter owlFilter = new ExtFilter(".owl", "OWL files (*.owl)");
+	private ExtFilter xmlFilter = new ExtFilter(".xml", "XML files (*.xml)");
     private ExtFilter dotFilter = new ExtFilter(".dot", "Dot graphs (*.dot)");
     private ExtFilter allFilter = new ExtFilter("", "All Files (*.*)");
     private JMenuItem jMenuOutputNorm = new JMenuItem();
@@ -548,6 +585,69 @@ public class Interface extends JFrame {
 //	System.out.println(graphs.keySet());
     }
 
+	void jbtnXML_actionPerformed(ActionEvent e) {
+		if (noCurrent()) return;
+		if (currentGraph.size() > 999 && jop.showConfirmDialog(null,
+							"Graph size is greater than 999. \nOutput anyway?",
+							"Large Graph",
+							jop.YES_NO_OPTION) == jop.NO_OPTION)
+			return;
+		jfc.setFileFilter(xmlFilter);
+		jfc.showSaveDialog(this);
+		if (jfc.getSelectedFile() != null) {
+			PrintWriter rdf = null;
+			try {
+				statusBar.setText("Outputting graph to XML...");
+				rdf = new PrintWriter(new BufferedWriter(
+									  new FileWriter(jfc.getSelectedFile())));
+				if (currentGraph.size() <= 999)
+					OutputXML.outputXML(currentGraph, rdf, 3);
+				else
+					OutputXML.outputXML(currentGraph, rdf);
+				statusBar.setText("Outputting graph to XML... Done.");
+			} catch (Exception ee) {
+				System.err.println(ee);
+				ee.printStackTrace();
+				statusBar.setText("Error outputting graph to XML. See stderr.");
+			} finally {
+				if (rdf != null)
+					rdf.close();
+			}
+		}
+	}
+
+	void jbtnOWL_actionPerformed(ActionEvent e) {
+		if (noCurrent()) return;
+		if (currentGraph.size() > 999 && jop.showConfirmDialog(null,
+							"Graph size is greater than 999. \nOutput anyway?",
+							"Large Graph",
+							jop.YES_NO_OPTION) == jop.NO_OPTION)
+			return;
+		jfc.setFileFilter(owlFilter);
+		jfc.showSaveDialog(this);
+		if (jfc.getSelectedFile() != null) {
+			PrintWriter rdf = null;
+			try {
+				statusBar.setText("Outputting graph to OWL Lite...");
+				rdf = new PrintWriter(new BufferedWriter(
+									  new FileWriter(jfc.getSelectedFile())));
+//				if (currentGraph.size() <= 999)
+//					OutputOWL.outputOWL(currentGraph, rdf, 3);
+//				else
+//					OutputOWL.outputOWL(currentGraph, rdf);
+				OutputOWL.outputOWL(currentGraph, rdf);
+				statusBar.setText("Outputting graph to OWL Lite... Done.");
+			} catch (Exception ee) {
+				System.err.println(ee);
+				ee.printStackTrace();
+				statusBar.setText("Error outputting graph to OWL. See stderr.");
+			} finally {
+				if (rdf != null)
+					rdf.close();
+			}
+		}
+	}
+
     void jbtnRDF_actionPerformed(ActionEvent e) {
         if (noCurrent()) return;
         if (currentGraph.size() > 999 && jop.showConfirmDialog(null,
@@ -564,9 +664,9 @@ public class Interface extends JFrame {
                 rdf = new PrintWriter(new BufferedWriter(
                                       new FileWriter(jfc.getSelectedFile())));
                 if (currentGraph.size() <= 999)
-                    Outputter.outputRDF(currentGraph, rdf, 3);
+                    OutputRDF.outputRDF(currentGraph, rdf, 3);
                 else
-                    Outputter.outputRDF(currentGraph, rdf);
+                    OutputRDF.outputRDF(currentGraph, rdf);
                 statusBar.setText("Outputting graph to RDF... Done.");
 
                 if (  jop.showConfirmDialog(null,
@@ -578,7 +678,7 @@ public class Interface extends JFrame {
                     String postfix = extStart > 0 ?
                                         rdfname.substring(0, extStart) :
                                         rdfname;
-                    Outputter.makeHTMLSet(jfc.getSelectedFile().getParentFile().getAbsoluteFile(),
+                    OutputRDF.makeHTMLSet(jfc.getSelectedFile().getParentFile().getAbsoluteFile(),
                                           rdfname,
                                           postfix,
                                           ((Node)currentGraph.nodeIterator().next()).getKey());
@@ -623,9 +723,9 @@ public class Interface extends JFrame {
                 dot = new PrintWriter(new BufferedWriter(
                                       new FileWriter(jfc.getSelectedFile())));
                 if (cluster) {
-                    Outputter.autoDOTCluster(currentGraph, dot, minKids, minLinks);
+                    OutputDOT.autoDOTCluster(currentGraph, dot, minKids, minLinks);
                 } else {
-                    Outputter.outputDOT(currentGraph, dot, minKids, minLinks);
+                    OutputDOT.outputDOT(currentGraph, dot, minKids, minLinks);
                 }
                 statusBar.setText("Outputting graph to DOT... Done.");
             } catch (Exception ee) {

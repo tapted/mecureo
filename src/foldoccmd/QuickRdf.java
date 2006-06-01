@@ -53,15 +53,27 @@ public class QuickRdf {
             System.err.println("Couldn't parse depth, using 1.0");
         }
         boolean USE_HCI = false;
+        boolean FULL_GRAPH = false;
         for (int idx = nonString + 1; idx < args.length; ++idx) {
             System.err.println("args[" + idx + "] = " + args[idx]);
             if (args[idx].equals("HCI")) {
                 USE_HCI = true;
             }
+			if (args[idx].equals("FULL_GRAPH")) {
+				FULL_GRAPH = true;
+			}
         }
 
         System.err.println("Loading " + args[0]);
         Connection conn = Connection.connect(new java.io.File(getenv("ROOT", "") + args[0]));
+
+		PrintWriter pw = new PrintWriter(System.out);
+
+		if (FULL_GRAPH) {
+			HashGraph g = Connection.openGraph(new java.io.File(QuickRdf.getenv("ROOT", "") + args[0])); 
+			Connection.outputRDF(g, pw);
+			return;
+		}
 
 		String mode = "dist";
         if (nonString + 2 < args.length)
@@ -77,7 +89,7 @@ public class QuickRdf {
         }
 
         System.err.println("Query size is " + query.size() + " nodes");
-        PrintWriter pw = new PrintWriter(System.out);
+
         if (USE_HCI) {
             System.err.println("Using HCI Output");
             Connection.outputHCI(query, pw);

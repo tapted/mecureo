@@ -97,9 +97,9 @@ public class Connection {
      */
     public static void outputDOT(HashGraph g, PrintWriter out, boolean cluster, int minKids, int minLinks) throws IOException {
         if (cluster)
-            foldocparser.Outputter.autoDOTCluster(g, out, minKids, minLinks);
+            foldocparser.tools.OutputDOT.autoDOTCluster(g, out, minKids, minLinks);
         else
-            foldocparser.Outputter.outputDOT(g, out, minKids, minLinks);
+            foldocparser.tools.OutputDOT.outputDOT(g, out, minKids, minLinks);
         out.flush();
     }
 
@@ -164,9 +164,19 @@ public class Connection {
      * @see foldocparser.Outputter#outputRDF(HashGraph g, PrintWriter out)
      */
     public static void outputRDF(HashGraph g, PrintWriter out) throws IOException {
-        foldocparser.Outputter.outputRDF(g, out);
+        foldocparser.tools.OutputRDF.outputRDF(g, out);
         out.flush();
     }
+
+	public static void outputOWL(HashGraph g, PrintWriter out) throws IOException {
+		foldocparser.tools.OutputOWL.outputOWL(g, out);
+		out.flush();
+	}
+
+	public static void outputXML(HashGraph g, PrintWriter out) throws IOException {
+		foldocparser.tools.OutputXML.outputXML(g, out);
+		out.flush();
+	}
 
     /**
      * Output a model as VLUM RDF for HCI
@@ -176,7 +186,7 @@ public class Connection {
      * @see #outputRDF(HashGraph g, PrintWriter out)
      */
     public static void outputHCI(HashGraph g, PrintWriter out) throws IOException {
-        foldocparser.Outputter.outputHCIRDF(g, out);
+        foldocparser.tools.OutputHCI.outputHCIRDF(g, out);
         out.flush();
     }
 
@@ -215,7 +225,6 @@ public class Connection {
                        PrintWriter log) {
 
         HashGraph g = new HashGraph();
-        int t;
         Node n;
         double curInf = 0; //progressive infinity for new subgraphs
         boolean first = true;

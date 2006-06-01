@@ -34,7 +34,7 @@ public class NormalisedSearchPenalty extends SearchPenalty {
     public double penaltyFinal(int common, int leftOnly, int rightOnly) {
         //normalise
 
-        double max, min, mult, tmp1, tmp2, sum;
+        double max, min, mult, tmp1, /*tmp2,*/ sum;
         int sz = costs.size();
         if (sz == 0) {
             return 0.0;
