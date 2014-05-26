@@ -1,6 +1,6 @@
 #!/bin/sh
 
-. ./cgicommon.sh
+. ./cgi2common.sh
 
 echo "Content-Type:image/gif"
 echo

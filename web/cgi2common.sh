@@ -6,7 +6,7 @@ ulimit -t 300
 #when not rshing this will work
 #ROOT="./"
 #ROOT="/usr/cs3/tapted/lib/html/mecureo/"
-ROOT="/usr/staff/tapted/lib/html/mec/"
+ROOT="/usr/staff/tapted/lib/html/mecureo/svn/"
 
 #command to run java - basser ugrad needs to rsh, otherwise just `java' should work
 #JAVA="java"
@@ -33,12 +33,12 @@ ONTOLOGY=""
 #line based interaction
 #echo "Content-Type:text/plain"
 #echo
-#echo "$ROOT/bin/spacify $QUERY_STRING"
+#echo "$ROOT/web/bin/spacify $QUERY_STRING"
 #$ROOT/bin/spacify $QUERY_STRING 2>&1
 CGIQUERY="`"$ROOT"bin/spacify $QUERY_STRING`"
 
 #the command for dot [AT&T Graphviz] - output is piped to this
-DOTCMD=$ROOT"bin/nicedot -Tgif"
+DOTCMD=$ROOT"web/bin/nicedot -Tgif"
 
 #DOT also needs a font path on staff
 DOTFONTPATH="/usr/X11R6/lib/X11/fonts/Type1:/usr/X11R6/lib/X11/fonts/latin2/pnm"

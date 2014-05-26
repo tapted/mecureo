@@ -1,6 +1,6 @@
 #!/bin/sh
 ulimit -t 300
-ulimit -v 20000 
+ulimit -v 100000 
 LD_LIBRARY_PATH=/usr/staff/tapted/mecureo/lib/graphviz
 export LD_LIBRARY_PATH
 nice -19 /usr/staff/tapted/mecureo/bin/dot $@ 2>/usr/staff/tapted/mecureo/bin/doterr
